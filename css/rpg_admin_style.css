@@ -1,0 +1,57 @@
+/*** Columns ***/
+.rpg-profile-sidebar-preview {
+  width: 30%;
+  float: left;
+  background-color: #1F1F1F;
+  padding: 20px;
+  text-align: center; }
+  .rpg-profile-sidebar-preview .dashicons dashicons-businessman {
+    width: 100px;
+    height: 100px; }
+  .rpg-profile-sidebar-preview .image-container {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-align: center; }
+  .rpg-profile-sidebar-preview .rpg-profile-picture {
+    width: 96px;
+    height: 96px;
+    overflow: hidden;
+    margin: 20px auto 10px auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%; }
+  .rpg-profile-sidebar-preview img {
+    border-radius: 50%; }
+  .rpg-profile-sidebar-preview h1.rpg-profile-username,
+  .rpg-profile-sidebar-preview h2.rpg-profile-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: #fff; }
+  .rpg-profile-sidebar-preview h1.rpg-profile-username {
+    font-size: 24px;
+    margin: 0 0 10px; }
+  .rpg-profile-sidebar-preview h2.rpg-profile-description {
+    font-size: 16px;
+    margin: 0 0 20px; }
+  .rpg-profile-sidebar-preview .icons-wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+.rpg-profile-general-form-container {
+  width: 65%;
+  float: right; }
+  .rpg-profile-general-form-container .txtProfile {
+    width: 80%; }
+  .rpg-profile-general-form-container #upload-button {
+    padding: 2px;
+    font-weight: bold;
+    width: 80%; }
+  .rpg-profile-general-form-container #remove-picture {
+    padding: 2px;
+    font-weight: bold;
+    width: 80%; }
+
+/*# sourceMappingURL=rpg_admin_style.css.map */
