@@ -81,6 +81,8 @@ if(!get_option('gplus_handler')){
 <?php
 		if (get_option('twitter_handler') || get_option('facebook_handler') || get_option('gplus_handler')) {
 ?>
+		
+		<h2 class="rpg-profile-social-media">Follow Me On Social Media</h2>
 		<div class="icons-wrapper">
 <?php
 			// Encase this in a social media class that centers everything

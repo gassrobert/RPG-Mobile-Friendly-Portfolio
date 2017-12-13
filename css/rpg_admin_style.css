@@ -25,7 +25,8 @@
   .rpg-profile-sidebar-preview img {
     border-radius: 50%; }
   .rpg-profile-sidebar-preview h1.rpg-profile-username,
-  .rpg-profile-sidebar-preview h2.rpg-profile-description {
+  .rpg-profile-sidebar-preview h2.rpg-profile-description,
+  .rpg-profile-sidebar-preview h2.rpg-profile-social-media {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     color: #fff; }
@@ -35,6 +36,9 @@
   .rpg-profile-sidebar-preview h2.rpg-profile-description {
     font-size: 16px;
     margin: 0 0 20px; }
+  .rpg-profile-sidebar-preview h2.rpg-profile-social-media {
+    font-size: 16px;
+    margin: 0 0 5px; }
   .rpg-profile-sidebar-preview .icons-wrapper {
     display: block;
     margin-left: auto;
