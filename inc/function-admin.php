@@ -51,6 +51,7 @@ function sunset_custom_settings() {
 	register_setting( 'rpg-profile-settings-group', 'profile_phone' );
 	register_setting( 'rpg-profile-settings-group', 'profile_location' );
 	register_setting( 'rpg-profile-settings-group', 'profile_intro' );
+	register_setting( 'rpg-profile-settings-group', 'github_handler' );
 	register_setting( 'rpg-profile-settings-group', 'twitter_handler' );
 	register_setting( 'rpg-profile-settings-group', 'facebook_handler' );
 	register_setting( 'rpg-profile-settings-group', 'gplus_handler' );	
@@ -63,6 +64,7 @@ function sunset_custom_settings() {
 	add_settings_field( 'sidebar-profile-phone', 'Phone', 'rpg_profile_sidebar_phone', 'rpg_profile', 'rpg-profile-sidebar-options');
 	add_settings_field( 'sidebar-profile-location', 'Location', 'rpg_profile_sidebar_location', 'rpg_profile', 'rpg-profile-sidebar-options');
 	add_settings_field( 'sidebar-profile-intro', 'Introduction', 'rpg_profile_sidebar_intro', 'rpg_profile', 'rpg-profile-sidebar-options');
+	add_settings_field( 'sidebar-profile-github', 'Github Link', 'rpg_profile_sidebar_github', 'rpg_profile', 'rpg-profile-sidebar-options');
 	add_settings_field( 'sidebar-profile-twitter', 'Twitter Link', 'rpg_profile_sidebar_twitter', 'rpg_profile', 'rpg-profile-sidebar-options');
 	add_settings_field( 'sidebar-profile-facebook', 'Facebook Link', 'rpg_profile_sidebar_facebook', 'rpg_profile', 'rpg-profile-sidebar-options');
 	add_settings_field( 'sidebar-profile-gplus', 'Google+ Link', 'rpg_profile_sidebar_gplus', 'rpg_profile', 'rpg-profile-sidebar-options');
@@ -115,6 +117,11 @@ function rpg_profile_sidebar_intro() {
 	$profileintro = esc_attr( get_option( 'profile_intro' ) );
 	echo '<textarea name="profile_intro" placeholder="Introduction" class="txtProfile">'.$profileintro.'</textarea>';
 	// echo '<input type="text" name="profile_intro" value="'.$profileintro.'" placeholder="Introduction" /><p class="description">Introduction</p>';
+}
+
+function rpg_profile_sidebar_github() {
+	$github = esc_attr( get_option( 'github_handler' ) );
+	echo '<input type="text" name="github_handler" value="'.$github.'" placeholder="Github account URL" class="txtProfile" />';
 }
 
 function rpg_profile_sidebar_twitter() {

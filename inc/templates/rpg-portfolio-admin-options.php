@@ -40,6 +40,12 @@ if(!get_option('profile_intro')){
 } else {
 	$profileintro = esc_attr( get_option( 'profile_intro' ) );
 }
+if(!get_option('github_handler')){
+    // update_option('profile_intro', 'first_default_value');
+	$profilegithub = "";
+} else {
+	$profilegithub = esc_attr( get_option( 'github_handler' ) );
+}
 if(!get_option('twitter_handler')){
     // update_option('profile_intro', 'first_default_value');
 	$profiletwitter = "";
@@ -78,6 +84,7 @@ if(!get_option('gplus_handler')){
 		<h2 class="rpg-profile-description"><?php print $profilephone; ?></h2>
 		<h2 class="rpg-profile-description"><?php print $profilelocation; ?></h2>
 		<h2 class="rpg-profile-description"><?php print $profileintro; ?></h2>
+		<h2 class="rpg-profile-description"><a href="<?php print $profilegithub; ?>">Link to me on Github</a></h2>
 <?php
 		if (get_option('twitter_handler') || get_option('facebook_handler') || get_option('gplus_handler')) {
 ?>
@@ -89,17 +96,17 @@ if(!get_option('gplus_handler')){
 			if(get_option('twitter_handler')){
 			    // update_option('profile_intro', 'first_default_value');
 				// $profiletwitter = "";
-				echo  '<span class="sunset-icon-sidebar dashicons-before dashicons-twitter"></span>';
+				echo  '<a href="' . $profiletwitter . '" target="_blank"><span class="rpg-profile-icon-sidebar dashicons-before dashicons-twitter"></span></a>';
 			}
 			if(get_option('facebook_handler')){
 			    // update_option('profile_intro', 'first_default_value');
 				// $profilefacebook = "";
-				echo '<span class="sunset-icon-sidebar sunset-icon-sidebar--gplus dashicons-before dashicons-googleplus"></span>';
+				echo '<a href="' . $profilefacebook . '" target="_blank"><span class="rpg-profile-icon-sidebar dashicons-before dashicons-googleplus"></span></a>';
 			}
 			if(get_option('gplus_handler')){
 			    // update_option('profile_intro', 'first_default_value');
 				// $profilegplus = "";
-				echo '<span class="sunset-icon-sidebar dashicons-before dashicons-facebook-alt"></span>';
+				echo '<a href="' . $profilegplus . '" target="_blank"><span class="rpg-profile-icon-sidebar dashicons-before dashicons-facebook"></span></a>';
 			}
 ?>
 		</div>
