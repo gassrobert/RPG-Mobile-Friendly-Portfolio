@@ -43,6 +43,9 @@
     display: block;
     margin-left: auto;
     margin-right: auto; }
+    .rpg-profile-sidebar-preview .icons-wrapper .rpg-profile-icon-sidebar {
+      margin-left: 5px;
+      margin-right: 5px; }
 
 .rpg-profile-general-form-container {
   width: 65%;

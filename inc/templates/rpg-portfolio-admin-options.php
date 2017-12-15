@@ -79,12 +79,20 @@ if(!get_option('gplus_handler')){
 			<?php } ?>
 
 		</div>
-		<h1 class="rpg-profile-username"><?php print $profilename; ?></h1>
-		<h2 class="rpg-profile-description"><?php print $profileemail; ?></h2>
-		<h2 class="rpg-profile-description"><?php print $profilephone; ?></h2>
-		<h2 class="rpg-profile-description"><?php print $profilelocation; ?></h2>
-		<h2 class="rpg-profile-description"><?php print $profileintro; ?></h2>
-		<h2 class="rpg-profile-description"><a href="<?php print $profilegithub; ?>">Link to me on Github</a></h2>
+		<h1 class="rpg-profile-username" title="Name"><?php print $profilename; ?></h1>
+		<h2 class="rpg-profile-description" title="Email"><?php print $profileemail; ?></h2>
+		<h2 class="rpg-profile-description" title="Phone"><?php print $profilephone; ?></h2>
+		<h2 class="rpg-profile-description" title="Location"><?php print $profilelocation; ?></h2>
+		<h2 class="rpg-profile-description" title="Introduction"><?php print $profileintro; ?></h2>
+
+<?php
+		if (get_option('github_handler')) {
+?>
+			<h2 class="rpg-profile-description" title="Github"><a href="<?php print $profilegithub; ?>">Link to me on Github</a></h2>
+<?php
+		}	
+?>
+
 <?php
 		if (get_option('twitter_handler') || get_option('facebook_handler') || get_option('gplus_handler')) {
 ?>
@@ -96,17 +104,17 @@ if(!get_option('gplus_handler')){
 			if(get_option('twitter_handler')){
 			    // update_option('profile_intro', 'first_default_value');
 				// $profiletwitter = "";
-				echo  '<a href="' . $profiletwitter . '" target="_blank"><span class="rpg-profile-icon-sidebar dashicons-before dashicons-twitter"></span></a>';
+				echo  '<a href="' . $profiletwitter . '" target="_blank" title="Twitter"><span class="rpg-profile-icon-sidebar dashicons-before dashicons-twitter"></span></a>';
 			}
 			if(get_option('facebook_handler')){
 			    // update_option('profile_intro', 'first_default_value');
 				// $profilefacebook = "";
-				echo '<a href="' . $profilefacebook . '" target="_blank"><span class="rpg-profile-icon-sidebar dashicons-before dashicons-googleplus"></span></a>';
+				echo '<a href="' . $profilefacebook . '" target="_blank" title="Facebook"><span class="rpg-profile-icon-sidebar dashicons-before dashicons-facebook"></span></a>';
 			}
 			if(get_option('gplus_handler')){
 			    // update_option('profile_intro', 'first_default_value');
 				// $profilegplus = "";
-				echo '<a href="' . $profilegplus . '" target="_blank"><span class="rpg-profile-icon-sidebar dashicons-before dashicons-facebook"></span></a>';
+				echo '<a href="' . $profilegplus . '" target="_blank" title="Google+"><span class="rpg-profile-icon-sidebar dashicons-before  dashicons-googleplus"></span></a>';
 			}
 ?>
 		</div>
