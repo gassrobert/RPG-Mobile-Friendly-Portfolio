@@ -33,16 +33,35 @@ html {
   position: fixed;
   float: left;
   width: 26%;
-  background: #EBEBEB;
-  padding: 15px 0;
+  background-color: #1F1F1F;
   height: 100%;
   border-left: 3px solid #000000;
   border-right: 3px solid #000000;
   border-top: 1px solid #000000;
   margin-left: 3px; }
-  .twoColumnBody #sidebar1 h3, .twoColumnBody #sidebar1 p {
-    margin-left: 10px;
-    margin-right: 10px; }
+  .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview {
+    float: left;
+    padding: 20px;
+    text-align: center; }
+    .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .dashicons dashicons-businessman {
+      width: 100px;
+      height: 100px; }
+    .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .image-container {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      text-align: center; }
+    .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .rpg-profile-picture {
+      width: 96px;
+      height: 96px;
+      overflow: hidden;
+      margin: 20px auto 10px auto;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 50%; }
+    .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview img {
+      border-radius: 50%; }
 
 .twoColumnBody #mainContent {
   margin: 0 20px 0 26%; }
