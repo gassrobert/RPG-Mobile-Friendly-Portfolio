@@ -42,7 +42,8 @@ html {
   .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview {
     float: left;
     padding: 20px;
-    text-align: center; }
+    text-align: center;
+    width: 90%; }
     .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .dashicons dashicons-businessman {
       width: 100px;
       height: 100px; }
