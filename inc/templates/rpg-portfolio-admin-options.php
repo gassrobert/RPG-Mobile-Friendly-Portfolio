@@ -106,15 +106,15 @@ if(!get_option('gplus_handler')){
 				// $profiletwitter = "";
 				echo  '<a href="' . $profiletwitter . '" target="_blank" title="Twitter"><span class="rpg-profile-icon-sidebar dashicons-before dashicons-twitter"></span></a>';
 			}
-			if(get_option('facebook_handler')){
-			    // update_option('profile_intro', 'first_default_value');
-				// $profilefacebook = "";
-				echo '<a href="' . $profilefacebook . '" target="_blank" title="Facebook"><span class="rpg-profile-icon-sidebar dashicons-before dashicons-facebook"></span></a>';
-			}
 			if(get_option('gplus_handler')){
 			    // update_option('profile_intro', 'first_default_value');
 				// $profilegplus = "";
 				echo '<a href="' . $profilegplus . '" target="_blank" title="Google+"><span class="rpg-profile-icon-sidebar dashicons-before  dashicons-googleplus"></span></a>';
+			}
+			if(get_option('facebook_handler')){
+			    // update_option('profile_intro', 'first_default_value');
+				// $profilefacebook = "";
+				echo '<a href="' . $profilefacebook . '" target="_blank" title="Facebook"><span class="rpg-profile-icon-sidebar dashicons-before dashicons-facebook"></span></a>';
 			}
 ?>
 		</div>

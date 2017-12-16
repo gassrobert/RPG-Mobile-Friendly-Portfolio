@@ -15,3 +15,12 @@ function rpg_portfolio_load_scripts(){
 
 }
 add_action( 'wp_enqueue_scripts', 'rpg_portfolio_load_scripts' );
+
+
+/********************************************************/
+// Adding Dashicons in WordPress Front-end
+/********************************************************/
+function load_dashicons_front_end() {
+  wp_enqueue_style( 'dashicons' );
+}
+add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
