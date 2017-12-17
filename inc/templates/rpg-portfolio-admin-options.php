@@ -88,7 +88,7 @@ if(!get_option('gplus_handler')){
 <?php
 		if (get_option('github_handler')) {
 ?>
-			<h2 class="rpg-profile-description" title="Github"><a href="<?php print $profilegithub; ?>">Link to me on Github</a></h2>
+			<h2 class="rpg-profile-description" title="Github"><a href="<?php print $profilegithub; ?>" target="_blank" class="sidebar-link">Link to me on Github</a></h2>
 <?php
 		}	
 ?>

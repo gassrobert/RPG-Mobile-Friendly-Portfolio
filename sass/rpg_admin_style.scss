@@ -33,6 +33,12 @@
 	h2.rpg-profile-description { font-size: 16px; margin: 0 0 20px; }
 	h2.rpg-profile-social-media { font-size: 16px; margin: 0 0 5px; }
 
+	.sidebar-link {
+		text-decoration: none;
+		&:hover { text-decoration: none; }
+		&:active { text-decoration: none; }
+	}
+
 	.icons-wrapper {
 		display: block;
 		margin-left: auto;

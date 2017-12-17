@@ -39,6 +39,12 @@
   .rpg-profile-sidebar-preview h2.rpg-profile-social-media {
     font-size: 16px;
     margin: 0 0 5px; }
+  .rpg-profile-sidebar-preview .sidebar-link {
+    text-decoration: none; }
+    .rpg-profile-sidebar-preview .sidebar-link:hover {
+      text-decoration: none; }
+    .rpg-profile-sidebar-preview .sidebar-link:active {
+      text-decoration: none; }
   .rpg-profile-sidebar-preview .icons-wrapper {
     display: block;
     margin-left: auto;

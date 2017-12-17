@@ -83,8 +83,9 @@ html {
 
 			.sidebar-link {
 				color: #0073aa;
-				&:hover { color: #00a0d2; }
-				&:active { color: #124964; }
+				text-decoration: none;
+				&:hover { color: #00a0d2; text-decoration: none; }
+				&:active { color: #124964; text-decoration: none; }
 			}	
 
 			.icons-wrapper {
