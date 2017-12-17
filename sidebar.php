@@ -87,7 +87,7 @@ if(!get_option('gplus_handler')){
 <?php
 		if (get_option('github_handler')) {
 ?>
-			<h2 class="rpg-profile-description" title="Github"><a class="sidebar-link" href="<?php print $profilegithub; ?>">Link to me on Github</a></h2>
+			<h2 class="rpg-profile-description" title="Github"><a class="sidebar-link" href="<?php print $profilegithub; ?>" target="_blank">Link to me on Github</a></h2>
 <?php
 		}	
 ?>
@@ -96,7 +96,7 @@ if(!get_option('gplus_handler')){
 		if (get_option('twitter_handler') || get_option('facebook_handler') || get_option('gplus_handler')) {
 ?>
 		
-		<h2 class="rpg-profile-social-media">Follow Me On Social Media</h2>
+		<h2 class="rpg-profile-social-media">Follow my Work On Social Media</h2>
 		<div class="icons-wrapper">
 <?php
 			// Encase this in a social media class that centers everything
