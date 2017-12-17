@@ -80,6 +80,10 @@ html {
       margin: 0 0 5px; }
     .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .sidebar-link {
       color: #0073aa; }
+      .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .sidebar-link:hover {
+        color: #00a0d2; }
+      .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .sidebar-link:active {
+        color: #124964; }
     .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .icons-wrapper {
       display: block;
       margin-left: auto;
@@ -88,6 +92,10 @@ html {
         margin-left: 5px;
         margin-right: 5px;
         color: #0073aa; }
+        .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .icons-wrapper .rpg-profile-icon-sidebar:hover {
+          color: #00a0d2; }
+        .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .icons-wrapper .rpg-profile-icon-sidebar:active {
+          color: #124964; }
 
 .twoColumnBody #mainContent {
   margin: 0 20px 0 26%; }
