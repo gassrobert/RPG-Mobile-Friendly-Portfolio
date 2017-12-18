@@ -20,14 +20,15 @@ html {
   text-align: left; }
 
 .twoColumnBody #header {
-  background: #DDDDDD;
+  background-color: #1F1F1F;
   padding: 0 10px;
   width: 100%;
   border-bottom: 1px solid #000000; }
   .twoColumnBody #header h1 {
     margin: 0;
     padding: 10px 0;
-    text-align: right; }
+    text-align: right;
+    color: #FFF; }
 
 .twoColumnBody #sidebar1 {
   position: fixed;
@@ -105,12 +106,13 @@ html {
 
 .twoColumnBody #footer {
   padding: 0 10px;
-  background: #DDDDDD;
+  background-color: #1F1F1F;
   text-align: right;
   border-top: 1px solid #000000; }
   .twoColumnBody #footer p {
     margin: 0;
-    padding: 10px 0; }
+    padding: 10px 0;
+    color: #FFF; }
 
 #innerMainContent {
   padding: 10px 50px; }
