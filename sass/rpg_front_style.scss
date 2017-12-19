@@ -28,12 +28,19 @@ html {
 		padding: 0 10px;  
 		width: 100%;
 		border-bottom: 1px solid #000000;
+		display: block;
 		h1 {
 			margin: 0; 
 			padding: 10px 0; 
 			text-align: right;
 			color: #FFF;
 		}	
+		#searchform 
+		{
+			color: #FFF;
+			float: right;
+			padding: 10px 0; 
+		}
 	} 	
 }  
 
