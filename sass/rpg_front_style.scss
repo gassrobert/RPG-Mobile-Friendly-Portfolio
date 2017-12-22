@@ -40,6 +40,18 @@ html {
 			color: #FFF;
 			float: right;
 			padding: 10px 0; 
+			#searchsubmit {
+				border:none; 
+				padding:4px 10px 5px 10px; 
+				cursor:pointer; 
+				background:#0073aa; 
+				color:#fff; 
+				font-weight:bold; 
+				border-radius:5px;
+
+				&:hover { background: #00a0d2; }
+				&:active { background: #124964; }
+			}
 		}
 	} 	
 }  
