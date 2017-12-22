@@ -1,3 +1,3 @@
   <div id="footer">
-    <p>Footer</p>
+    <p>Copyright &copy; 2017-<?php echo date("Y");?> <br />Robert Paul Gass Profile <br /> All rights reserved </p>
   <!-- end #footer --></div>
