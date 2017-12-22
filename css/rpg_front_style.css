@@ -25,11 +25,29 @@ html {
   width: 100%;
   border-bottom: 1px solid #000000;
   display: block; }
-  .twoColumnBody #header h1 {
-    margin: 0;
-    padding: 10px 0;
-    text-align: right;
-    color: #FFF; }
+  .twoColumnBody #header .leftMainMenu .menu {
+    padding-left: 0; }
+  .twoColumnBody #header .leftMainMenu ul {
+    position: absolute; }
+    .twoColumnBody #header .leftMainMenu ul li {
+      list-style-type: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      float: left; }
+      .twoColumnBody #header .leftMainMenu ul li a {
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #FFF;
+        margin-left: 10px;
+        margin-right: 10px; }
+        .twoColumnBody #header .leftMainMenu ul li a:hover {
+          color: #00a0d2; }
+        .twoColumnBody #header .leftMainMenu ul li a:active {
+          color: #124964; }
+      .twoColumnBody #header .leftMainMenu ul li.current-menu-item a {
+        color: #0073aa; }
   .twoColumnBody #header #searchform {
     color: #FFF;
     float: right;

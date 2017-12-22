@@ -29,12 +29,38 @@ html {
 		width: 100%;
 		border-bottom: 1px solid #000000;
 		display: block;
-		h1 {
-			margin: 0; 
-			padding: 10px 0; 
-			text-align: right;
-			color: #FFF;
+		
+		.leftMainMenu {
+			.menu {
+				padding-left: 0;
+			}
+			ul {
+				position: absolute;
+				li {
+					list-style-type: none;
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					float: left;
+					a {
+						font-size: 18px;
+						font-weight: bold;
+						text-decoration: none;
+						color: #FFF;	
+						margin-left: 10px;	
+						margin-right: 10px;
+						&:hover { color: #00a0d2; }
+						&:active { color: #124964; }	
+					}
+					&.current-menu-item {
+						a {
+							color: #0073aa;
+						}
+					}
+				}
+			} 
 		}	
+
 		#searchform 
 		{
 			color: #FFF;
