@@ -121,6 +121,8 @@ if(!get_option('gplus_handler')){
 		}
 ?>
 
-		</div>
-	</div>
+		<?php dynamic_sidebar( 'rpg-portfolio-sidebar' ); ?>
+
+		</div><!-- end .rpg-profile-sidebar -->
+	</div><!-- end .rpg-profile-sidebar-preview -->
 </div><!-- end #sidebar1 -->

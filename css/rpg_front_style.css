@@ -1,3 +1,21 @@
+/*
+	@package rpg mobile friendly portfolio
+*/
+/*
+	Import
+	------------------------------------------------
+*/
+/*
+	@package rpg mobile friendly portfolio
+*/
+/*
+	Variables
+	------------------------------------------------
+*/
+/* 
+	Outer Containers
+	------------------------------------------------
+*/
 body {
   font: 100% Verdana, Arial, Helvetica, sans-serif;
   background: #000000;
@@ -19,6 +37,10 @@ html {
   border-top: 1px solid #000000;
   text-align: left; }
 
+/* 
+	Header
+	------------------------------------------------
+*/
 .twoColumnBody #header {
   background-color: #1F1F1F;
   padding: 0 10px;
@@ -35,21 +57,21 @@ html {
       margin: 0;
       padding: 0;
       float: left; }
+      .twoColumnBody #header .leftMainMenu ul li.current-menu-item a {
+        color: #0073aa; }
       .twoColumnBody #header .leftMainMenu ul li a {
         font-size: 18px;
         font-weight: bold;
         text-decoration: none;
-        color: #FFF;
+        color: #FFFFFF;
         margin-left: 10px;
         margin-right: 10px; }
         .twoColumnBody #header .leftMainMenu ul li a:hover {
           color: #00a0d2; }
         .twoColumnBody #header .leftMainMenu ul li a:active {
           color: #124964; }
-      .twoColumnBody #header .leftMainMenu ul li.current-menu-item a {
-        color: #0073aa; }
   .twoColumnBody #header #searchform {
-    color: #FFF;
+    color: #FFFFFF;
     float: right;
     padding: 10px 0; }
     .twoColumnBody #header #searchform #searchsubmit {
@@ -65,6 +87,10 @@ html {
       .twoColumnBody #header #searchform #searchsubmit:active {
         background: #124964; }
 
+/* 
+	Sidebar
+	------------------------------------------------
+*/
 .twoColumnBody #sidebar1 {
   position: fixed;
   float: left;
@@ -105,7 +131,7 @@ html {
     .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview h2.rpg-profile-social-media {
       font-family: Arial, Helvetica, sans-serif;
       font-weight: 100;
-      color: #fff; }
+      color: #FFFFFF; }
     .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview h1.rpg-profile-username {
       font-size: 24px;
       margin: 0 0 10px; }
@@ -137,9 +163,20 @@ html {
         .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .icons-wrapper .rpg-profile-icon-sidebar:active {
           color: #124964; }
 
+/* 
+	Main Content
+	------------------------------------------------
+*/
 .twoColumnBody #mainContent {
   margin: 0 20px 0 26%; }
 
+#innerMainContent {
+  padding: 10px 50px; }
+
+/* 
+	Footer
+	------------------------------------------------
+*/
 .twoColumnBody #footer {
   padding: 0 10px;
   background-color: #1F1F1F;
@@ -148,12 +185,12 @@ html {
   .twoColumnBody #footer p {
     margin: 0;
     padding: 10px 0;
-    color: #FFF; }
+    color: #FFFFFF; }
 
-#innerMainContent {
-  padding: 10px 50px; }
-
-/* Miscellaneous classes for reuse */
+/* 
+	Miscellaneous classes for reuse
+	------------------------------------------------
+*/
 .fltrt {
   float: right;
   margin-left: 8px; }

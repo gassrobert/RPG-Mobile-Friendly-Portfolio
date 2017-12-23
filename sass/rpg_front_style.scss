@@ -1,10 +1,24 @@
- body  {
+/*
+	@package rpg mobile friendly portfolio
+*/
+/*
+	Import
+	------------------------------------------------
+*/
+@import 'base/variables';
+
+
+/* 
+	Outer Containers
+	------------------------------------------------
+*/
+body  {
 	font: 100% Verdana, Arial, Helvetica, sans-serif;
-	background: #000000;
+	background: $primary-black;
 	margin: 0; 
 	padding: 0;
 	text-align: center; 
-	color: #000000;
+	color: $primary-black;
 	height: 100%;
 }
 html {
@@ -13,21 +27,25 @@ html {
 .twoColumnBody {
 	#container { 
 		width: 99%;
-		background: #FFFFFF;
+		background: $white;
 		margin: 0 auto; 
-		border-left: 3px solid #000000;
-		border-right: 3px solid #000000;
-		border-top: 1px solid #000000;
+		border-left: 3px solid $primary-black;
+		border-right: 3px solid $primary-black;
+		border-top: 1px solid $primary-black;
 		text-align: left; 
 	}	
 } 
 
+/* 
+	Header
+	------------------------------------------------
+*/
 .twoColumnBody {
 	#header { 
-		background-color: #1F1F1F;  
+		background-color: $off-black;  
 		padding: 0 10px;  
 		width: 100%;
-		border-bottom: 1px solid #000000;
+		border-bottom: 1px solid $primary-black;
 		display: block;
 		
 		.leftMainMenu {
@@ -42,20 +60,20 @@ html {
 					margin: 0;
 					padding: 0;
 					float: left;
+					&.current-menu-item {
+						a {
+							color: $primary-blue;
+						}
+					}
 					a {
 						font-size: 18px;
 						font-weight: bold;
 						text-decoration: none;
-						color: #FFF;	
+						color: $white;	
 						margin-left: 10px;	
 						margin-right: 10px;
-						&:hover { color: #00a0d2; }
-						&:active { color: #124964; }	
-					}
-					&.current-menu-item {
-						a {
-							color: #0073aa;
-						}
+						&:hover { color: $hover-blue; }
+						&:active { color: $active-blue; }	
 					}
 				}
 			} 
@@ -63,34 +81,38 @@ html {
 
 		#searchform 
 		{
-			color: #FFF;
+			color: $white;
 			float: right;
 			padding: 10px 0; 
 			#searchsubmit {
 				border:none; 
 				padding:4px 10px 5px 10px; 
 				cursor:pointer; 
-				background:#0073aa; 
+				background:$primary-blue; 
 				color:#fff; 
 				font-weight:bold; 
 				border-radius:5px;
 
-				&:hover { background: #00a0d2; }
-				&:active { background: #124964; }
+				&:hover { background: $hover-blue; }
+				&:active { background: $active-blue; }
 			}
 		}
 	} 	
 }  
 
+/* 
+	Sidebar
+	------------------------------------------------
+*/
 .twoColumnBody {
 	#sidebar1 {
 		position: fixed;
 		float: left; 
 		width: 26%; 
-		background-color: #1F1F1F; 
+		background-color: $off-black; 
 		height: 100%;
-		border-left: 3px solid #000000;
-		border-top: 1px solid #000000;
+		border-left: 3px solid $primary-black;
+		border-top: 1px solid $primary-black;
 		margin-left: 3px;
 
 		.rpg-profile-sidebar-preview {
@@ -114,25 +136,25 @@ html {
 				background-repeat: no-repeat; 
 				background-size: cover; 
 				border-radius: 50%; 
-				border: 3px solid #0073aa;
+				border: 3px solid $primary-blue;
 			}
 			img {
 				border-radius: 50%; 
-				border: 1px solid #0073aa;
+				border: 1px solid $primary-blue;
 			}
 
 			h1.rpg-profile-username, 
 			h2.rpg-profile-description, 
-			h2.rpg-profile-social-media { font-family: Arial, Helvetica, sans-serif; font-weight: 100; color: #fff; }
+			h2.rpg-profile-social-media { font-family: Arial, Helvetica, sans-serif; font-weight: 100; color: $white; }
 			h1.rpg-profile-username { font-size: 24px; margin: 0 0 10px; }
 			h2.rpg-profile-description { font-size: 16px; margin: 0 0 20px; }
 			h2.rpg-profile-social-media { font-size: 16px; margin: 0 0 5px; }	
 
 			.sidebar-link {
-				color: #0073aa;
+				color: $primary-blue;
 				text-decoration: none;
-				&:hover { color: #00a0d2; text-decoration: none; }
-				&:active { color: #124964; text-decoration: none; }
+				&:hover { color: $hover-blue; text-decoration: none; }
+				&:active { color: $active-blue; text-decoration: none; }
 			}	
 
 			.icons-wrapper {
@@ -143,40 +165,52 @@ html {
 				.rpg-profile-icon-sidebar {
 					margin-left: 5px;
 					margin-right: 5px;
-					color: #0073aa;
-					&:hover { color: #00a0d2; }
-					&:active { color: #124964; }
+					color: $primary-blue;
+					&:hover { color: $hover-blue; }
+					&:active { color: $active-blue; }
 				}
 			}						
 		}
 	}	
 }   
 
+/* 
+	Main Content
+	------------------------------------------------
+*/
 .twoColumnBody {
 	#mainContent { 
 		margin: 0 20px 0 26%;
 	}	
-}  
-
-.twoColumnBody {
-	#footer {
-		padding: 0 10px; 
-		background-color: #1F1F1F; 
-		text-align: right;
-		border-top: 1px solid #000000;
-		p {
-			margin: 0; 
-			padding: 10px 0; 
-			color: #FFF;
-		}	
-	} 	
 } 
 
 #innerMainContent {
 	padding: 10px 50px;
-}
+} 
 
-/* Miscellaneous classes for reuse */
+/* 
+	Footer
+	------------------------------------------------
+*/
+.twoColumnBody {
+	#footer {
+		padding: 0 10px; 
+		background-color: $off-black; 
+		text-align: right;
+		border-top: 1px solid $primary-black;
+		p {
+			margin: 0; 
+			padding: 10px 0; 
+			color: $white;
+		}	
+	} 	
+} 
+
+
+/* 
+	Miscellaneous classes for reuse
+	------------------------------------------------
+*/
 .fltrt { 
 	float: right;
 	margin-left: 8px;
