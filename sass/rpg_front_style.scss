@@ -114,6 +114,8 @@ html {
 		border-left: 3px solid $primary-black;
 		border-top: 1px solid $primary-black;
 		margin-left: 3px;
+		overflow-y: auto;
+		overflow-x: hidden;
 
 		.rpg-profile-sidebar-preview {
 			float: left;
@@ -173,6 +175,9 @@ html {
 		}
 	}	
 }   
+
+
+
 
 /* 
 	Main Content

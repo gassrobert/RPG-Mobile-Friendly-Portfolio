@@ -65,7 +65,12 @@ if(!get_option('gplus_handler')){
 }
 
 ?>
-<div id="sidebar1">
+<div id="sidebar1" class="scrollbar">
+	<div class="force-overflow">
+ <!--    <div class="scrollbar" id="style-1">
+        <div class="force-overflow"></div>
+    </div>  -->
+
 	<div class="rpg-profile-sidebar-preview">
 		<div class="rpg-profile-sidebar">
 			<div class="image-container">
@@ -125,4 +130,5 @@ if(!get_option('gplus_handler')){
 
 		</div><!-- end .rpg-profile-sidebar -->
 	</div><!-- end .rpg-profile-sidebar-preview -->
+	</div>
 </div><!-- end #sidebar1 -->

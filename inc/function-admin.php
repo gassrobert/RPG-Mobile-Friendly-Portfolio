@@ -30,7 +30,7 @@ add_action( 'admin_enqueue_scripts', 'rpg_portfolio_enqueue_custom_admin_style' 
 function rpg_portfolio_add_admin_page() {
 
 	// Generate RPG Portfolio Admin Page
-	add_menu_page( 'Portfolio Personal Data', 'Portfolio', 'manage_options', 'rpg_portfolio_admin', 'rpg_portfolio_admin_create_page', 'dashicons-businessman', 110 );
+	add_menu_page( 'Portfolio Personal Data', 'Personal Data', 'manage_options', 'rpg_portfolio_admin', 'rpg_portfolio_admin_create_page', 'dashicons-businessman', 110 );
 }
 add_action( 'admin_menu', 'rpg_portfolio_add_admin_page', 'rpg_portfolio_sidebar_name' );
 
