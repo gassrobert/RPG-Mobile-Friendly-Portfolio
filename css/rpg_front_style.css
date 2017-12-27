@@ -76,16 +76,25 @@ html {
     padding: 10px 0; }
     .twoColumnBody #header #searchform #searchsubmit {
       border: none;
-      padding: 4px 10px 5px 10px;
+      padding: 3px 10px 3px 10px;
       cursor: pointer;
       background: #0073aa;
       color: #fff;
       font-weight: bold;
-      border-radius: 5px; }
+      border-radius: 5px;
+      position: absolute;
+      opacity: .1;
+      margin-top: 1px; }
       .twoColumnBody #header #searchform #searchsubmit:hover {
-        background: #00a0d2; }
+        background: #00a0d2;
+        opacity: .5; }
       .twoColumnBody #header #searchform #searchsubmit:active {
-        background: #124964; }
+        background: #124964;
+        opacity: .5; }
+    .twoColumnBody #header #searchform .dashicons-search {
+      background-color: #0073aa;
+      margin-top: 1px;
+      border-radius: 5px; }
 
 /* 
 	Sidebar
