@@ -84,9 +84,14 @@ html {
 			color: $white;
 			float: right;
 			padding: 10px 0; 
+
+			#s {
+				font-size: 18px;
+			}
+
 			#searchsubmit {
 				border:none; 
-				padding:3px 10px 3px 10px; 
+				padding:5px 15px 5px 15px; 
 				cursor:pointer; 
 				background:$primary-blue; 
 				color:#fff; 
@@ -103,6 +108,7 @@ html {
 				background-color: $primary-blue;
 				margin-top: 1px;
 				border-radius:5px;
+				padding:3px 5px 3px 5px; 
 			}
 		}
 	} 	

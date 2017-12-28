@@ -74,9 +74,11 @@ html {
     color: #FFFFFF;
     float: right;
     padding: 10px 0; }
+    .twoColumnBody #header #searchform #s {
+      font-size: 18px; }
     .twoColumnBody #header #searchform #searchsubmit {
       border: none;
-      padding: 3px 10px 3px 10px;
+      padding: 5px 15px 5px 15px;
       cursor: pointer;
       background: #0073aa;
       color: #fff;
@@ -94,7 +96,8 @@ html {
     .twoColumnBody #header #searchform .dashicons-search {
       background-color: #0073aa;
       margin-top: 1px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      padding: 3px 5px 3px 5px; }
 
 /* 
 	Sidebar
