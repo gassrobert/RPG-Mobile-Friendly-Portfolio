@@ -75,7 +75,8 @@ html {
     float: right;
     padding: 10px 0; }
     .twoColumnBody #header #searchform #s {
-      font-size: 18px; }
+      font-size: 18px;
+      width: 160px; }
     .twoColumnBody #header #searchform #searchsubmit {
       border: none;
       padding: 5px 15px 5px 15px;
@@ -113,7 +114,17 @@ html {
   border-top: 1px solid #000000;
   margin-left: 3px;
   overflow-y: auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  /* scrollbar for Chrome */ }
+  .twoColumnBody #sidebar1::-webkit-scrollbar {
+    width: 9px;
+    background-color: #0073aa; }
+  .twoColumnBody #sidebar1::-webkit-scrollbar-thumb {
+    background-color: #124964;
+    border-radius: 10px; }
+  .twoColumnBody #sidebar1::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #0073aa; }
   .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview {
     float: left;
     padding: 20px;
@@ -196,10 +207,41 @@ html {
   background-color: #1F1F1F;
   text-align: right;
   border-top: 1px solid #000000; }
-  .twoColumnBody #footer p {
+  .twoColumnBody #footer #rpg-footerMenu {
+    margin: 0 20px;
+    padding: 0;
+    color: #FFFFFF;
+    display: inline-block; }
+    .twoColumnBody #footer #rpg-footerMenu p {
+      text-align: center;
+      margin: 0; }
+    .twoColumnBody #footer #rpg-footerMenu hr {
+      margin: 0; }
+    .twoColumnBody #footer #rpg-footerMenu .menu {
+      margin: 0; }
+    .twoColumnBody #footer #rpg-footerMenu ul {
+      text-align: center;
+      padding: 5px; }
+      .twoColumnBody #footer #rpg-footerMenu ul li {
+        list-style-type: none;
+        list-style: none;
+        font-weight: bold; }
+        .twoColumnBody #footer #rpg-footerMenu ul li.current-menu-item a {
+          color: #0073aa; }
+        .twoColumnBody #footer #rpg-footerMenu ul li a {
+          text-decoration: none;
+          color: #FFFFFF; }
+          .twoColumnBody #footer #rpg-footerMenu ul li a:hover {
+            color: #00a0d2; }
+          .twoColumnBody #footer #rpg-footerMenu ul li a:active {
+            color: #124964; }
+  .twoColumnBody #footer #rpg-copyright {
     margin: 0;
-    padding: 10px 0;
-    color: #FFFFFF; }
+    padding: 0;
+    color: #FFFFFF;
+    display: inline-block; }
+    .twoColumnBody #footer #rpg-copyright .menu {
+      margin: 0; }
 
 /* 
 	Miscellaneous classes for reuse

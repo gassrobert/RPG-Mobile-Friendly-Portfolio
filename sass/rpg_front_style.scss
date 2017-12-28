@@ -87,6 +87,7 @@ html {
 
 			#s {
 				font-size: 18px;
+				width: 160px;
 			}
 
 			#searchsubmit {
@@ -130,6 +131,22 @@ html {
 		margin-left: 3px;
 		overflow-y: auto;
 		overflow-x: hidden;
+
+		/* scrollbar for Chrome */
+		&::-webkit-scrollbar {
+		    width: 9px;
+		    background-color: #0073aa;
+		} 
+
+		&::-webkit-scrollbar-thumb {
+		    background-color: #124964;
+		    border-radius:10px;
+		}
+
+		&::-webkit-scrollbar-track {
+		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		    background-color: #0073aa;
+		}
 
 		.rpg-profile-sidebar-preview {
 			float: left;
@@ -213,14 +230,62 @@ html {
 */
 .twoColumnBody {
 	#footer {
+
 		padding: 0 10px; 
 		background-color: $off-black; 
 		text-align: right;
 		border-top: 1px solid $primary-black;
-		p {
-			margin: 0; 
-			padding: 10px 0; 
+		#rpg-footerMenu {
+			margin: 0 20px; 
+			padding: 0; 
 			color: $white;
+			display: inline-block;	
+
+			p {
+				text-align: center;
+				margin: 0;
+			}
+
+			hr {
+				margin: 0;
+			}
+
+			.menu {
+				margin: 0;
+			}
+
+			ul {
+				text-align: center;
+				padding: 5px;
+
+				li {
+					list-style-type: none;
+					list-style: none;					
+					font-weight: bold;
+					&.current-menu-item {
+						a {
+							color: $primary-blue;
+						}
+					}
+					a {
+						text-decoration: none;
+						color: $white;
+						&:hover { color: $hover-blue; }
+						&:active { color: $active-blue; }
+					}
+				}
+			}		
+		}
+		#rpg-copyright {
+
+			.menu {
+				margin: 0;
+			}
+
+			margin: 0; 
+			padding: 0; 
+			color: $white;
+			display: inline-block;
 		}	
 	} 	
 } 

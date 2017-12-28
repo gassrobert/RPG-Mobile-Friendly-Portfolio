@@ -7,5 +7,17 @@ if(!get_option('profile_name')){
 }
 ?>
   <div id="footer">
-    <p>Copyright &copy; <?php echo date("Y");?> <br /><?php print $profilename; ?> Profile <br /> All rights reserved </p>
+	<div id="rpg-footerMenu">  
+		<p>Site Map</p>
+		<hr>
+		<?php 
+			wp_nav_menu(array(
+				'theme_location' => 'rpg-profile-primary-menu', 
+				'container' => false
+			)); 
+		?>
+	</div>	
+	<div id="rpg-copyright">
+    	<p>Copyright &copy; <?php echo date("Y");?> <br /><?php print $profilename; ?> Profile <br /> All rights reserved </p>
+    </div>
   <!-- end #footer --></div>
