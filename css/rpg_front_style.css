@@ -203,45 +203,55 @@ html {
 	------------------------------------------------
 */
 .twoColumnBody #footer {
+  border-top: 1px solid #000000;
   padding: 0 10px;
   background-color: #1F1F1F;
-  text-align: right;
-  border-top: 1px solid #000000; }
-  .twoColumnBody #footer #rpg-footerMenu {
-    margin: 0 20px;
-    padding: 0;
-    color: #FFFFFF;
+  text-align: right; }
+  .twoColumnBody #footer #rpg-leftFooterWidget {
     display: inline-block; }
-    .twoColumnBody #footer #rpg-footerMenu p {
-      text-align: center;
-      margin: 0; }
-    .twoColumnBody #footer #rpg-footerMenu hr {
-      margin: 0; }
-    .twoColumnBody #footer #rpg-footerMenu .menu {
-      margin: 0; }
-    .twoColumnBody #footer #rpg-footerMenu ul {
-      text-align: center;
-      padding: 5px; }
-      .twoColumnBody #footer #rpg-footerMenu ul li {
-        list-style-type: none;
-        list-style: none;
-        font-weight: bold; }
-        .twoColumnBody #footer #rpg-footerMenu ul li.current-menu-item a {
-          color: #0073aa; }
-        .twoColumnBody #footer #rpg-footerMenu ul li a {
-          text-decoration: none;
-          color: #FFFFFF; }
-          .twoColumnBody #footer #rpg-footerMenu ul li a:hover {
-            color: #00a0d2; }
-          .twoColumnBody #footer #rpg-footerMenu ul li a:active {
-            color: #124964; }
-  .twoColumnBody #footer #rpg-copyright {
-    margin: 0;
-    padding: 0;
-    color: #FFFFFF;
+    .twoColumnBody #footer #rpg-leftFooterWidget #rpg-portfolio-footer-one-container {
+      display: inline-block; }
+    .twoColumnBody #footer #rpg-leftFooterWidget #rpg-portfolio-footer-two-container {
+      display: inline-block; }
+    .twoColumnBody #footer #rpg-leftFooterWidget #rpg-portfolio-footer-three-container {
+      display: inline-block; }
+  .twoColumnBody #footer #rpg-rightFooter {
     display: inline-block; }
-    .twoColumnBody #footer #rpg-copyright .menu {
-      margin: 0; }
+    .twoColumnBody #footer #rpg-rightFooter #rpg-footerMenu {
+      margin: 0 20px;
+      padding: 0;
+      color: #FFFFFF;
+      display: inline-block; }
+      .twoColumnBody #footer #rpg-rightFooter #rpg-footerMenu p {
+        text-align: center;
+        margin: 0; }
+      .twoColumnBody #footer #rpg-rightFooter #rpg-footerMenu hr {
+        margin: 0; }
+      .twoColumnBody #footer #rpg-rightFooter #rpg-footerMenu .menu {
+        margin: 0; }
+      .twoColumnBody #footer #rpg-rightFooter #rpg-footerMenu ul {
+        text-align: center;
+        padding: 5px; }
+        .twoColumnBody #footer #rpg-rightFooter #rpg-footerMenu ul li {
+          list-style-type: none;
+          list-style: none;
+          font-weight: bold; }
+          .twoColumnBody #footer #rpg-rightFooter #rpg-footerMenu ul li.current-menu-item a {
+            color: #0073aa; }
+          .twoColumnBody #footer #rpg-rightFooter #rpg-footerMenu ul li a {
+            text-decoration: none;
+            color: #FFFFFF; }
+            .twoColumnBody #footer #rpg-rightFooter #rpg-footerMenu ul li a:hover {
+              color: #00a0d2; }
+            .twoColumnBody #footer #rpg-rightFooter #rpg-footerMenu ul li a:active {
+              color: #124964; }
+    .twoColumnBody #footer #rpg-rightFooter #rpg-copyright {
+      margin: 0;
+      padding: 0;
+      color: #FFFFFF;
+      display: inline-block; }
+      .twoColumnBody #footer #rpg-rightFooter #rpg-copyright .menu {
+        margin: 0; }
 
 /* 
 	Miscellaneous classes for reuse

@@ -230,62 +230,81 @@ html {
 */
 .twoColumnBody {
 	#footer {
-
+		border-top: 1px solid $primary-black;
 		padding: 0 10px; 
 		background-color: $off-black; 
 		text-align: right;
-		border-top: 1px solid $primary-black;
-		#rpg-footerMenu {
-			margin: 0 20px; 
-			padding: 0; 
-			color: $white;
-			display: inline-block;	
 
-			p {
-				text-align: center;
-				margin: 0;
+		#rpg-leftFooterWidget {
+			display: inline-block;
+
+			#rpg-portfolio-footer-one-container {
+				display: inline-block;
 			}
-
-			hr {
-				margin: 0;
+			#rpg-portfolio-footer-two-container {
+				display: inline-block;
 			}
-
-			.menu {
-				margin: 0;
+			#rpg-portfolio-footer-three-container {
+				display: inline-block;
 			}
+		}
 
-			ul {
-				text-align: center;
-				padding: 5px;
+		#rpg-rightFooter {
+			
+			display: inline-block;
 
-				li {
-					list-style-type: none;
-					list-style: none;					
-					font-weight: bold;
-					&.current-menu-item {
+			#rpg-footerMenu {
+				margin: 0 20px; 
+				padding: 0; 
+				color: $white;
+				display: inline-block;	
+
+				p {
+					text-align: center;
+					margin: 0;
+				}
+
+				hr {
+					margin: 0;
+				}
+
+				.menu {
+					margin: 0;
+				}
+
+				ul {
+					text-align: center;
+					padding: 5px;
+
+					li {
+						list-style-type: none;
+						list-style: none;					
+						font-weight: bold;
+						&.current-menu-item {
+							a {
+								color: $primary-blue;
+							}
+						}
 						a {
-							color: $primary-blue;
+							text-decoration: none;
+							color: $white;
+							&:hover { color: $hover-blue; }
+							&:active { color: $active-blue; }
 						}
 					}
-					a {
-						text-decoration: none;
-						color: $white;
-						&:hover { color: $hover-blue; }
-						&:active { color: $active-blue; }
-					}
-				}
-			}		
-		}
-		#rpg-copyright {
-
-			.menu {
-				margin: 0;
+				}		
 			}
+			#rpg-copyright {
 
-			margin: 0; 
-			padding: 0; 
-			color: $white;
-			display: inline-block;
+				.menu {
+					margin: 0;
+				}
+
+				margin: 0; 
+				padding: 0; 
+				color: $white;
+				display: inline-block;
+			}
 		}	
 	} 	
 } 
