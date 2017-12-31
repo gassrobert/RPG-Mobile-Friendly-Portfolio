@@ -204,6 +204,38 @@ html {
 				}
 			}						
 		}
+
+		#sidebar-widget {
+			ul {
+				li {
+					list-style-type: none;
+					list-style: none;
+					a {
+						text-decoration: none;
+						color: #bababa;
+
+						&:hover { color: #fff; }
+						&:active { color: #fff; }
+					}
+				}
+			}
+			text-align: left;
+			margin-top: 10px;
+			margin-bottom: 30px;
+
+			.rpg-portfolio-widget-title {
+				text-align: center;
+				color: #FFF;
+				display: block;
+				border-radius: 20px;
+				background-color: #303030;
+				border: 1px solid #303030;
+				font: 100% Verdana, Arial, Helvetica, sans-serif;
+				font-weight: 300;
+				padding: 3px;
+			}
+		}
+
 	}	
 }   
 

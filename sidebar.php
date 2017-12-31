@@ -125,8 +125,9 @@ if(!get_option('gplus_handler')){
 <?php			
 		}
 ?>
-
-		<?php dynamic_sidebar( 'rpg-portfolio-sidebar' ); ?>
+			<div id="sidebar-widget">
+			<?php dynamic_sidebar( 'rpg-portfolio-sidebar' ); ?>
+			</div>
 
 		</div><!-- end .rpg-profile-sidebar -->
 	</div><!-- end .rpg-profile-sidebar-preview -->

@@ -187,6 +187,30 @@ html {
           color: #00a0d2; }
         .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .icons-wrapper .rpg-profile-icon-sidebar:active {
           color: #124964; }
+  .twoColumnBody #sidebar1 #sidebar-widget {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 30px; }
+    .twoColumnBody #sidebar1 #sidebar-widget ul li {
+      list-style-type: none;
+      list-style: none; }
+      .twoColumnBody #sidebar1 #sidebar-widget ul li a {
+        text-decoration: none;
+        color: #bababa; }
+        .twoColumnBody #sidebar1 #sidebar-widget ul li a:hover {
+          color: #fff; }
+        .twoColumnBody #sidebar1 #sidebar-widget ul li a:active {
+          color: #fff; }
+    .twoColumnBody #sidebar1 #sidebar-widget .rpg-portfolio-widget-title {
+      text-align: center;
+      color: #FFF;
+      display: block;
+      border-radius: 20px;
+      background-color: #303030;
+      border: 1px solid #303030;
+      font: 100% Verdana, Arial, Helvetica, sans-serif;
+      font-weight: 300;
+      padding: 3px; }
 
 /* 
 	Main Content
