@@ -191,7 +191,8 @@ html {
     text-align: left;
     margin-top: 10px;
     margin-bottom: 30px;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    border: 1px solid #303030; }
     .twoColumnBody #sidebar1 #sidebar-widget a {
       text-decoration: none;
       color: #0073aa; }
@@ -202,18 +203,17 @@ html {
     .twoColumnBody #sidebar1 #sidebar-widget ul li {
       list-style-type: none;
       list-style: none; }
+    .twoColumnBody #sidebar1 #sidebar-widget h2 {
+      margin: 0; }
     .twoColumnBody #sidebar1 #sidebar-widget .rpg-portfolio-widget-title {
       text-align: center;
-      color: #FFF;
+      color: #FFFFFF;
       display: block;
-      border-radius: 20px;
       background-color: #303030;
-      border: 1px solid #303030;
       font: 100% Verdana, Arial, Helvetica, sans-serif;
-      font-weight: 300;
-      padding: 3px; }
+      font-weight: 300; }
     .twoColumnBody #sidebar1 #sidebar-widget table {
-      margin-left: 30px; }
+      margin: 10px 30px; }
 
 /* 
 	Main Content
@@ -239,8 +239,6 @@ html {
     .twoColumnBody #footer #rpg-leftFooterWidget #rpg-portfolio-footer-one-container {
       display: inline-block; }
     .twoColumnBody #footer #rpg-leftFooterWidget #rpg-portfolio-footer-two-container {
-      display: inline-block; }
-    .twoColumnBody #footer #rpg-leftFooterWidget #rpg-portfolio-footer-three-container {
       display: inline-block; }
   .twoColumnBody #footer #rpg-rightFooter {
     display: inline-block; }
