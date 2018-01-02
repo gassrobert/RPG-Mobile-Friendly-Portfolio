@@ -135,17 +135,18 @@ html {
 		/* scrollbar for Chrome */
 		&::-webkit-scrollbar {
 		    width: 9px;
-		    background-color: #0073aa;
+		    background-color: $primary-blue;
 		} 
 
 		&::-webkit-scrollbar-thumb {
-		    background-color: #124964;
+		    background-color: $active-blue;
 		    border-radius:10px;
+		    cursor: pointer;
 		}
 
 		&::-webkit-scrollbar-track {
 		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-		    background-color: #0073aa;
+		    background-color: $primary-blue;
 		}
 
 		.rpg-profile-sidebar-preview {
@@ -207,7 +208,7 @@ html {
 
 		#sidebar-widget {
 			text-align: left;
-			margin-top: 10px;
+			margin-top: 20px;
 			margin-bottom: 30px;
 			color: $white;
 			border: 1px solid $lighter-off-black;
@@ -279,9 +280,83 @@ html {
 
 			#rpg-portfolio-footer-one-container {
 				display: inline-block;
+				text-align: left;
+				margin-top: 20px;
+				margin-bottom: 30px;
+				color: $white;
+				padding-bottom: 5px;
+				border: 1px solid $lighter-off-black;
+				a {
+					text-decoration: none;
+					color: $primary-blue;
+
+					&:hover { color: $hover-blue; }
+					&:active { color: $active-blue; }
+				}
+				ul {
+					margin: 0 10px;
+					li {
+						list-style-type: none;
+						list-style: none;
+					}
+				}
+
+				h2 {
+					margin: 0;
+				}
+
+				.rpg-portfolio-widget-title {
+					text-align: center;
+					color: $white;
+					display: block;
+					background-color: $lighter-off-black;
+					font: 100% Verdana, Arial, Helvetica, sans-serif;
+					font-weight: 300;
+				}
+
+				table {
+					margin: 10px 30px;
+				}
 			}
 			#rpg-portfolio-footer-two-container {
 				display: inline-block;
+				text-align: left;
+				margin-top: 20px;
+				margin-bottom: 30px;
+				color: $white;
+				padding-bottom: 5px;
+				border: 1px solid $lighter-off-black;
+				a {
+					text-decoration: none;
+					color: $primary-blue;
+
+					&:hover { color: $hover-blue; }
+					&:active { color: $active-blue; }
+				}
+				ul {
+					margin: 0 10px;
+					li {
+						list-style-type: none;
+						list-style: none;
+					}
+				}
+
+				h2 {
+					margin: 0;
+				}
+
+				.rpg-portfolio-widget-title {
+					text-align: center;
+					color: $white;
+					display: block;
+					background-color: $lighter-off-black;
+					font: 100% Verdana, Arial, Helvetica, sans-serif;
+					font-weight: 300;
+				}
+
+				table {
+					margin: 10px 30px;
+				}
 			}
 		}
 
