@@ -240,7 +240,16 @@ html {
 			}
 
 			table {
-				margin: 10px 30px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+
+
+			.widget_archive {
+				ul {
+					padding-left: 0;
+				}
 			}
 		}
 
@@ -315,48 +324,16 @@ html {
 				}
 
 				table {
-					margin: 10px 30px;
+					margin: 10px 0;
+					text-align: center;
 				}
-			}
-			#rpg-portfolio-footer-two-container {
-				display: inline-block;
-				text-align: left;
-				margin-top: 20px;
-				margin-bottom: 30px;
-				color: $white;
-				padding-bottom: 5px;
-				border: 1px solid $lighter-off-black;
-				a {
-					text-decoration: none;
-					color: $primary-blue;
 
-					&:hover { color: $hover-blue; }
-					&:active { color: $active-blue; }
-				}
-				ul {
-					margin: 0 10px;
-					li {
-						list-style-type: none;
-						list-style: none;
+				.widget_archive {
+					ul {
+						padding-left: 0;
 					}
 				}
 
-				h2 {
-					margin: 0;
-				}
-
-				.rpg-portfolio-widget-title {
-					text-align: center;
-					color: $white;
-					display: block;
-					background-color: $lighter-off-black;
-					font: 100% Verdana, Arial, Helvetica, sans-serif;
-					font-weight: 300;
-				}
-
-				table {
-					margin: 10px 30px;
-				}
 			}
 		}
 

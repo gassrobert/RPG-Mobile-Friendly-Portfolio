@@ -12,9 +12,6 @@ if(!get_option('profile_name')){
   		<div id="rpg-portfolio-footer-one-container">
   		<?php dynamic_sidebar( 'rpg-portfolio-footer-one' ); ?>
   		</div>
-  		<div id="rpg-portfolio-footer-two-container">
-  		<?php dynamic_sidebar( 'rpg-portfolio-footer-two' ); ?>
-  		</div>
   	</div> <!-- end #rpg-leftFooterWidget -->
 
   	<div id="rpg-rightFooter">
