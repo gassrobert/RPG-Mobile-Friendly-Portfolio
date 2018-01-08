@@ -14,6 +14,10 @@
  */
 $formats = array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' );
 add_theme_support( 'post-formats', $formats );
+add_theme_support( 'post-thumbnails' );
+
+/* Activate HTML5 features */
+add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption' ) );
 
 /**
  * Enqueue admin css and js
