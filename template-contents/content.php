@@ -18,8 +18,25 @@
 	</header>
 
 	<div class="entry-content">
-		<?php echo "<h1>This is a test</h1>"; ?>
 
-	</div>
+		<?php if( rpg_portfolio_get_attachment() ): 
+				$featured_image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
+		?>
+
+			<a class="standard-featured-link" href="<?php the_permalink(); ?>">
+				<div class="standard-featured background-image" style="background-image: url(<?php echo $featured_image; ?>);"></div>
+			</a>
+
+		<?php endif; ?>
+
+		<div class="entry-excerpt">
+			<?php the_excerpt(); ?>
+		</div>
+
+		<div class="button-container text-center">
+			<a href="<?php the_permalink(); ?>" class="btn btn-rpgportfolio"><?php _e( 'Read More' ); ?></a>
+		</div>
+
+	</div> <!-- .entry-content -->
 
 </article>
