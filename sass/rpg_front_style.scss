@@ -271,7 +271,39 @@ html {
 
 #innerMainContent {
 	padding: 10px 50px;
+
+	#articleContainer {
+
+
+		article { 
+			padding-top: 40px; margin-bottom: 40px; 
+			.entry-meta { font-size: 13px; font-weight: 200; color: $light-grey; text-align: center;
+				a { font-weight: 500; color: $light-grey; 
+					&:hover,
+					&:focus { color: $dark-grey }		
+				}
+			}			
+		}
+		h1 { font-size: 36px; font-weight: 600; text-align: center;
+			a { color: $active-blue; text-decoration: none; 
+				&:hover,
+				&:focus { color: $primary-blue; }
+				&:active { color: $hover-blue; }
+			}
+			&.entry-title {
+				line-height: 1.5em; margin: 0; padding: 0;
+			}
+		}
+		.entry-excerpt {
+			
+		}
+	}
 } 
+
+
+
+/* Standard Post Format */
+
 
 /* 
 	Footer

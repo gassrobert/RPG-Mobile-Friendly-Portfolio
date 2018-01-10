@@ -15,6 +15,7 @@
 $formats = array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' );
 add_theme_support( 'post-formats', $formats );
 add_theme_support( 'post-thumbnails' );
+add_post_type_support( 'page', 'excerpt' );
 
 /* Activate HTML5 features */
 add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption' ) );

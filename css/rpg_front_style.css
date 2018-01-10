@@ -229,7 +229,36 @@ html {
 
 #innerMainContent {
   padding: 10px 50px; }
+  #innerMainContent #articleContainer article {
+    padding-top: 40px;
+    margin-bottom: 40px; }
+    #innerMainContent #articleContainer article .entry-meta {
+      font-size: 13px;
+      font-weight: 200;
+      color: #898989;
+      text-align: center; }
+      #innerMainContent #articleContainer article .entry-meta a {
+        font-weight: 500;
+        color: #898989; }
+        #innerMainContent #articleContainer article .entry-meta a:hover, #innerMainContent #articleContainer article .entry-meta a:focus {
+          color: #333333; }
+  #innerMainContent #articleContainer h1 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center; }
+    #innerMainContent #articleContainer h1 a {
+      color: #124964;
+      text-decoration: none; }
+      #innerMainContent #articleContainer h1 a:hover, #innerMainContent #articleContainer h1 a:focus {
+        color: #0073aa; }
+      #innerMainContent #articleContainer h1 a:active {
+        color: #00a0d2; }
+    #innerMainContent #articleContainer h1.entry-title {
+      line-height: 1.5em;
+      margin: 0;
+      padding: 0; }
 
+/* Standard Post Format */
 /* 
 	Footer
 	------------------------------------------------
