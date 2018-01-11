@@ -12,6 +12,13 @@
 	Variables
 	------------------------------------------------
 */
+/*
+	@package rpg mobile friendly portfolio
+*/
+/*
+	Mixins
+	------------------------------------------------
+*/
 /* 
 	Outer Containers
 	------------------------------------------------
@@ -30,7 +37,7 @@ html {
 
 .twoColumnBody #container {
   width: 99%;
-  background: #FFFFFF;
+  background: #F8F8FF;
   margin: 0 auto;
   border-left: 3px solid #000000;
   border-right: 3px solid #000000;
@@ -60,6 +67,11 @@ html {
       .twoColumnBody #header .leftMainMenu ul li.current-menu-item a {
         color: #0073aa; }
       .twoColumnBody #header .leftMainMenu ul li a {
+        -webkit-transition: all 320ms ease;
+        -moz-transition: all 320ms ease;
+        -ms-transition: all 320ms ease;
+        -o-transition: all 320ms ease;
+        transition: all 320ms ease;
         font-size: 18px;
         font-weight: bold;
         text-decoration: none;
@@ -78,6 +90,11 @@ html {
       font-size: 18px;
       width: 160px; }
     .twoColumnBody #header #searchform #searchsubmit {
+      -webkit-transition: all 320ms ease;
+      -moz-transition: all 320ms ease;
+      -ms-transition: all 320ms ease;
+      -o-transition: all 320ms ease;
+      transition: all 320ms ease;
       border: none;
       padding: 5px 15px 5px 15px;
       cursor: pointer;
@@ -168,6 +185,11 @@ html {
       font-size: 16px;
       margin: 0 0 5px; }
     .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .sidebar-link {
+      -webkit-transition: all 320ms ease;
+      -moz-transition: all 320ms ease;
+      -ms-transition: all 320ms ease;
+      -o-transition: all 320ms ease;
+      transition: all 320ms ease;
       color: #0073aa;
       text-decoration: none; }
       .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .sidebar-link:hover {
@@ -181,6 +203,11 @@ html {
       margin-left: auto;
       margin-right: auto; }
       .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .icons-wrapper .rpg-profile-icon-sidebar {
+        -webkit-transition: all 320ms ease;
+        -moz-transition: all 320ms ease;
+        -ms-transition: all 320ms ease;
+        -o-transition: all 320ms ease;
+        transition: all 320ms ease;
         margin-left: 5px;
         margin-right: 5px;
         color: #0073aa; }
@@ -195,6 +222,11 @@ html {
     color: #FFFFFF;
     border: 1px solid #303030; }
     .twoColumnBody #sidebar1 #sidebar-widget a {
+      -webkit-transition: all 320ms ease;
+      -moz-transition: all 320ms ease;
+      -ms-transition: all 320ms ease;
+      -o-transition: all 320ms ease;
+      transition: all 320ms ease;
       text-decoration: none;
       color: #0073aa; }
       .twoColumnBody #sidebar1 #sidebar-widget a:hover {
@@ -248,15 +280,51 @@ html {
     text-align: center; }
     #innerMainContent #articleContainer h1 a {
       color: #124964;
-      text-decoration: none; }
+      text-decoration: none;
+      -webkit-transition: all 320ms ease;
+      -moz-transition: all 320ms ease;
+      -ms-transition: all 320ms ease;
+      -o-transition: all 320ms ease;
+      transition: all 320ms ease; }
       #innerMainContent #articleContainer h1 a:hover, #innerMainContent #articleContainer h1 a:focus {
-        color: #0073aa; }
+        color: #5F9EA0; }
       #innerMainContent #articleContainer h1 a:active {
         color: #00a0d2; }
     #innerMainContent #articleContainer h1.entry-title {
       line-height: 1.5em;
       margin: 0;
       padding: 0; }
+  #innerMainContent #articleContainer .standard-featured-link {
+    display: block;
+    position: relative; }
+    #innerMainContent #articleContainer .standard-featured-link:hover .standard-featured:after, #innerMainContent #articleContainer .standard-featured-link:focus .standard-featured:after {
+      background-color: transparent; }
+  #innerMainContent #articleContainer img {
+    display: block;
+    margin: 10px auto;
+    border: 3px outset #333333; }
+  #innerMainContent #articleContainer .button-container {
+    text-align: center;
+    margin-top: 20px; }
+    #innerMainContent #articleContainer .button-container .btn-rpgportfolio {
+      -webkit-transition: all 320ms ease;
+      -moz-transition: all 320ms ease;
+      -ms-transition: all 320ms ease;
+      -o-transition: all 320ms ease;
+      transition: all 320ms ease;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 300;
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      border: 1px solid #898989;
+      background-color: #124964; }
+      #innerMainContent #articleContainer .button-container .btn-rpgportfolio:hover, #innerMainContent #articleContainer .button-container .btn-rpgportfolio:focus {
+        color: #1F1F1F;
+        border-color: #333333;
+        background-color: #5F9EA0; }
 
 /* Standard Post Format */
 /* 

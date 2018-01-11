@@ -24,7 +24,10 @@
 		?>
 
 			<a class="standard-featured-link" href="<?php the_permalink(); ?>">
+			<?php /* ?>
 				<div class="standard-featured background-image" style="background-image: url(<?php echo $featured_image; ?>);"></div>
+			<?php */ ?>
+			 	<img src="<?php echo $featured_image; ?>" /> 
 			</a>
 
 		<?php endif; ?>
@@ -33,8 +36,8 @@
 			<?php the_excerpt(); ?>
 		</div>
 
-		<div class="button-container text-center">
-			<a href="<?php the_permalink(); ?>" class="btn btn-rpgportfolio"><?php _e( 'Read More' ); ?></a>
+		<div class="button-container">
+			<a href="<?php the_permalink(); ?>" class="btn-rpgportfolio"><?php _e( 'Read More' ); ?></a>
 		</div>
 
 	</div> <!-- .entry-content -->
