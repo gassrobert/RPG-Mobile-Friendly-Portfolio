@@ -347,6 +347,11 @@ html {
       padding-bottom: 5px;
       border: 1px solid #303030; }
       .twoColumnBody #footer #rpg-leftFooterWidget #rpg-portfolio-footer-one-container a {
+        -webkit-transition: all 320ms ease;
+        -moz-transition: all 320ms ease;
+        -ms-transition: all 320ms ease;
+        -o-transition: all 320ms ease;
+        transition: all 320ms ease;
         text-decoration: none;
         color: #0073aa; }
         .twoColumnBody #footer #rpg-leftFooterWidget #rpg-portfolio-footer-one-container a:hover {
@@ -396,6 +401,11 @@ html {
           .twoColumnBody #footer #rpg-rightFooter #rpg-footerMenu ul li.current-menu-item a {
             color: #0073aa; }
           .twoColumnBody #footer #rpg-rightFooter #rpg-footerMenu ul li a {
+            -webkit-transition: all 320ms ease;
+            -moz-transition: all 320ms ease;
+            -ms-transition: all 320ms ease;
+            -o-transition: all 320ms ease;
+            transition: all 320ms ease;
             text-decoration: none;
             color: #FFFFFF; }
             .twoColumnBody #footer #rpg-rightFooter #rpg-footerMenu ul li a:hover {

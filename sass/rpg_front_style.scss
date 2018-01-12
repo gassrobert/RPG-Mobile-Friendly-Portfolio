@@ -342,6 +342,7 @@ html {
 /* Standard Post Format */
 
 
+
 /* 
 	Footer
 	------------------------------------------------
@@ -365,6 +366,7 @@ html {
 				padding-bottom: 5px;
 				border: 1px solid $lighter-off-black;
 				a {
+					@include animate( all, 320ms );
 					text-decoration: none;
 					color: $primary-blue;
 
@@ -443,6 +445,7 @@ html {
 							}
 						}
 						a {
+							@include animate( all, 320ms );
 							text-decoration: none;
 							color: $white;
 							&:hover { color: $hover-blue; }
