@@ -12,7 +12,7 @@
 /**
  * Post Formats
  */
-$formats = array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' );
+$formats = array( 'gallery', 'link', 'image', 'video', 'audio' );
 add_theme_support( 'post-formats', $formats );
 add_theme_support( 'post-thumbnails' );
 add_post_type_support( 'page', 'excerpt' );

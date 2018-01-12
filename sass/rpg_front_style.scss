@@ -275,6 +275,7 @@ html {
 	}	
 } 
 
+/* Standard Post Format */
 #innerMainContent {
 	padding: 10px 50px;
 
@@ -282,9 +283,10 @@ html {
 
 
 		article { 
-			padding-top: 40px; margin-bottom: 40px; 
+			padding-top: 20px; margin-bottom: 20px; 
 			.entry-meta { font-size: 13px; font-weight: 200; color: $light-grey; text-align: center;
 				a { font-weight: 500; color: $light-grey; 
+					@include animate( all, 320ms );
 					&:hover,
 					&:focus { color: $dark-grey }		
 				}
@@ -299,14 +301,6 @@ html {
 			}
 			&.entry-title {
 				line-height: 1.5em; margin: 0; padding: 0;
-			}
-		}
-		.standard-featured-link { display: block; position: relative; 
-			&:hover,
-			&:focus {
-				.standard-featured {
-					&:after { background-color: rgba(0,0,0,0); }
-				}
 			}
 		}
 		img { display: block; margin: 10px auto; border: 3px outset $dark-grey; }
@@ -333,6 +327,9 @@ html {
 					color: $off-black; border-color: $dark-grey; background-color: $cadet-blue;
 				}			
 			}
+		}
+		.entry-footer {
+			padding: 20px 5px; border-bottom: 4px solid $light-grey;
 		}
 	}
 } 

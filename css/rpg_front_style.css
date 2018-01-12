@@ -259,11 +259,12 @@ html {
 .twoColumnBody #mainContent {
   margin: 0 20px 0 26%; }
 
+/* Standard Post Format */
 #innerMainContent {
   padding: 10px 50px; }
   #innerMainContent #articleContainer article {
-    padding-top: 40px;
-    margin-bottom: 40px; }
+    padding-top: 20px;
+    margin-bottom: 20px; }
     #innerMainContent #articleContainer article .entry-meta {
       font-size: 13px;
       font-weight: 200;
@@ -271,7 +272,12 @@ html {
       text-align: center; }
       #innerMainContent #articleContainer article .entry-meta a {
         font-weight: 500;
-        color: #898989; }
+        color: #898989;
+        -webkit-transition: all 320ms ease;
+        -moz-transition: all 320ms ease;
+        -ms-transition: all 320ms ease;
+        -o-transition: all 320ms ease;
+        transition: all 320ms ease; }
         #innerMainContent #articleContainer article .entry-meta a:hover, #innerMainContent #articleContainer article .entry-meta a:focus {
           color: #333333; }
   #innerMainContent #articleContainer h1 {
@@ -294,11 +300,6 @@ html {
       line-height: 1.5em;
       margin: 0;
       padding: 0; }
-  #innerMainContent #articleContainer .standard-featured-link {
-    display: block;
-    position: relative; }
-    #innerMainContent #articleContainer .standard-featured-link:hover .standard-featured:after, #innerMainContent #articleContainer .standard-featured-link:focus .standard-featured:after {
-      background-color: transparent; }
   #innerMainContent #articleContainer img {
     display: block;
     margin: 10px auto;
@@ -325,6 +326,9 @@ html {
         color: #1F1F1F;
         border-color: #333333;
         background-color: #5F9EA0; }
+  #innerMainContent #articleContainer .entry-footer {
+    padding: 20px 5px;
+    border-bottom: 4px solid #898989; }
 
 /* Standard Post Format */
 /* 
