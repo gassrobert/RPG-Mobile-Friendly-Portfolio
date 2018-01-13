@@ -9,10 +9,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' ); ?>
+		<?php the_title( '<h1 class="entry-title"><a class="standard-link-title" href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php echo rpg_portfolio_posted_meta(); ?>
+			<div class="standard-entry-meta"><?php echo rpg_portfolio_posted_meta(); ?></div>
 		</div>
 
 	</header>

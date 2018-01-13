@@ -7,6 +7,7 @@
 */
 @import 'base/variables';
 @import 'base/mixins';
+@import 'base/placeholders';
 
 
 /* 
@@ -36,6 +37,8 @@ html {
 		text-align: left; 
 	}	
 } 
+
+.background-image { background-position: center center; background-size: cover; background-repeat: no-repeat; }
 
 /* 
 	Header
@@ -285,7 +288,7 @@ html {
 		article { 
 			padding-top: 20px; margin-bottom: 20px; 
 			.entry-meta { font-size: 13px; font-weight: 200; color: $light-grey; text-align: center;
-				a { font-weight: 500; color: $light-grey; 
+				.standard-entry-meta a { font-weight: 500; color: $light-grey; 
 					@include animate( all, 320ms );
 					&:hover,
 					&:focus { color: $dark-grey }		
@@ -293,7 +296,7 @@ html {
 			}			
 		}
 		h1 { font-size: 36px; font-weight: 600; text-align: center;
-			a { color: $active-blue; text-decoration: none;
+			.standard-link-title { color: $active-blue; text-decoration: none;
 				@include animate( all, 320ms ); 
 				&:hover,
 				&:focus { color: $cadet-blue; }
@@ -336,7 +339,20 @@ html {
 
 
 
-/* Standard Post Format */
+/* Image Post Format */
+
+.rpgportfolio-format-image { 
+	.entry-header { height: 600px;  @extend %text-shadow; position: relative; }
+	h1, .entry-meta, .entry-header { color: #ffffff;
+		a { color: #ffffff; }
+	}
+	h1 { padding-top: 10px; color: #ffffff; }
+}
+.entry-excerpt {
+	&.image-caption { @extend %background-gradient; position: absolute; left: 0; bottom: 0; right: 0; margin: 0;
+		p { margin: 40px 0; font-size: 14px; }
+	}
+}
 
 
 

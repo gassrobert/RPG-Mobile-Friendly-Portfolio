@@ -19,6 +19,26 @@
 	Mixins
 	------------------------------------------------
 */
+/*
+	@package rpgmobilefriendlyportfolio
+*/
+/*
+	Placeholders
+	------------------------------------------------
+*/
+.rpgportfolio-format-image .entry-header {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); }
+
+.entry-excerpt.image-caption {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(2, 1, 1, 0.5) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(2, 1, 1, 0.5) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(2, 1, 1, 0.5) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80020101',GradientType=0 );
+  /* IE6-9 */ }
+
 /* 
 	Outer Containers
 	------------------------------------------------
@@ -43,6 +63,11 @@ html {
   border-right: 3px solid #000000;
   border-top: 1px solid #000000;
   text-align: left; }
+
+.background-image {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /* 
 	Header
@@ -270,7 +295,7 @@ html {
       font-weight: 200;
       color: #898989;
       text-align: center; }
-      #innerMainContent #articleContainer article .entry-meta a {
+      #innerMainContent #articleContainer article .entry-meta .standard-entry-meta a {
         font-weight: 500;
         color: #898989;
         -webkit-transition: all 320ms ease;
@@ -278,13 +303,13 @@ html {
         -ms-transition: all 320ms ease;
         -o-transition: all 320ms ease;
         transition: all 320ms ease; }
-        #innerMainContent #articleContainer article .entry-meta a:hover, #innerMainContent #articleContainer article .entry-meta a:focus {
+        #innerMainContent #articleContainer article .entry-meta .standard-entry-meta a:hover, #innerMainContent #articleContainer article .entry-meta .standard-entry-meta a:focus {
           color: #333333; }
   #innerMainContent #articleContainer h1 {
     font-size: 36px;
     font-weight: 600;
     text-align: center; }
-    #innerMainContent #articleContainer h1 a {
+    #innerMainContent #articleContainer h1 .standard-link-title {
       color: #124964;
       text-decoration: none;
       -webkit-transition: all 320ms ease;
@@ -292,9 +317,9 @@ html {
       -ms-transition: all 320ms ease;
       -o-transition: all 320ms ease;
       transition: all 320ms ease; }
-      #innerMainContent #articleContainer h1 a:hover, #innerMainContent #articleContainer h1 a:focus {
+      #innerMainContent #articleContainer h1 .standard-link-title:hover, #innerMainContent #articleContainer h1 .standard-link-title:focus {
         color: #5F9EA0; }
-      #innerMainContent #articleContainer h1 a:active {
+      #innerMainContent #articleContainer h1 .standard-link-title:active {
         color: #00a0d2; }
     #innerMainContent #articleContainer h1.entry-title {
       line-height: 1.5em;
@@ -330,7 +355,28 @@ html {
     padding: 20px 5px;
     border-bottom: 4px solid #898989; }
 
-/* Standard Post Format */
+/* Image Post Format */
+.rpgportfolio-format-image .entry-header {
+  height: 600px;
+  position: relative; }
+.rpgportfolio-format-image h1, .rpgportfolio-format-image .entry-meta, .rpgportfolio-format-image .entry-header {
+  color: #ffffff; }
+  .rpgportfolio-format-image h1 a, .rpgportfolio-format-image .entry-meta a, .rpgportfolio-format-image .entry-header a {
+    color: #ffffff; }
+.rpgportfolio-format-image h1 {
+  padding-top: 10px;
+  color: #ffffff; }
+
+.entry-excerpt.image-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0; }
+  .entry-excerpt.image-caption p {
+    margin: 40px 0;
+    font-size: 14px; }
+
 /* 
 	Footer
 	------------------------------------------------
