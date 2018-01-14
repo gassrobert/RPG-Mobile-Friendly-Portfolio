@@ -41,7 +41,7 @@ function rpg_portfolio_posted_meta() {
 		endforeach;
 	endif;
 
-	return '<span class="posted-on"> Posted <a href="' . esc_url( get_permalink() ) . '">' . $posted_on . '</a> ago</span> / <span class="posted-in">' . $output . '</span>';
+	return '<span class="posted-on"> Posted <a href="' . esc_url( get_permalink() ) . '">' . $posted_on . '</a> ago / </span><span class="posted-in">' . $output . '</span>';
 }
 
 function rpg_portfolio_get_attachment( $num = 1 ){

@@ -9,8 +9,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('rpgportfolio-format-image'); ?>>
 
+		<div class="inner-rpgportfolio-format-image">
 
-			<header class="entry-header background-image" style="background-image: url(<?php echo rpg_portfolio_get_attachment(); ?>);">
+			<?php 
+				$current_post_id = get_post_thumbnail_id();
+				$image_attributes = wp_get_attachment_metadata($current_post_id); 
+			?>
+			<header class="entry-header background-image" style="background-image: url(<?php echo rpg_portfolio_get_attachment(); ?>); background-size: auto 100%; background-repeat: no-repeat; background-position: left top; height: <?php echo $image_attributes["height"]; ?>px; width: <?php echo $image_attributes["width"]; ?>px; ">
 
 				<?php the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' ); ?>
 
@@ -24,7 +29,7 @@
 				
 			</header>
 
-		
+		</div>	
 
 	<footer class="entry-footer"></footer>
 

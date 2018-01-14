@@ -356,16 +356,35 @@ html {
     border-bottom: 4px solid #898989; }
 
 /* Image Post Format */
+.rpgportfolio-format-image .inner-rpgportfolio-format-image {
+  width: 100%;
+  margin: 0 10%; }
 .rpgportfolio-format-image .entry-header {
-  height: 600px;
-  position: relative; }
+  position: relative;
+  border: 3px outset #333333; }
+.rpgportfolio-format-image .entry-meta {
+  text-shadow: 1px 1px #000000; }
+  .rpgportfolio-format-image .entry-meta .posted-on {
+    color: #F8F8FF; }
 .rpgportfolio-format-image h1, .rpgportfolio-format-image .entry-meta, .rpgportfolio-format-image .entry-header {
-  color: #ffffff; }
+  color: #FFFFFF; }
   .rpgportfolio-format-image h1 a, .rpgportfolio-format-image .entry-meta a, .rpgportfolio-format-image .entry-header a {
-    color: #ffffff; }
+    color: #FFFFFF;
+    -webkit-transition: all 320ms ease;
+    -moz-transition: all 320ms ease;
+    -ms-transition: all 320ms ease;
+    -o-transition: all 320ms ease;
+    transition: all 320ms ease; }
+    .rpgportfolio-format-image h1 a:hover, .rpgportfolio-format-image h1 a:focus, .rpgportfolio-format-image .entry-meta a:hover, .rpgportfolio-format-image .entry-meta a:focus, .rpgportfolio-format-image .entry-header a:hover, .rpgportfolio-format-image .entry-header a:focus {
+      color: #333333; }
 .rpgportfolio-format-image h1 {
   padding-top: 10px;
-  color: #ffffff; }
+  color: #FFFFFF;
+  text-shadow: 2px 2px #000000; }
+  .rpgportfolio-format-image h1 a {
+    text-decoration: none; }
+    .rpgportfolio-format-image h1 a:hover, .rpgportfolio-format-image h1 a:focus {
+      text-shadow: 2px 2px #F8F8FF; }
 
 .entry-excerpt.image-caption {
   position: absolute;
@@ -374,8 +393,10 @@ html {
   right: 0;
   margin: 0; }
   .entry-excerpt.image-caption p {
-    margin: 40px 0;
-    font-size: 14px; }
+    margin: 40px 10px;
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 1px 1px #000000; }
 
 /* 
 	Footer
