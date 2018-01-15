@@ -398,6 +398,43 @@ html {
     text-align: center;
     text-shadow: 1px 1px #000000; }
 
+/* Audio Post Format */
+.rpgportfolio-format-audio h1 {
+  font-size: 30px; }
+  .rpgportfolio-format-audio h1.entry-title {
+    display: inline-block;
+    margin-right: 20px; }
+    .rpgportfolio-format-audio h1.entry-title:before, .rpgportfolio-format-audio h1.entry-title:after {
+      display: none; }
+    .rpgportfolio-format-audio h1.entry-title a {
+      color: #124964;
+      text-decoration: none;
+      -webkit-transition: all 320ms ease;
+      -moz-transition: all 320ms ease;
+      -ms-transition: all 320ms ease;
+      -o-transition: all 320ms ease;
+      transition: all 320ms ease; }
+      .rpgportfolio-format-audio h1.entry-title a:hover, .rpgportfolio-format-audio h1.entry-title a:focus {
+        color: #5F9EA0; }
+      .rpgportfolio-format-audio h1.entry-title a:active {
+        color: #00a0d2; }
+.rpgportfolio-format-audio .entry-meta {
+  display: inline-block;
+  margin-bottom: 0; }
+  .rpgportfolio-format-audio .entry-meta a {
+    font-weight: 500;
+    color: #898989;
+    -webkit-transition: all 320ms ease;
+    -moz-transition: all 320ms ease;
+    -ms-transition: all 320ms ease;
+    -o-transition: all 320ms ease;
+    transition: all 320ms ease; }
+    .rpgportfolio-format-audio .entry-meta a:hover, .rpgportfolio-format-audio .entry-meta a:focus {
+      color: #333333; }
+.rpgportfolio-format-audio .entry-content iframe {
+  width: 100%;
+  height: 166px; }
+
 /* 
 	Footer
 	------------------------------------------------

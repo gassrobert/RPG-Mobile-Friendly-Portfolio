@@ -26,6 +26,10 @@
 				<div class="entry-excerpt image-caption">
 					<?php the_excerpt(); ?>
 				</div>
+
+				<div class="button-container">
+					<a href="<?php the_permalink(); ?>" class="btn-rpgportfolio"><?php _e( 'Read More' ); ?></a>
+				</div>
 				
 			</header>
 

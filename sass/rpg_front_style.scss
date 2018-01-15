@@ -374,6 +374,34 @@ html {
 
 
 
+/* Audio Post Format */
+.rpgportfolio-format-audio {
+	h1 { font-size: 30px; 	
+		&.entry-title { display: inline-block; margin-right: 20px; &:before, &:after { display: none; }
+		
+			a { color: $active-blue; text-decoration: none;
+				@include animate( all, 320ms ); 
+				&:hover,
+				&:focus { color: $cadet-blue; }
+				&:active { color: $hover-blue; }
+			}
+			
+		}
+	}
+	.entry-meta { display: inline-block; margin-bottom: 0; 
+		a { font-weight: 500; color: $light-grey; 
+			@include animate( all, 320ms );
+			&:hover,
+			&:focus { color: $dark-grey; }		
+		}
+	}
+
+
+	.entry-content {
+		iframe { width: 100%; height: 166px; }
+	}
+}
+
 /* 
 	Footer
 	------------------------------------------------
