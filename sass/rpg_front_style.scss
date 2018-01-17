@@ -396,11 +396,15 @@ html {
 		}
 	}
 
-
 	.entry-content {
+		border: 3px outset $dark-grey;
+		
 		iframe { width: 100%; height: 166px; }
 	}
 }
+
+
+
 
 /* 
 	Footer

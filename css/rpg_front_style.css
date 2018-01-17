@@ -431,9 +431,11 @@ html {
     transition: all 320ms ease; }
     .rpgportfolio-format-audio .entry-meta a:hover, .rpgportfolio-format-audio .entry-meta a:focus {
       color: #333333; }
-.rpgportfolio-format-audio .entry-content iframe {
-  width: 100%;
-  height: 166px; }
+.rpgportfolio-format-audio .entry-content {
+  border: 3px outset #333333; }
+  .rpgportfolio-format-audio .entry-content iframe {
+    width: 100%;
+    height: 166px; }
 
 /* 
 	Footer
