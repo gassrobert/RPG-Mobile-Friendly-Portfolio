@@ -333,6 +333,17 @@ html {
 		}
 		.entry-footer {
 			padding: 20px 5px; border-bottom: 4px solid $light-grey;
+			.rpg-profile-icon-footer {
+				color: $light-grey;
+			}
+			a {
+				margin-left: 10px; text-decoration: none; text-transform: uppercase; color: $light-grey;
+				@include animate( all, 320ms );
+				&:hover,
+				&:focus {
+					color: $dark-grey; font-weight: 500;
+				}				
+			}
 		}
 	}
 } 

@@ -69,6 +69,11 @@ function rpg_portfolio_get_attachment( $num = 1 ){
 	return $output;
 }
 
+function rpg_portfolio_tags() {
+
+	return '<div class="post-footer-container">' . get_the_tag_list( '<div class="rpg-profile-icon-footer dashicons-before dashicons-tag"></span>', ' ', '</div>' ) . '</div>';
+}
+
 function rpg_portfolio_get_embedded_media( $type = array() ) {
 	$content = do_shortcode( apply_filters( 'the_content', get_the_content() ) );
 	$embed = get_media_embedded_in_content( $content, $type );
@@ -80,7 +85,6 @@ function rpg_portfolio_get_embedded_media( $type = array() ) {
 	endif;
 	return	$output;
 }
-
 
 /* Footer Functions */
 function rpg_portfolio_footer_one_init() {

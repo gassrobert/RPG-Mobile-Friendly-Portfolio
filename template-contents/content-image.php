@@ -35,6 +35,8 @@
 
 		</div>	
 
-	<footer class="entry-footer"></footer>
+	<footer class="entry-footer">
+		<?php echo rpg_portfolio_tags(); ?>	
+	</footer>
 
 </article>

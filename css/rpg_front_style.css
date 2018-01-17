@@ -354,6 +354,21 @@ html {
   #innerMainContent #articleContainer .entry-footer {
     padding: 20px 5px;
     border-bottom: 4px solid #898989; }
+    #innerMainContent #articleContainer .entry-footer .rpg-profile-icon-footer {
+      color: #898989; }
+    #innerMainContent #articleContainer .entry-footer a {
+      margin-left: 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #898989;
+      -webkit-transition: all 320ms ease;
+      -moz-transition: all 320ms ease;
+      -ms-transition: all 320ms ease;
+      -o-transition: all 320ms ease;
+      transition: all 320ms ease; }
+      #innerMainContent #articleContainer .entry-footer a:hover, #innerMainContent #articleContainer .entry-footer a:focus {
+        color: #333333;
+        font-weight: 500; }
 
 /* Image Post Format */
 .rpgportfolio-format-image .inner-rpgportfolio-format-image {
