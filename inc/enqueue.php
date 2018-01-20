@@ -12,7 +12,13 @@
 function rpg_portfolio_load_scripts(){
 	
 	if (!is_admin()) {
+		// load css
+		wp_enqueue_style( 'rpg_carousel_style', get_template_directory_uri() . '/css/carousel-style.css', array(), '3.3.5', 'all' );
+
 		wp_enqueue_style( 'rpg_front_style', get_template_directory_uri() . '/css/rpg_front_style.css', array(), '1.0.3', 'all' );
+
+		// load js
+		wp_enqueue_script( 'rpg_carousel_js', get_template_directory_uri() . '/js/carousel.js', array('jquery'), '3.3.5', true );
 
 		wp_register_script( 'rpg-portfolio-front-script', get_template_directory_uri() . '/js/rpgprofile.front.js', array('jquery'), '1.0.0', true );
 		wp_enqueue_script( 'rpg-portfolio-front-script' );

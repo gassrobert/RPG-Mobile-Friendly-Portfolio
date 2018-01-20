@@ -2,7 +2,7 @@
 
 /*
 	
-@package sunsettheme
+@package rpgmobilefriendlyportfolio
 -- Video Post Format
 */
 ?>

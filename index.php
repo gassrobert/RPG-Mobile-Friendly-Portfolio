@@ -14,6 +14,7 @@
     <?php get_header(); ?>
   	<div id="innerMainContent">
 		<div id="articleContainer">
+
 				<?php
 
 					if ( have_posts() ):

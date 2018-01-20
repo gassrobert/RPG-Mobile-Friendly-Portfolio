@@ -442,6 +442,23 @@ html {
 	}
 }
 
+/* Gallery Post Format */
+#innerMainContent {
+	#articleContainer {
+		.carousel-inner {
+			 border: 3px ridge $dark-grey;
+		}
+
+		.item img{
+			display: block; margin: 0 auto; border: none; height: 500px;
+		}
+
+		.hide {
+			display: none;
+		}
+	}
+}
+
 /* 
 	Footer
 	------------------------------------------------

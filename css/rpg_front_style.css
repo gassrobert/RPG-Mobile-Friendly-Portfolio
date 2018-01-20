@@ -489,6 +489,17 @@ html {
       .rpgportfolio-format-video .entry-header h1.entry-title a:active {
         color: #00a0d2; }
 
+/* Gallery Post Format */
+#innerMainContent #articleContainer .carousel-inner {
+  border: 3px ridge #333333; }
+#innerMainContent #articleContainer .item img {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  height: 500px; }
+#innerMainContent #articleContainer .hide {
+  display: none; }
+
 /* 
 	Footer
 	------------------------------------------------
