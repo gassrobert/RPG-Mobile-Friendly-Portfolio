@@ -22,9 +22,12 @@
             foreach( $attachments as $attachment ):
           ?>
 
+
           <div class="item <?php echo $attachment['class']; ?>">
             <img src="<?php echo $attachment['url']; ?>">
-
+<?php /* ?>
+        <div class="item <?php echo $attachment['class']; ?>" style="background: url('<?php echo $attachment['url']; ?>') top center no-repeat;">
+<?php */ ?>
             <div class="hide next-image-preview" data-image="<?php echo $attachment['next_img']; ?>"></div>
             <div class="hide prev-image-preview" data-image="<?php echo $attachment['prev_img']; ?>"></div>
 

@@ -281,9 +281,6 @@ html {
 	Main Content
 	------------------------------------------------
 */
-.twoColumnBody #mainContent {
-  margin: 0 20px 0 26%; }
-
 /* Standard Post Format */
 #innerMainContent {
   padding: 10px 50px; }
@@ -490,15 +487,47 @@ html {
         color: #00a0d2; }
 
 /* Gallery Post Format */
-#innerMainContent #articleContainer .carousel-inner {
+#innerMainContent #articleContainer .rpgportfolio-format-gallery .carousel-inner {
   border: 3px ridge #333333; }
-#innerMainContent #articleContainer .item img {
+#innerMainContent #articleContainer .rpgportfolio-format-gallery .item img {
   display: block;
   margin: 0 auto;
   border: none;
   height: 500px; }
-#innerMainContent #articleContainer .hide {
+#innerMainContent #articleContainer .rpgportfolio-format-gallery .hide {
   display: none; }
+#innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .entry-meta {
+  text-align: center;
+  margin-bottom: 0; }
+  #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .entry-meta a {
+    font-weight: 500;
+    color: #898989;
+    -webkit-transition: all 320ms ease;
+    -moz-transition: all 320ms ease;
+    -ms-transition: all 320ms ease;
+    -o-transition: all 320ms ease;
+    transition: all 320ms ease; }
+    #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .entry-meta a:hover, #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .entry-meta a:focus {
+      color: #333333; }
+#innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1 {
+  font-size: 30px; }
+  #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title {
+    text-align: center;
+    margin-right: 20px; }
+    #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title:before, #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title:after {
+      display: none; }
+    #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title a {
+      color: #124964;
+      text-decoration: none;
+      -webkit-transition: all 320ms ease;
+      -moz-transition: all 320ms ease;
+      -ms-transition: all 320ms ease;
+      -o-transition: all 320ms ease;
+      transition: all 320ms ease; }
+      #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title a:hover, #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title a:focus {
+        color: #5F9EA0; }
+      #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title a:active {
+        color: #00a0d2; }
 
 /* 
 	Footer
@@ -593,6 +622,25 @@ html {
       .twoColumnBody #footer #rpg-rightFooter #rpg-copyright .menu {
         margin: 0; }
 
+/* Responsive */
+/*** Responsive Section ***/
+/* laptop+ */
+@media screen and (min-width: 1076px) {
+  .twoColumnBody #mainContent {
+    margin: 0 20px 0 26%; } }
+@media screen and (max-width: 1075px) {
+  #sidebar1 {
+    display: none; }
+
+  #mainContent {
+    margin: 0 20px 0 0; } }
+/* Phone */
+@media screen and (max-width: 768px) {
+  #sidebar1 {
+    display: none; }
+
+  #mainContent {
+    margin: 0 20px 0 0; } }
 /* 
 	Miscellaneous classes for reuse
 	------------------------------------------------
