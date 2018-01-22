@@ -528,6 +528,10 @@ html {
         color: #5F9EA0; }
       #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title a:active {
         color: #00a0d2; }
+#innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-caption {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transform: translate(-20%, 0); }
 
 /* 
 	Footer
