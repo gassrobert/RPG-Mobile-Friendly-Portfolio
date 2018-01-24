@@ -248,7 +248,7 @@
     height: 400px;
   }
   .carousel-caption {
-    display: none;
+      bottom: 20%;
   }
 }
 
@@ -264,6 +264,6 @@
     height: 300px;
   }
   .carousel-caption {
-    display: none;
+      bottom: 40%;
   }
 }

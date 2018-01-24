@@ -637,14 +637,20 @@ html {
     display: none; }
 
   #mainContent {
-    margin: 0 20px 0 0; } }
+    margin: 0 20px 0 0; }
+
+  #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-caption {
+    transform: translate(-20%, 0); } }
 /* Phone */
 @media screen and (max-width: 768px) {
   #sidebar1 {
     display: none; }
 
   #mainContent {
-    margin: 0 20px 0 0; } }
+    margin: 0 20px 0 0; }
+
+  #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-caption {
+    transform: translate(-15%, 0); } }
 /* 
 	Miscellaneous classes for reuse
 	------------------------------------------------

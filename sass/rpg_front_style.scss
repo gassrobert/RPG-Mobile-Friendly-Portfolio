@@ -628,6 +628,17 @@ html {
 	#mainContent { 
 		margin: 0 20px 0 0;
 	}
+	#innerMainContent {
+		#articleContainer {
+			.rpgportfolio-format-gallery {
+				.entry-header {
+					.carousel-caption {
+						transform: translate(-20%, 0);
+					}
+				}
+			}
+		}
+	}
 }
 
 /* Phone */
@@ -637,6 +648,17 @@ html {
 	} 
 	#mainContent { 
 		margin: 0 20px 0 0;
+	}
+	#innerMainContent {
+		#articleContainer {
+			.rpgportfolio-format-gallery {
+				.entry-header {
+					.carousel-caption {
+						transform: translate(-15%, 0);
+					}
+				}
+			}
+		}
 	}
 }
 
