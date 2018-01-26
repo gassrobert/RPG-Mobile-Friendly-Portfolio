@@ -494,8 +494,6 @@ html {
   margin: 0 auto;
   border: none;
   height: 500px; }
-#innerMainContent #articleContainer .rpgportfolio-format-gallery .hide {
-  display: none; }
 #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .entry-meta {
   text-align: center;
   margin-bottom: 0; }
@@ -533,66 +531,15 @@ html {
   width: 100%;
   transform: translate(-20%, 0); }
 #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-control {
-  background: none;
-  background-image: none;
-  opacity: 1;
-  filter: alpha(opacity=100);
   font-size: 30px; }
   #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-control .glyphicon-chevron-right {
     font-weight: bold;
     font-size: 45px;
-    text-shadow: 2px 2px 4px #000000; }
+    text-shadow: 3px 3px 1px #000000; }
   #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-control .glyphicon-chevron-left {
     font-weight: bold;
     font-size: 45px;
-    text-shadow: 2px 2px 4px #000000; }
-  #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-control .preview-container {
-    position: relative;
-    display: block;
-    padding: 20px;
-    background-color: transparent;
-    line-height: 0;
-    -webkit-transition: background-color 320ms ease;
-    -moz-transition: background-color 320ms ease;
-    -ms-transition: background-color 320ms ease;
-    -o-transition: background-color 320ms ease;
-    transition: background-color 320ms ease; }
-    #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-control .preview-container .thumbnail-container {
-      position: absolute;
-      display: block;
-      height: 68px;
-      width: 68px;
-      border-radius: 50%;
-      background: #999;
-      top: 1px;
-      -webkit-transition: transform 320ms ease;
-      -moz-transition: transform 320ms ease;
-      -ms-transition: transform 320ms ease;
-      -o-transition: transform 320ms ease;
-      transition: transform 320ms ease;
-      -webkit-transform: scale(0);
-      -moz-transform: scale(0);
-      -ms-transform: scale(0);
-      -o-transform: scale(0);
-      transform: scale(0); }
-  #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-control.right .preview-container {
-    padding-left: 80px;
-    border-radius: 35.5px 0 0 35.5px; }
-    #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-control.right .preview-container .thumbnail-container {
-      left: 1px; }
-  #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-control.left .preview-container {
-    padding-right: 80px;
-    border-radius: 0 35.5px 35.5px 0; }
-    #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-control.left .preview-container .thumbnail-container {
-      right: 1px; }
-  #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-control:hover .preview-container {
-    background-color: rgba(0, 0, 0, 0.8); }
-    #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-control:hover .preview-container .thumbnail-container {
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      -ms-transform: scale(1);
-      -o-transform: scale(1);
-      transform: scale(1); }
+    text-shadow: 3px 3px 1px #000000; }
 
 /* 
 	Footer

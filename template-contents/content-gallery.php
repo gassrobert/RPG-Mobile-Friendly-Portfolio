@@ -25,11 +25,6 @@
 
           <div class="item <?php echo $attachment['class']; ?>">
             <img src="<?php echo $attachment['url']; ?>">
-<?php /* ?>
-        <div class="item <?php echo $attachment['class']; ?>" style="background: url('<?php echo $attachment['url']; ?>') top center no-repeat;">
-<?php */ ?>
-            <div class="hide next-image-preview" data-image="<?php echo $attachment['next_img']; ?>"></div>
-            <div class="hide prev-image-preview" data-image="<?php echo $attachment['prev_img']; ?>"></div>
 
             <div class="carousel-caption">
               <?php echo $attachment['caption']; ?>
@@ -39,21 +34,15 @@
           <?php endforeach; ?>
 
         <!-- Controls -->
-        <div class="preview-container">
-          <span class="thumbnail-container background-image"></span>
           <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><</span>
             <span class="sr-only">Previous</span>
           </a>
-        </div>
 
-        <div class="preview-container">
-          <span class="thumbnail-container background-image"></span>
           <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">></span>
             <span class="sr-only">Next</span>
           </a>
-        </div>
 
 
         </div>  <!-- end of carousel-inner -->

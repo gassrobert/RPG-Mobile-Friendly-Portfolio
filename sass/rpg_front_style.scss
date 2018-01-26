@@ -449,9 +449,6 @@ html {
 				display: block; margin: 0 auto; border: none; height: 500px;
 			}
 
-			.hide {
-				display: none;
-			}
 			.entry-header {
 				.entry-meta { text-align: center; margin-bottom: 0; 
 					a { font-weight: 500; color: $light-grey; 
@@ -478,40 +475,18 @@ html {
 					transform: translate(-20%, 0);
 				}
 				.carousel-control {
-					background: none; background-image: none; opacity: 1; filter: alpha(opacity=100); font-size: 30px;
+					font-size: 30px;
+
 					.glyphicon-chevron-right {
 						font-weight: bold;
 						font-size: 45px;
-						text-shadow: 2px 2px 4px #000000;
+						text-shadow: 3px 3px 1px #000000;
 					}
 					.glyphicon-chevron-left {
 						font-weight: bold;
 						font-size: 45px;
-						text-shadow: 2px 2px 4px #000000;
+						text-shadow: 3px 3px 1px #000000;
 					}
-					.preview-container { 
-						position: relative; display: block; padding: 20px; background-color: rgba(0,0,0,0); line-height: 0; @include animate( background-color, 320ms );
-						.thumbnail-container { position: absolute; display: block; height: 68px; width: 68px; border-radius: 50%; background: #999; top: 1px; @include animate( transform, 320ms ); @include transform( scale(0) ); }
-					}
-					&.right {
-						.preview-container { padding-left: 80px; border-radius: 35.5px 0 0 35.5px;
-							.thumbnail-container { left: 1px; }
-						}
-					}
-
-					&.left {
-						.preview-container { padding-right: 80px; border-radius:  0 35.5px 35.5px 0; 
-							.thumbnail-container { right: 1px; }
-						}
-					}
-
-					&:hover {
-						.preview-container { background-color: rgba(0,0,0,0.8);
-							.thumbnail-container {
-								 @include transform( scale(1) );
-							}
-						}
-					}	
 				}
 			}
 		}
