@@ -348,7 +348,18 @@ html {
 /* Image Post Format */
 
 .rpgportfolio-format-image { 
-	.inner-rpgportfolio-format-image { width: 100%; margin: 0 10%; }	
+	.inner-rpgportfolio-format-image { 
+		margin: 0 auto; 
+		.background-image-large {
+			display: block;
+		}
+		.background-image-tablet {
+			display: none;
+		}
+		.background-image-smartphone {
+			display: none;
+		}
+	}	
 	.entry-header { @extend %text-shadow; position: relative; border: 3px outset $dark-grey; }
 	.entry-meta {
 		 text-shadow: 1px 1px $primary-black;
@@ -371,6 +382,9 @@ html {
 			&:focus { text-shadow: 2px 2px $ghost-white; }	
 		}
 	}
+}
+.background-image-large {
+	
 }
 .entry-excerpt {
 	&.image-caption { @extend %background-gradient; position: absolute; left: 0; bottom: 0; right: 0; margin: 0;
@@ -623,14 +637,30 @@ html {
 /* Responsive */
 /*** Responsive Section ***/
 /* laptop+ */
-@media screen and (min-width: 1076px) {
+@media screen and (max-width: 1076px) {
+	.rpgportfolio-format-image { 
+		.inner-rpgportfolio-format-image { 
+			.background-image-large {
+				display: none;
+			}
+			.background-image-tablet {
+				display: block;
+			}
+			.background-image-smartphone {
+				display: none;
+			}
+		}
+	}	
+}
+/* Tablet */
+@media screen and (min-width: 1024px) {
 	.twoColumnBody {
 		#mainContent { 
 			margin: 0 20px 0 26%;
 		}	
 	} 
 }
-@media screen and (max-width: 1075px) {
+@media screen and (max-width: 1023px) {
 	#sidebar1 {
 		display: none;
 	} 
@@ -652,11 +682,12 @@ html {
 
 /* Phone */
 @media screen and (max-width:768px) {
+
 	#sidebar1 {
 		display: none;
 	} 
 	#mainContent { 
-		margin: 0 20px 0 0;
+		margin: 0;
 	}
 	#innerMainContent {
 		#articleContainer {
@@ -667,6 +698,37 @@ html {
 					}
 				}
 			}
+		}
+	}
+	.rpgportfolio-format-image { 
+		.inner-rpgportfolio-format-image { 
+			.background-image-large {
+				display: none;
+			}
+			.background-image-tablet {
+				display: none;
+			}
+			.background-image-smartphone {
+				display: block;
+				h3 {
+					text-shadow: 2px 2px $primary-black;
+					a {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+	.twoColumnBody {
+		#container { 
+			margin-right: 0; 
+			margin-left: 0;
+			border: none;
+		}	
+	} 
+	.twoColumnBody {
+		#header {
+			padding: 0;
 		}
 	}
 }

@@ -369,8 +369,13 @@ html {
 
 /* Image Post Format */
 .rpgportfolio-format-image .inner-rpgportfolio-format-image {
-  width: 100%;
-  margin: 0 10%; }
+  margin: 0 auto; }
+  .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-large {
+    display: block; }
+  .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-tablet {
+    display: none; }
+  .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone {
+    display: none; }
 .rpgportfolio-format-image .entry-header {
   position: relative;
   border: 3px outset #333333; }
@@ -637,10 +642,18 @@ html {
 /* Responsive */
 /*** Responsive Section ***/
 /* laptop+ */
-@media screen and (min-width: 1076px) {
+@media screen and (max-width: 1076px) {
+  .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-large {
+    display: none; }
+  .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-tablet {
+    display: block; }
+  .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone {
+    display: none; } }
+/* Tablet */
+@media screen and (min-width: 1024px) {
   .twoColumnBody #mainContent {
     margin: 0 20px 0 26%; } }
-@media screen and (max-width: 1075px) {
+@media screen and (max-width: 1023px) {
   #sidebar1 {
     display: none; }
 
@@ -655,10 +668,29 @@ html {
     display: none; }
 
   #mainContent {
-    margin: 0 20px 0 0; }
+    margin: 0; }
 
   #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-caption {
-    transform: translate(-15%, 0); } }
+    transform: translate(-15%, 0); }
+
+  .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-large {
+    display: none; }
+  .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-tablet {
+    display: none; }
+  .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone {
+    display: block; }
+    .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 {
+      text-shadow: 2px 2px #000000; }
+      .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 a {
+        text-decoration: none; }
+
+  .twoColumnBody #container {
+    margin-right: 0;
+    margin-left: 0;
+    border: none; }
+
+  .twoColumnBody #header {
+    padding: 0; } }
 /* 
 	Miscellaneous classes for reuse
 	------------------------------------------------
