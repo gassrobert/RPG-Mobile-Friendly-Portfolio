@@ -656,10 +656,8 @@ html {
   #sidebar1 {
     display: none; }
 
-  .twoColumnBody #content {
-    width: 100%; }
-  .twoColumnBody #mainContent {
-    margin: 0; }
+  #mainContent {
+    margin: 0 20px 0 0; }
 
   #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-caption {
     transform: translate(-20%, 0); } }
@@ -671,8 +669,6 @@ html {
   #mainContent {
     margin: 0; }
 
-  #innerMainContent #articleContainer .rpgportfolio-format-gallery h1 {
-    font-size: 18px; }
   #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-caption {
     transform: translate(-15%, 0); }
 
