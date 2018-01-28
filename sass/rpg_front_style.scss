@@ -454,6 +454,9 @@ html {
 /* Gallery Post Format */
 #innerMainContent {
 	#articleContainer {
+		#mobile-gallery {
+			display: none;	
+		}
 		.rpgportfolio-format-gallery {
 			.carousel-inner {
 				 border: 3px ridge $dark-grey;
@@ -691,6 +694,9 @@ html {
 	}
 	#innerMainContent {
 		#articleContainer {
+			#mobile-gallery {
+				display: block;	
+			}
 			.rpgportfolio-format-gallery {
 				.entry-header {
 					.carousel-caption {
@@ -719,6 +725,10 @@ html {
 			}
 		}
 	}
+	#carousel-example-generic {
+		display: none;
+	}
+
 	.twoColumnBody {
 		#container { 
 			margin-right: 0; 

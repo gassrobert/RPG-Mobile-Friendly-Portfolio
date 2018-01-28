@@ -47,12 +47,22 @@
 
         </div>  <!-- end of carousel-inner -->
       </div> <!-- end of carousel slide -->
-    <?php // endif; ?>
 
     <?php the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' ); ?>
 
     <div class="entry-meta">
       <?php echo rpg_portfolio_posted_meta(); ?>
+    </div>
+
+    <div id="mobile-gallery">
+    <?php
+        $featured_image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
+    ?>
+      <?php if (!empty($featured_image)) { ?>
+        <a class="standard-featured-link" href="<?php the_permalink(); ?>">
+          <img src="<?php echo $featured_image; ?>" /> 
+        </a>
+      <?php } // End of if (!empty($featured_image)) { ?>
     </div>
     
   <?php endif; ?>
@@ -60,13 +70,15 @@
 
   <div class="entry-content">
 
-    <div class="entry-excerpt">
-      <?php the_excerpt(); ?>
-    </div>
+    <?php if (!empty(the_excerpt())) { ?>
+      <div class="entry-excerpt">
+        <?php the_excerpt(); ?>
+      </div>
 
-    <div class="button-container">
-      <a href="<?php the_permalink(); ?>" class="btn-rpgportfolio"><?php _e( 'Read More' ); ?></a>
-    </div>
+      <div class="button-container">
+        <a href="<?php the_permalink(); ?>" class="btn-rpgportfolio"><?php _e( 'Read More' ); ?></a>
+      </div>
+    <?php } // End of if (!empty(the_excerpt())) { ?>
 
   </div> <!-- .entry-content -->
 

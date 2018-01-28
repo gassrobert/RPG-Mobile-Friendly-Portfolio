@@ -493,6 +493,8 @@ html {
         color: #00a0d2; }
 
 /* Gallery Post Format */
+#innerMainContent #articleContainer #mobile-gallery {
+  display: none; }
 #innerMainContent #articleContainer .rpgportfolio-format-gallery .carousel-inner {
   border: 3px ridge #333333; }
 #innerMainContent #articleContainer .rpgportfolio-format-gallery .item img {
@@ -669,6 +671,8 @@ html {
   #mainContent {
     margin: 0; }
 
+  #innerMainContent #articleContainer #mobile-gallery {
+    display: block; }
   #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-caption {
     transform: translate(-15%, 0); }
 
@@ -682,6 +686,9 @@ html {
       text-shadow: 2px 2px #000000; }
       .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 a {
         text-decoration: none; }
+
+  #carousel-example-generic {
+    display: none; }
 
   .twoColumnBody #container {
     margin-right: 0;
