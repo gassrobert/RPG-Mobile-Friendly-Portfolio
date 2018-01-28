@@ -301,7 +301,7 @@ html {
 				line-height: 1.5em; margin: 0; padding: 0;
 			}
 		}
-		img { display: block; margin: 10px auto; border: 3px outset $dark-grey; }
+		img { display: block; margin: 10px auto; border: 3px outset $dark-grey; width: 100%; }
 		.entry-excerpt {
 			
 		}
@@ -471,7 +471,7 @@ html {
 						&:focus { color: $dark-grey; }		
 					}
 				}
-				h1 { font-size: 30px; 	
+				h1 {	
 					&.entry-title { text-align: center; margin-right: 20px; &:before, &:after { display: none; }
 					
 						a { color: $active-blue; text-decoration: none;
@@ -663,9 +663,14 @@ html {
 @media screen and (max-width: 1023px) {
 	#sidebar1 {
 		display: none;
-	} 
-	#mainContent { 
-		margin: 0 20px 0 0;
+	}
+	.twoColumnBody {
+		#content {
+			width: 100%;
+		} 
+		#mainContent { 
+			margin: 0;
+		}
 	}
 	#innerMainContent {
 		#articleContainer {
@@ -692,6 +697,9 @@ html {
 	#innerMainContent {
 		#articleContainer {
 			.rpgportfolio-format-gallery {
+				h1 {
+					font-size: 18px;
+				}
 				.entry-header {
 					.carousel-caption {
 						transform: translate(-15%, 0);
@@ -730,6 +738,16 @@ html {
 		#header {
 			padding: 0;
 		}
+	}
+	#innerMainContent {
+		#articleContainer {
+			h1 {
+				font-size: 18px;
+			}
+		}
+	}
+	.entry-footer {
+		font-size: 14px;
 	}
 }
 

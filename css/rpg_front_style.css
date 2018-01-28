@@ -325,7 +325,8 @@ html {
   #innerMainContent #articleContainer img {
     display: block;
     margin: 10px auto;
-    border: 3px outset #333333; }
+    border: 3px outset #333333;
+    width: 100%; }
   #innerMainContent #articleContainer .button-container {
     text-align: center;
     margin-top: 20px; }
@@ -512,25 +513,23 @@ html {
     transition: all 320ms ease; }
     #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .entry-meta a:hover, #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .entry-meta a:focus {
       color: #333333; }
-#innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1 {
-  font-size: 30px; }
-  #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title {
-    text-align: center;
-    margin-right: 20px; }
-    #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title:before, #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title:after {
-      display: none; }
-    #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title a {
-      color: #124964;
-      text-decoration: none;
-      -webkit-transition: all 320ms ease;
-      -moz-transition: all 320ms ease;
-      -ms-transition: all 320ms ease;
-      -o-transition: all 320ms ease;
-      transition: all 320ms ease; }
-      #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title a:hover, #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title a:focus {
-        color: #5F9EA0; }
-      #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title a:active {
-        color: #00a0d2; }
+#innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title {
+  text-align: center;
+  margin-right: 20px; }
+  #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title:before, #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title:after {
+    display: none; }
+  #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title a {
+    color: #124964;
+    text-decoration: none;
+    -webkit-transition: all 320ms ease;
+    -moz-transition: all 320ms ease;
+    -ms-transition: all 320ms ease;
+    -o-transition: all 320ms ease;
+    transition: all 320ms ease; }
+    #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title a:hover, #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title a:focus {
+      color: #5F9EA0; }
+    #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header h1.entry-title a:active {
+      color: #00a0d2; }
 #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-caption {
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
@@ -657,8 +656,10 @@ html {
   #sidebar1 {
     display: none; }
 
-  #mainContent {
-    margin: 0 20px 0 0; }
+  .twoColumnBody #content {
+    width: 100%; }
+  .twoColumnBody #mainContent {
+    margin: 0; }
 
   #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-caption {
     transform: translate(-20%, 0); } }
@@ -670,6 +671,8 @@ html {
   #mainContent {
     margin: 0; }
 
+  #innerMainContent #articleContainer .rpgportfolio-format-gallery h1 {
+    font-size: 18px; }
   #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-caption {
     transform: translate(-15%, 0); }
 
@@ -690,7 +693,13 @@ html {
     border: none; }
 
   .twoColumnBody #header {
-    padding: 0; } }
+    padding: 0; }
+
+  #innerMainContent #articleContainer h1 {
+    font-size: 18px; }
+
+  .entry-footer {
+    font-size: 14px; } }
 /* 
 	Miscellaneous classes for reuse
 	------------------------------------------------
