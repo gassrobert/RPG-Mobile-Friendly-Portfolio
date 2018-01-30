@@ -301,9 +301,11 @@ html {
 				line-height: 1.5em; margin: 0; padding: 0;
 			}
 		}
-		img { display: block; margin: 10px auto; border: 3px outset $dark-grey; width: 100%; }
-		.entry-excerpt {
-			
+		img { display: block; margin: 10px auto; border: 3px outset $dark-grey; }
+		.standard-featured-link {
+			img {
+				width: 80%;
+			}
 		}
 		.button-container {
 			text-align: center;
@@ -348,6 +350,9 @@ html {
 /* Image Post Format */
 
 .rpgportfolio-format-image { 
+	.image-caption-mobile {
+		display: none;
+	}
 	.inner-rpgportfolio-format-image { 
 		margin: 0 auto; 
 		.background-image-large {
@@ -698,6 +703,9 @@ html {
 				display: block;	
 			}
 			.rpgportfolio-format-gallery {
+				img {
+					width: 100%;
+				}
 				.entry-header {
 					.carousel-caption {
 						transform: translate(-15%, 0);
@@ -707,6 +715,11 @@ html {
 		}
 	}
 	.rpgportfolio-format-image { 
+		.inner-rpgportfolio-format-image {
+			.image-caption-mobile {
+				display: block;
+			}
+		}
 		.inner-rpgportfolio-format-image { 
 			.background-image-large {
 				display: none;

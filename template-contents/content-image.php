@@ -66,6 +66,9 @@
 				
 			</header>
 
+			<div class="entry-excerpt image-caption-mobile">
+					<?php the_excerpt(); ?>
+			</div>
 
 		</div>	
 

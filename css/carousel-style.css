@@ -240,7 +240,6 @@
 @media screen and (max-width: 1050px) {
   .item img{
     height: 400px;
-    transform: translate(-5%, -5%);
   }
   .carousel-inner {
     position: relative;
