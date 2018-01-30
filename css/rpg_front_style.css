@@ -690,9 +690,35 @@ html {
   .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone {
     display: block; }
     .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 {
-      text-shadow: 2px 2px #000000; }
+      text-align: center;
+      margin-bottom: 5px; }
       .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 a {
-        text-decoration: none; }
+        text-decoration: none;
+        color: #124964;
+        -webkit-transition: all 320ms ease;
+        -moz-transition: all 320ms ease;
+        -ms-transition: all 320ms ease;
+        -o-transition: all 320ms ease;
+        transition: all 320ms ease; }
+        .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 a:hover, .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 a:focus {
+          color: #5F9EA0; }
+        .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 a:active {
+          color: #00a0d2; }
+    .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta {
+      margin-bottom: 10px;
+      text-shadow: none; }
+      .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta .posted-on, .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta .posted-in {
+        color: #898989; }
+      .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta a {
+        font-weight: 500;
+        color: #898989;
+        -webkit-transition: all 320ms ease;
+        -moz-transition: all 320ms ease;
+        -ms-transition: all 320ms ease;
+        -o-transition: all 320ms ease;
+        transition: all 320ms ease; }
+        .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta a:hover, .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta a:focus {
+          color: #333333; }
 
   #carousel-example-generic {
     display: none; }

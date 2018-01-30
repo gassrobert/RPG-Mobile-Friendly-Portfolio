@@ -730,11 +730,27 @@ html {
 			.background-image-smartphone {
 				display: block;
 				h3 {
-					text-shadow: 2px 2px $primary-black;
+					text-align: center; margin-bottom: 5px;
 					a {
 						text-decoration: none;
+						color: $active-blue;
+						@include animate( all, 320ms ); 
+						&:hover,
+						&:focus { color: $cadet-blue; }
+						&:active { color: $hover-blue; }
 					}
 				}
+				.entry-meta { margin-bottom: 10px; text-shadow: none;
+					.posted-on, .posted-in {
+						color: $light-grey; 
+					}
+					a { font-weight: 500; color: $light-grey; 
+						@include animate( all, 320ms );
+						&:hover,
+						&:focus { color: $dark-grey; }		
+					}
+				}
+
 			}
 		}
 	}
