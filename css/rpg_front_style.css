@@ -45,7 +45,7 @@
 */
 body {
   font: 100% Verdana, Arial, Helvetica, sans-serif;
-  background: #000000;
+  background-color: #1F1F1F;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -59,8 +59,6 @@ html {
   width: 99%;
   background: #F8F8FF;
   margin: 0 auto;
-  border-left: 3px solid #000000;
-  border-right: 3px solid #000000;
   border-top: 1px solid #000000;
   text-align: left; }
 
@@ -107,6 +105,28 @@ html {
           color: #00a0d2; }
         .twoColumnBody #header .leftMainMenu ul li a:active {
           color: #124964; }
+  @media screen and (max-width: 1023px) {
+    .twoColumnBody #header .leftMainMenu {
+      display: none; } }
+  .twoColumnBody #header .sideBarIcon {
+    display: none; }
+    .twoColumnBody #header .sideBarIcon .rpg-profile-icon-header {
+      -webkit-transition: all 320ms ease;
+      -moz-transition: all 320ms ease;
+      -ms-transition: all 320ms ease;
+      -o-transition: all 320ms ease;
+      transition: all 320ms ease;
+      color: #0073aa; }
+      .twoColumnBody #header .sideBarIcon .rpg-profile-icon-header:hover {
+        color: #00a0d2; }
+      .twoColumnBody #header .sideBarIcon .rpg-profile-icon-header:active {
+        color: #124964; }
+    @media screen and (max-width: 1023px) {
+      .twoColumnBody #header .sideBarIcon {
+        display: inline;
+        float: left;
+        margin: 15px 0 0 10px;
+        cursor: pointer; } }
   .twoColumnBody #header #searchform {
     color: #FFFFFF;
     float: right;
@@ -152,7 +172,7 @@ html {
   width: 26%;
   background-color: #1F1F1F;
   height: 100%;
-  border-left: 3px solid #000000;
+  border-right: 3px ridge #303030;
   border-top: 1px solid #000000;
   margin-left: 3px;
   overflow-y: auto;
@@ -566,7 +586,7 @@ html {
     width: 35px;
     height: 30px;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #124964;
     margin: 0 auto;
     line-height: 1em;
     padding-top: 10px;
@@ -576,9 +596,9 @@ html {
     -o-transition: all 320ms ease;
     transition: all 320ms ease; }
     #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a .link-icon:hover, #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a .link-icon:focus {
-      color: #5F9EA0; }
+      background-color: #5F9EA0; }
     #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a .link-icon:active {
-      color: #00a0d2; }
+      background-color: #00a0d2; }
   #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a:hover, #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a:focus {
     color: #5F9EA0; }
   #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a:active {

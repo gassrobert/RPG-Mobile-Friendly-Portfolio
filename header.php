@@ -10,6 +10,10 @@
 					)); 
 				?>
 			</div>
+			<div class="sideBarIcon">
+				<span id="btn-rpg-profile-icon" class="rpg-profile-icon-header dashicons-before 
+				dashicons-businessman"></span>
+			</div>
 		</nav>
 	</div> 
     <?php 

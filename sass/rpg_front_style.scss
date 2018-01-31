@@ -16,7 +16,7 @@
 */
 body  {
 	font: 100% Verdana, Arial, Helvetica, sans-serif;
-	background: $primary-black;
+	background-color: $off-black;
 	margin: 0; 
 	padding: 0;
 	text-align: center; 
@@ -31,8 +31,6 @@ html {
 		width: 99%;
 		background: $ghost-white;
 		margin: 0 auto; 
-		border-left: 3px solid $primary-black;
-		border-right: 3px solid $primary-black;
 		border-top: 1px solid $primary-black;
 		text-align: left; 
 	}	
@@ -82,6 +80,28 @@ html {
 					}
 				}
 			} 
+
+			@media screen and (max-width: 1023px) {
+				display: none;
+			}
+		}
+
+		.sideBarIcon {
+			display: none;
+
+			.rpg-profile-icon-header {
+				@include animate( all, 320ms );
+				color: $primary-blue;
+				&:hover { color: $hover-blue; }
+				&:active { color: $active-blue; }
+			}
+
+			@media screen and (max-width: 1023px) {
+				display: inline;
+				float: left;
+				margin: 15px 0 0 10px;
+				cursor: pointer;
+			}
 		}	
 
 		#searchform 
@@ -132,7 +152,7 @@ html {
 		width: 26%; 
 		background-color: $off-black; 
 		height: 100%;
-		border-left: 3px solid $primary-black;
+		border-right: 3px ridge $lighter-off-black;
 		border-top: 1px solid $primary-black;
 		margin-left: 3px;
 		overflow-y: auto;
@@ -527,14 +547,14 @@ html {
 						width: 35px;
 						height: 30px;
 						border-radius: 50%;
-						background-color: rgba(0,0,0,0.5);
+						background-color: $active-blue;
 						margin: 0 auto;
 						line-height: 1em;
 						padding-top: 10px;
 						@include animate( all, 320ms ); 
 						&:hover,
-						&:focus { color: $cadet-blue; }
-						&:active { color: $hover-blue; }
+						&:focus { background-color: $cadet-blue; }
+						&:active { background-color: $hover-blue; }
 					}
 
 					text-decoration: none;
