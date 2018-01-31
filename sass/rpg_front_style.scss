@@ -515,6 +515,42 @@ html {
 	}
 }
 
+/* Link Post Format */
+#innerMainContent {
+	#articleContainer {
+		.rpgportfolio-format-link {
+			.entry-title {
+				a {
+					.link-icon {
+						display: block;
+						color: #fff;
+						width: 35px;
+						height: 30px;
+						border-radius: 50%;
+						background-color: rgba(0,0,0,0.5);
+						margin: 0 auto;
+						line-height: 1em;
+						padding-top: 10px;
+						@include animate( all, 320ms ); 
+						&:hover,
+						&:focus { color: $cadet-blue; }
+						&:active { color: $hover-blue; }
+					}
+
+					text-decoration: none;
+					color: $active-blue;
+					font-size: 30px; 	
+					@include animate( all, 320ms ); 
+					&:hover,
+					&:focus { color: $cadet-blue; }
+					&:active { color: $hover-blue; }
+				}
+			}
+		}
+	}
+}
+
+
 /* 
 	Footer
 	------------------------------------------------

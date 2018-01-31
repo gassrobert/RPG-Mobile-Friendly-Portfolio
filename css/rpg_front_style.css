@@ -550,6 +550,40 @@ html {
     font-size: 45px;
     text-shadow: 3px 3px 1px #000000; }
 
+/* Link Post Format */
+#innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a {
+  text-decoration: none;
+  color: #124964;
+  font-size: 30px;
+  -webkit-transition: all 320ms ease;
+  -moz-transition: all 320ms ease;
+  -ms-transition: all 320ms ease;
+  -o-transition: all 320ms ease;
+  transition: all 320ms ease; }
+  #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a .link-icon {
+    display: block;
+    color: #fff;
+    width: 35px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    line-height: 1em;
+    padding-top: 10px;
+    -webkit-transition: all 320ms ease;
+    -moz-transition: all 320ms ease;
+    -ms-transition: all 320ms ease;
+    -o-transition: all 320ms ease;
+    transition: all 320ms ease; }
+    #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a .link-icon:hover, #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a .link-icon:focus {
+      color: #5F9EA0; }
+    #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a .link-icon:active {
+      color: #00a0d2; }
+  #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a:hover, #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a:focus {
+    color: #5F9EA0; }
+  #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a:active {
+    color: #00a0d2; }
+
 /* 
 	Footer
 	------------------------------------------------
