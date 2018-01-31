@@ -106,6 +106,14 @@ function rpg_portfolio_get_slides($attachments) {
 	return $output;
 }
 
+function rpg_portfolio_grab_url() {
+	if (!preg_match('/<a\s[^>]*?href=[\'"](.+?)[\'"]/i', get_the_content(), $links))
+	{
+		return false;
+	}
+	return esc_url_raw( $links[1] );
+}
+
 /* Footer Functions */
 function rpg_portfolio_footer_one_init() {
 
