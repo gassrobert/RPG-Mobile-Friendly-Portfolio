@@ -92,8 +92,10 @@ html {
 			.rpg-profile-icon-header {
 				@include animate( all, 320ms );
 				color: $primary-blue;
-				&:hover { color: $hover-blue; }
-				&:active { color: $active-blue; }
+				border: 3px solid $primary-blue;
+				border-radius: 10%;
+				&:hover { color: $hover-blue; border-color: $hover-blue; }
+				&:active { color: $active-blue; border-color: $active-blue; }
 			}
 
 			@media screen and (max-width: 1023px) {
@@ -113,6 +115,12 @@ html {
 			#s {
 				font-size: 18px;
 				width: 160px;
+
+				@media screen and (max-width:768px) { 
+					font-size: 14px;
+					width: 120px;
+					margin-top: 2px;
+				}
 			}
 
 			#searchsubmit {
@@ -136,6 +144,10 @@ html {
 				margin-top: 1px;
 				border-radius:5px;
 				padding:3px 5px 3px 5px; 
+			}
+
+			@media screen and (max-width:768px) { 
+				margin-right: 20px;
 			}
 		}
 	} 	
@@ -765,6 +777,13 @@ html {
 				.entry-header {
 					.carousel-caption {
 						transform: translate(-15%, 0);
+					}
+				}
+			}
+			.rpgportfolio-format-link {
+				.entry-title {
+					a {
+						font-size: 18px;
 					}
 				}
 			}
