@@ -1,5 +1,4 @@
   <div id="header">
-    <!-- <h1>Header</h1> -->
 	<div class="nav-collapse collapse navbar-responsive-collapse">
 		<nav>
 			<div class="leftMainMenu">  
@@ -11,8 +10,9 @@
 				?>
 			</div>
 			<div class="sideBarIcon">
-				<span id="btn-rpg-profile-icon" class="rpg-profile-icon-header dashicons-before 
-				dashicons-businessman"></span>
+				<div id="iconDiv">
+					<span id="btn-rpg-profile-icon" class="rpg-profile-icon-header dashicons-before dashicons-businessman"></span>
+				</div>
 			</div>
 		</nav>
 	</div> 
@@ -20,4 +20,4 @@
     get_search_form();
     ?>
     <br class="clearfloat" />
-  <!-- end #header --></div>
+  </div><!-- end #header -->

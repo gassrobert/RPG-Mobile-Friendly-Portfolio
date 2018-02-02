@@ -61,6 +61,12 @@ html {
   margin: 0 auto;
   border-top: 1px solid #000000;
   text-align: left; }
+  @media screen and (min-width: 1024px) {
+    .twoColumnBody #container #mainContent {
+      margin: 0 20px 0 26%; } }
+  @media screen and (max-width: 768px) {
+    .twoColumnBody #container #mainContent {
+      margin: 0; } }
 
 .background-image {
   background-position: center center;
@@ -110,7 +116,7 @@ html {
       display: none; } }
   .twoColumnBody #header .sideBarIcon {
     display: none; }
-    .twoColumnBody #header .sideBarIcon .rpg-profile-icon-header {
+    .twoColumnBody #header .sideBarIcon #iconDiv {
       -webkit-transition: all 320ms ease;
       -moz-transition: all 320ms ease;
       -ms-transition: all 320ms ease;
@@ -118,11 +124,12 @@ html {
       transition: all 320ms ease;
       color: #0073aa;
       border: 3px solid #0073aa;
-      border-radius: 10%; }
-      .twoColumnBody #header .sideBarIcon .rpg-profile-icon-header:hover {
+      border-radius: 5px;
+      margin-top: -3px; }
+      .twoColumnBody #header .sideBarIcon #iconDiv:hover {
         color: #00a0d2;
         border-color: #00a0d2; }
-      .twoColumnBody #header .sideBarIcon .rpg-profile-icon-header:active {
+      .twoColumnBody #header .sideBarIcon #iconDiv:active {
         color: #124964;
         border-color: #124964; }
     @media screen and (max-width: 1023px) {
@@ -308,6 +315,9 @@ html {
       text-align: center; }
     .twoColumnBody #sidebar1 #sidebar-widget .widget_archive ul {
       padding-left: 0; }
+  @media screen and (max-width: 768px) {
+    .twoColumnBody #sidebar1 {
+      display: none; } }
 
 /* 
 	Main Content
@@ -473,7 +483,7 @@ html {
         color: #00a0d2; }
 .rpgportfolio-format-audio .entry-meta {
   display: inline-block;
-  margin-bottom: 0; }
+  margin-bottom: 10px; }
   .rpgportfolio-format-audio .entry-meta a {
     font-weight: 500;
     color: #898989;
@@ -719,10 +729,6 @@ html {
     display: block; }
   .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone {
     display: none; } }
-/* Tablet */
-@media screen and (min-width: 1024px) {
-  .twoColumnBody #mainContent {
-    margin: 0 20px 0 26%; } }
 @media screen and (max-width: 1023px) {
   #sidebar1 {
     display: none; }
@@ -734,12 +740,6 @@ html {
     transform: translate(-20%, 0); } }
 /* Phone */
 @media screen and (max-width: 768px) {
-  #sidebar1 {
-    display: none; }
-
-  #mainContent {
-    margin: 0; }
-
   #innerMainContent #articleContainer #mobile-gallery {
     display: block; }
   #innerMainContent #articleContainer .rpgportfolio-format-gallery img {

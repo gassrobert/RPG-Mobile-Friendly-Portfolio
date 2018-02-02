@@ -33,6 +33,15 @@ html {
 		margin: 0 auto; 
 		border-top: 1px solid $primary-black;
 		text-align: left; 
+
+		#mainContent {
+			@media screen and (min-width: 1024px) {
+				margin: 0 20px 0 26%;
+			}
+			@media screen and (max-width:768px) {
+				margin: 0;
+			}
+		}
 	}	
 } 
 
@@ -89,14 +98,16 @@ html {
 		.sideBarIcon {
 			display: none;
 
-			.rpg-profile-icon-header {
-				@include animate( all, 320ms );
-				color: $primary-blue;
-				border: 3px solid $primary-blue;
-				border-radius: 10%;
-				&:hover { color: $hover-blue; border-color: $hover-blue; }
-				&:active { color: $active-blue; border-color: $active-blue; }
+			#iconDiv {
+					@include animate( all, 320ms );
+					color: $primary-blue;
+					border: 3px solid $primary-blue;
+					border-radius: 5px;
+					margin-top: -3px;
+					&:hover { color: $hover-blue; border-color: $hover-blue; }
+					&:active { color: $active-blue; border-color: $active-blue; }			
 			}
+
 
 			@media screen and (max-width: 1023px) {
 				display: inline;
@@ -294,6 +305,10 @@ html {
 			}
 		}
 
+		@media screen and (max-width:768px) {
+			display: none;
+		}
+
 	}	
 }   
 
@@ -445,7 +460,7 @@ html {
 			
 		}
 	}
-	.entry-meta { display: inline-block; margin-bottom: 0; 
+	.entry-meta { display: inline-block; margin-bottom: 10px; 
 		a { font-weight: 500; color: $light-grey; 
 			@include animate( all, 320ms );
 			&:hover,
@@ -728,14 +743,6 @@ html {
 		}
 	}	
 }
-/* Tablet */
-@media screen and (min-width: 1024px) {
-	.twoColumnBody {
-		#mainContent { 
-			margin: 0 20px 0 26%;
-		}	
-	} 
-}
 @media screen and (max-width: 1023px) {
 	#sidebar1 {
 		display: none;
@@ -759,12 +766,7 @@ html {
 /* Phone */
 @media screen and (max-width:768px) {
 
-	#sidebar1 {
-		display: none;
-	} 
-	#mainContent { 
-		margin: 0;
-	}
+
 	#innerMainContent {
 		#articleContainer {
 			#mobile-gallery {
