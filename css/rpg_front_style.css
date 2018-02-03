@@ -64,9 +64,17 @@ html {
   @media screen and (min-width: 1024px) {
     .twoColumnBody #container #mainContent {
       margin: 0 20px 0 26%; } }
+  @media screen and (max-width: 1023px) {
+    .twoColumnBody #container #mainContent {
+      margin: 0 20px 0 0; } }
   @media screen and (max-width: 768px) {
     .twoColumnBody #container #mainContent {
       margin: 0; } }
+  @media screen and (max-width: 768px) {
+    .twoColumnBody #container {
+      margin-right: 0;
+      margin-left: 0;
+      border: none; } }
 
 .background-image {
   background-position: center center;
@@ -180,6 +188,9 @@ html {
     @media screen and (max-width: 768px) {
       .twoColumnBody #header #searchform {
         margin-right: 20px; } }
+  @media screen and (max-width: 768px) {
+    .twoColumnBody #header {
+      padding: 0; } }
 
 /* 
 	Sidebar
@@ -315,6 +326,9 @@ html {
       text-align: center; }
     .twoColumnBody #sidebar1 #sidebar-widget .widget_archive ul {
       padding-left: 0; }
+  @media screen and (max-width: 1023px) {
+    .twoColumnBody #sidebar1 {
+      display: none; } }
   @media screen and (max-width: 768px) {
     .twoColumnBody #sidebar1 {
       display: none; } }
@@ -364,6 +378,9 @@ html {
       line-height: 1.5em;
       margin: 0;
       padding: 0; }
+    @media screen and (max-width: 768px) {
+      #innerMainContent #articleContainer h1 {
+        font-size: 18px; } }
   #innerMainContent #articleContainer img {
     display: block;
     margin: 10px auto;
@@ -410,6 +427,9 @@ html {
       #innerMainContent #articleContainer .entry-footer a:hover, #innerMainContent #articleContainer .entry-footer a:focus {
         color: #333333;
         font-weight: 500; }
+    @media screen and (max-width: 768px) {
+      #innerMainContent #articleContainer .entry-footer {
+        font-size: 14px; } }
 
 /* Image Post Format */
 .rpgportfolio-format-image .image-caption-mobile {
@@ -422,6 +442,52 @@ html {
     display: none; }
   .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone {
     display: none; }
+  @media screen and (max-width: 1076px) {
+    .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-large {
+      display: none; }
+    .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-tablet {
+      display: block; }
+    .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone {
+      display: none; } }
+  @media screen and (max-width: 768px) {
+    .rpgportfolio-format-image .inner-rpgportfolio-format-image .image-caption-mobile {
+      display: block; }
+    .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-large {
+      display: none; }
+    .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-tablet {
+      display: none; }
+    .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone {
+      display: block; }
+      .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 {
+        text-align: center;
+        margin-bottom: 5px; }
+        .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 a {
+          text-decoration: none;
+          color: #124964;
+          -webkit-transition: all 320ms ease;
+          -moz-transition: all 320ms ease;
+          -ms-transition: all 320ms ease;
+          -o-transition: all 320ms ease;
+          transition: all 320ms ease; }
+          .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 a:hover, .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 a:focus {
+            color: #5F9EA0; }
+          .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 a:active {
+            color: #00a0d2; }
+      .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta {
+        margin-bottom: 10px;
+        text-shadow: none; }
+        .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta .posted-on, .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta .posted-in {
+          color: #898989; }
+        .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta a {
+          font-weight: 500;
+          color: #898989;
+          -webkit-transition: all 320ms ease;
+          -moz-transition: all 320ms ease;
+          -ms-transition: all 320ms ease;
+          -o-transition: all 320ms ease;
+          transition: all 320ms ease; }
+          .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta a:hover, .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta a:focus {
+            color: #333333; } }
 .rpgportfolio-format-image .entry-header {
   position: relative;
   border: 3px outset #333333; }
@@ -540,6 +606,9 @@ html {
 /* Gallery Post Format */
 #innerMainContent #articleContainer #mobile-gallery {
   display: none; }
+  @media screen and (max-width: 768px) {
+    #innerMainContent #articleContainer #mobile-gallery {
+      display: block; } }
 #innerMainContent #articleContainer .rpgportfolio-format-gallery .carousel-inner {
   border: 3px ridge #333333; }
 #innerMainContent #articleContainer .rpgportfolio-format-gallery .item img {
@@ -581,6 +650,12 @@ html {
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
   transform: translate(-20%, 0); }
+  @media screen and (max-width: 1023px) {
+    #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-caption {
+      transform: translate(-20%, 0); } }
+  @media screen and (max-width: 768px) {
+    #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-caption {
+      transform: translate(-15%, 0); } }
 #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-control {
   font-size: 30px; }
   #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-control .glyphicon-chevron-right {
@@ -591,6 +666,12 @@ html {
     font-weight: bold;
     font-size: 45px;
     text-shadow: 3px 3px 1px #000000; }
+@media screen and (max-width: 768px) {
+  #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header #carousel-example-generic {
+    display: none; } }
+@media screen and (max-width: 768px) {
+  #innerMainContent #articleContainer .rpgportfolio-format-gallery img {
+    width: 100%; } }
 
 /* Link Post Format */
 #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a {
@@ -625,6 +706,9 @@ html {
     color: #5F9EA0; }
   #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a:active {
     color: #00a0d2; }
+  @media screen and (max-width: 768px) {
+    #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a {
+      font-size: 18px; } }
 
 /* 
 	Footer
@@ -719,93 +803,8 @@ html {
       .twoColumnBody #footer #rpg-rightFooter #rpg-copyright .menu {
         margin: 0; }
 
-/* Responsive */
-/*** Responsive Section ***/
-/* laptop+ */
-@media screen and (max-width: 1076px) {
-  .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-large {
-    display: none; }
-  .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-tablet {
-    display: block; }
-  .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone {
-    display: none; } }
-@media screen and (max-width: 1023px) {
-  #sidebar1 {
-    display: none; }
-
-  #mainContent {
-    margin: 0 20px 0 0; }
-
-  #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-caption {
-    transform: translate(-20%, 0); } }
-/* Phone */
-@media screen and (max-width: 768px) {
-  #innerMainContent #articleContainer #mobile-gallery {
-    display: block; }
-  #innerMainContent #articleContainer .rpgportfolio-format-gallery img {
-    width: 100%; }
-  #innerMainContent #articleContainer .rpgportfolio-format-gallery .entry-header .carousel-caption {
-    transform: translate(-15%, 0); }
-  #innerMainContent #articleContainer .rpgportfolio-format-link .entry-title a {
-    font-size: 18px; }
-
-  .rpgportfolio-format-image .inner-rpgportfolio-format-image .image-caption-mobile {
-    display: block; }
-  .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-large {
-    display: none; }
-  .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-tablet {
-    display: none; }
-  .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone {
-    display: block; }
-    .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 {
-      text-align: center;
-      margin-bottom: 5px; }
-      .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 a {
-        text-decoration: none;
-        color: #124964;
-        -webkit-transition: all 320ms ease;
-        -moz-transition: all 320ms ease;
-        -ms-transition: all 320ms ease;
-        -o-transition: all 320ms ease;
-        transition: all 320ms ease; }
-        .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 a:hover, .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 a:focus {
-          color: #5F9EA0; }
-        .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone h3 a:active {
-          color: #00a0d2; }
-    .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta {
-      margin-bottom: 10px;
-      text-shadow: none; }
-      .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta .posted-on, .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta .posted-in {
-        color: #898989; }
-      .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta a {
-        font-weight: 500;
-        color: #898989;
-        -webkit-transition: all 320ms ease;
-        -moz-transition: all 320ms ease;
-        -ms-transition: all 320ms ease;
-        -o-transition: all 320ms ease;
-        transition: all 320ms ease; }
-        .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta a:hover, .rpgportfolio-format-image .inner-rpgportfolio-format-image .background-image-smartphone .entry-meta a:focus {
-          color: #333333; }
-
-  #carousel-example-generic {
-    display: none; }
-
-  .twoColumnBody #container {
-    margin-right: 0;
-    margin-left: 0;
-    border: none; }
-
-  .twoColumnBody #header {
-    padding: 0; }
-
-  #innerMainContent #articleContainer h1 {
-    font-size: 18px; }
-
-  .entry-footer {
-    font-size: 14px; } }
 /* 
-	Miscellaneous classes for reuse
+	float related classes
 	------------------------------------------------
 */
 .fltrt {

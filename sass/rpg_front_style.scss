@@ -38,9 +38,18 @@ html {
 			@media screen and (min-width: 1024px) {
 				margin: 0 20px 0 26%;
 			}
+			@media screen and (max-width: 1023px) {
+				margin: 0 20px 0 0;
+			}
 			@media screen and (max-width:768px) {
 				margin: 0;
 			}
+		}
+
+		@media screen and (max-width:768px) {
+			margin-right: 0; 
+			margin-left: 0;
+			border: none;
 		}
 	}	
 } 
@@ -160,6 +169,10 @@ html {
 			@media screen and (max-width:768px) { 
 				margin-right: 20px;
 			}
+		}
+
+		@media screen and (max-width:768px) {
+			padding: 0;
 		}
 	} 	
 }  
@@ -305,6 +318,10 @@ html {
 			}
 		}
 
+		@media screen and (max-width: 1023px) {
+			display: none;
+		}
+
 		@media screen and (max-width:768px) {
 			display: none;
 		}
@@ -347,6 +364,10 @@ html {
 			&.entry-title {
 				line-height: 1.5em; margin: 0; padding: 0;
 			}
+
+			@media screen and (max-width:768px) {
+				font-size: 18px;
+			}
 		}
 		img { display: block; margin: 10px auto; border: 3px outset $dark-grey; }
 		.standard-featured-link {
@@ -388,6 +409,10 @@ html {
 					color: $dark-grey; font-weight: 500;
 				}				
 			}
+
+			@media screen and (max-width:768px) {
+				font-size: 14px;
+			}
 		}
 	}
 } 
@@ -410,6 +435,54 @@ html {
 		}
 		.background-image-smartphone {
 			display: none;
+		}
+
+		@media screen and (max-width: 1076px) {
+			.background-image-large {
+				display: none;
+			}
+			.background-image-tablet {
+				display: block;
+			}
+			.background-image-smartphone {
+				display: none;
+			}
+		}
+		@media screen and (max-width:768px) {
+			.image-caption-mobile {
+				display: block;
+			}
+			.background-image-large {
+				display: none;
+			}
+			.background-image-tablet {
+				display: none;
+			}
+			.background-image-smartphone {
+				display: block;
+				h3 {
+					text-align: center; margin-bottom: 5px;
+					a {
+						text-decoration: none;
+						color: $active-blue;
+						@include animate( all, 320ms ); 
+						&:hover,
+						&:focus { color: $cadet-blue; }
+						&:active { color: $hover-blue; }
+					}
+				}
+				.entry-meta { margin-bottom: 10px; text-shadow: none;
+					.posted-on, .posted-in {
+						color: $light-grey; 
+					}
+					a { font-weight: 500; color: $light-grey; 
+						@include animate( all, 320ms );
+						&:hover,
+						&:focus { color: $dark-grey; }		
+					}
+				}
+
+			}
 		}
 	}	
 	.entry-header { @extend %text-shadow; position: relative; border: 3px outset $dark-grey; }
@@ -508,6 +581,10 @@ html {
 	#articleContainer {
 		#mobile-gallery {
 			display: none;	
+
+			@media screen and (max-width:768px) {
+				display: block;	
+			}
 		}
 		.rpgportfolio-format-gallery {
 			.carousel-inner {
@@ -542,6 +619,15 @@ html {
 					background: rgba(0, 0, 0, 0.8);
 					width: 100%;
 					transform: translate(-20%, 0);
+
+					@media screen and (max-width: 1023px) {
+						transform: translate(-20%, 0);
+					}
+
+					@media screen and (max-width:768px) {
+						transform: translate(-15%, 0);
+					}
+
 				}
 				.carousel-control {
 					font-size: 30px;
@@ -556,6 +642,16 @@ html {
 						font-size: 45px;
 						text-shadow: 3px 3px 1px #000000;
 					}
+				}
+				#carousel-example-generic {
+					@media screen and (max-width:768px) {
+						display: none;
+					}
+				}
+			}
+			img {
+				@media screen and (max-width:768px) {	
+					width: 100%;
 				}
 			}
 		}
@@ -591,6 +687,10 @@ html {
 					&:hover,
 					&:focus { color: $cadet-blue; }
 					&:active { color: $hover-blue; }
+
+					@media screen and (max-width:768px) {
+						font-size: 18px;
+					}					
 				}
 			}
 		}
@@ -725,143 +825,8 @@ html {
 } 
 
 
-/* Responsive */
-/*** Responsive Section ***/
-/* laptop+ */
-@media screen and (max-width: 1076px) {
-	.rpgportfolio-format-image { 
-		.inner-rpgportfolio-format-image { 
-			.background-image-large {
-				display: none;
-			}
-			.background-image-tablet {
-				display: block;
-			}
-			.background-image-smartphone {
-				display: none;
-			}
-		}
-	}	
-}
-@media screen and (max-width: 1023px) {
-	#sidebar1 {
-		display: none;
-	} 
-	#mainContent { 
-		margin: 0 20px 0 0;
-	}
-	#innerMainContent {
-		#articleContainer {
-			.rpgportfolio-format-gallery {
-				.entry-header {
-					.carousel-caption {
-						transform: translate(-20%, 0);
-					}
-				}
-			}
-		}
-	}
-}
-
-/* Phone */
-@media screen and (max-width:768px) {
-
-
-	#innerMainContent {
-		#articleContainer {
-			#mobile-gallery {
-				display: block;	
-			}
-			.rpgportfolio-format-gallery {
-				img {
-					width: 100%;
-				}
-				.entry-header {
-					.carousel-caption {
-						transform: translate(-15%, 0);
-					}
-				}
-			}
-			.rpgportfolio-format-link {
-				.entry-title {
-					a {
-						font-size: 18px;
-					}
-				}
-			}
-		}
-	}
-	.rpgportfolio-format-image { 
-		.inner-rpgportfolio-format-image {
-			.image-caption-mobile {
-				display: block;
-			}
-		}
-		.inner-rpgportfolio-format-image { 
-			.background-image-large {
-				display: none;
-			}
-			.background-image-tablet {
-				display: none;
-			}
-			.background-image-smartphone {
-				display: block;
-				h3 {
-					text-align: center; margin-bottom: 5px;
-					a {
-						text-decoration: none;
-						color: $active-blue;
-						@include animate( all, 320ms ); 
-						&:hover,
-						&:focus { color: $cadet-blue; }
-						&:active { color: $hover-blue; }
-					}
-				}
-				.entry-meta { margin-bottom: 10px; text-shadow: none;
-					.posted-on, .posted-in {
-						color: $light-grey; 
-					}
-					a { font-weight: 500; color: $light-grey; 
-						@include animate( all, 320ms );
-						&:hover,
-						&:focus { color: $dark-grey; }		
-					}
-				}
-
-			}
-		}
-	}
-	#carousel-example-generic {
-		display: none;
-	}
-
-	.twoColumnBody {
-		#container { 
-			margin-right: 0; 
-			margin-left: 0;
-			border: none;
-		}	
-	} 
-	.twoColumnBody {
-		#header {
-			padding: 0;
-		}
-	}
-	#innerMainContent {
-		#articleContainer {
-			h1 {
-				font-size: 18px;
-			}
-		}
-	}
-	.entry-footer {
-		font-size: 14px;
-	}	
-}
-
-
 /* 
-	Miscellaneous classes for reuse
+	float related classes
 	------------------------------------------------
 */
 .fltrt { 
