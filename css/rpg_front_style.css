@@ -290,6 +290,30 @@ html {
           color: #00a0d2; }
         .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .icons-wrapper .rpg-profile-icon-sidebar:active {
           color: #124964; }
+    .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .rpg-profile-sidebar .sideBarIcon {
+      display: none; }
+      .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .rpg-profile-sidebar .sideBarIcon #iconDiv {
+        -webkit-transition: all 320ms ease;
+        -moz-transition: all 320ms ease;
+        -ms-transition: all 320ms ease;
+        -o-transition: all 320ms ease;
+        transition: all 320ms ease;
+        color: #0073aa;
+        border: 3px solid #0073aa;
+        border-radius: 5px;
+        margin-top: -3px; }
+        .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .rpg-profile-sidebar .sideBarIcon #iconDiv:hover {
+          color: #00a0d2;
+          border-color: #00a0d2; }
+        .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .rpg-profile-sidebar .sideBarIcon #iconDiv:active {
+          color: #124964;
+          border-color: #124964; }
+      @media screen and (max-width: 1023px) {
+        .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .rpg-profile-sidebar .sideBarIcon {
+          display: block;
+          width: 100%;
+          z-index: 9999;
+          cursor: pointer; } }
   .twoColumnBody #sidebar1 #sidebar-widget {
     text-align: left;
     margin-top: 20px;
@@ -331,7 +355,9 @@ html {
       display: none; } }
   @media screen and (max-width: 768px) {
     .twoColumnBody #sidebar1 {
-      display: none; } }
+      display: none;
+      width: 450px;
+      z-index: 9999; } }
 
 /* 
 	Main Content

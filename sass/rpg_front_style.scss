@@ -267,6 +267,31 @@ html {
 					&:hover { color: $hover-blue; }
 					&:active { color: $active-blue; }
 				}
+			}
+
+			.rpg-profile-sidebar {
+				.sideBarIcon {
+					display: none;
+
+					#iconDiv {
+							@include animate( all, 320ms );
+							color: $primary-blue;
+							border: 3px solid $primary-blue;
+							border-radius: 5px;
+							margin-top: -3px;
+							&:hover { color: $hover-blue; border-color: $hover-blue; }
+							&:active { color: $active-blue; border-color: $active-blue; }			
+					}
+
+
+					@media screen and (max-width:1023px) {
+						display: block;
+
+						width: 100%;
+						z-index: 9999;
+						cursor: pointer;
+					}					
+				}
 			}						
 		}
 
@@ -324,6 +349,9 @@ html {
 
 		@media screen and (max-width:768px) {
 			display: none;
+
+			width: 450px;
+			z-index: 9999;
 		}
 
 	}	
