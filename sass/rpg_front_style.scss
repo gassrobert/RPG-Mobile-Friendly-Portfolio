@@ -22,6 +22,10 @@ body  {
 	text-align: center; 
 	color: $primary-black;
 	height: 100%;
+	
+	&.no-scroll {
+		overflow-y: hidden;
+	}
 }
 html {
 	height: 100%;
@@ -354,7 +358,17 @@ html {
 			z-index: 9999;
 		}
 
-	}	
+	}
+	.sidebar-overlay {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: $off-black;
+		position: fixed;
+		z-index: 3;
+		display: none;
+	}		
 }   
 
 

@@ -9,7 +9,7 @@
 					)); 
 				?>
 			</div>
-			<div class="sideBarIcon">
+			<div class="sideBarIcon js-toggleSidebar">
 				<div id="iconDiv">
 					<span id="btn-rpg-profile-icon" class="rpg-profile-icon-header dashicons-before dashicons-businessman"></span>
 				</div>

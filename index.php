@@ -18,6 +18,7 @@
 
 <body class="twoColumnBody">
 <?php get_sidebar(); ?>
+<div class="sidebar-overlay"></div>
 <div id="container"> 
   <div id="mainContent">
     <?php get_header(); ?>
@@ -47,7 +48,7 @@
 	<?php get_footer(); ?>
 
 
-<!-- end #container --></div>
+</div><!-- end #container -->
 <?php wp_footer(); ?>
 </body>
 </html>

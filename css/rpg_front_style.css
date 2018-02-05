@@ -51,6 +51,8 @@ body {
   text-align: center;
   color: #000000;
   height: 100%; }
+  body.no-scroll {
+    overflow-y: hidden; }
 
 html {
   height: 100%; }
@@ -358,6 +360,15 @@ html {
       display: none;
       width: 450px;
       z-index: 9999; } }
+.twoColumnBody .sidebar-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1F1F1F;
+  position: fixed;
+  z-index: 3;
+  display: none; }
 
 /* 
 	Main Content

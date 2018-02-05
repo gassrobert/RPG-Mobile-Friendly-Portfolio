@@ -73,7 +73,7 @@ if(!get_option('gplus_handler')){
 
 	<div class="rpg-profile-sidebar-preview">
 		<div class="rpg-profile-sidebar">
-			<div class="sideBarIcon">
+			<div class="sideBarIcon js-toggleSidebar">
 				<div id="iconDiv">
 					<span id="btn-rpg-profile-icon" class="rpg-profile-icon-header dashicons-before dashicons-businessman"></span>
 				</div>
