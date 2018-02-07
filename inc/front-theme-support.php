@@ -1,10 +1,15 @@
 <?php
 
-/* Activate Nav Menu Option */
+/* Activate Nav Menu Options */
 function rpg_portfolio_register_nav_menu() {
 	register_nav_menu( 'rpg-profile-primary-menu', 'Header Navigation Menu' );
 }
 add_action( 'init', 'rpg_portfolio_register_nav_menu' );
+
+function rpg_portfolio_register_mobile_sidebar_nav_menu() {
+	register_nav_menu( 'rpg-profile-mobile-sidebar-menu', 'Mobile Sidebar Navigation Menu' );
+}
+add_action( 'init', 'rpg_portfolio_register_mobile_sidebar_nav_menu' );
 
 /* Sidebar Functions */
 function rpg_portfolio_sidebar_init() {

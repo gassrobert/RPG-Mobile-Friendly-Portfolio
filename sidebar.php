@@ -67,9 +67,6 @@ if(!get_option('gplus_handler')){
 ?>
 <div id="sidebar1" class="scrollbar">
 	<div class="force-overflow">
- <!--    <div class="scrollbar" id="style-1">
-        <div class="force-overflow"></div>
-    </div>  -->
 
 	<div class="rpg-profile-sidebar-preview">
 		<div class="rpg-profile-sidebar">
@@ -78,10 +75,19 @@ if(!get_option('gplus_handler')){
 					<span id="btn-rpg-profile-icon" class="rpg-profile-icon-header dashicons-before dashicons-businessman"></span>
 				</div>
 			</div>
+
+			<div class="mobileMenuContainer">
+				<?php 
+					wp_nav_menu(array(
+						'theme_location' => 'rpg-profile-mobile-sidebar-menu', 
+						'container' => false
+					)); 
+				?>				
+			</div>
+
 			<div class="image-container">
 				<?php if (!get_option('profile_picture')) { ?>
 					<div id="rpg-profile-picture-preview" class="rpg-profile-picture"><?php echo $defaultprofilepicture; ?></div>
-					<?php /* ?><div id="rpg-profile-picture-preview" class="rpg-profile-picture" style="background-image: url(<?php print $defaultprofilepicture; ?>);"></div><?php */ ?>
 				<?php } else { ?>
 					<div id="rpg-profile-picture-preview" class="rpg-profile-picture" style="background-image: url(<?php print $profilepicture; ?>);"></div>				
 				<?php } ?>
