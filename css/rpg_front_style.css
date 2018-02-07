@@ -51,8 +51,9 @@ body {
   text-align: center;
   color: #000000;
   height: 100%; }
-  body.no-scroll {
-    overflow-y: hidden; }
+  @media screen and (max-width: 1023px) {
+    body.no-scroll {
+      overflow-y: hidden; } }
 
 html {
   height: 100%; }

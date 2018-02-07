@@ -15,5 +15,6 @@ jQuery(document).ready(function($) {
 		$( '#sidebar1' ).css("width", "100%");
 		$( '#sidebar1' ).css("z-index", "9999");		
 		$( '.sidebar-overlay' ).fadeToggle( 320 );
+		$( 'body' ).toggleClass( 'no-scroll' );
 	});	
 });
