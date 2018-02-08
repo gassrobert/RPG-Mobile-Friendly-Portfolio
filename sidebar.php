@@ -82,10 +82,11 @@ if(!get_option('gplus_handler')){
 						'theme_location' => 'rpg-profile-mobile-sidebar-menu', 
 						'container' => false
 					)); 
-				?>				
+				?>			
 			</div>
 
 			<div class="image-container">
+
 				<?php if (!get_option('profile_picture')) { ?>
 					<div id="rpg-profile-picture-preview" class="rpg-profile-picture"><?php echo $defaultprofilepicture; ?></div>
 				<?php } else { ?>

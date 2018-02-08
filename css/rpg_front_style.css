@@ -226,6 +226,40 @@ html {
     padding: 20px;
     text-align: center;
     width: 90%; }
+    .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .mobileMenuContainer {
+      display: none; }
+      .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .mobileMenuContainer .menu {
+        padding-left: 0; }
+      .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .mobileMenuContainer ul {
+        position: relative; }
+        .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .mobileMenuContainer ul li {
+          list-style-type: none;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          float: left;
+          margin-bottom: 10px; }
+          .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .mobileMenuContainer ul li.current-menu-item a {
+            color: #0073aa; }
+          .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .mobileMenuContainer ul li a {
+            -webkit-transition: all 320ms ease;
+            -moz-transition: all 320ms ease;
+            -ms-transition: all 320ms ease;
+            -o-transition: all 320ms ease;
+            transition: all 320ms ease;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #FFFFFF;
+            margin-left: 10px;
+            margin-right: 10px; }
+            .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .mobileMenuContainer ul li a:hover {
+              color: #00a0d2; }
+            .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .mobileMenuContainer ul li a:active {
+              color: #124964; }
+      @media screen and (max-width: 1023px) {
+        .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .mobileMenuContainer {
+          display: block; } }
     .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .dashicons dashicons-businessman {
       width: 100px;
       height: 100px; }
@@ -234,6 +268,9 @@ html {
       width: 100%;
       overflow: hidden;
       text-align: center; }
+      @media screen and (max-width: 1023px) {
+        .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .image-container {
+          border-top: 1px solid #333333; } }
     .twoColumnBody #sidebar1 .rpg-profile-sidebar-preview .rpg-profile-picture {
       width: 96px;
       height: 96px;

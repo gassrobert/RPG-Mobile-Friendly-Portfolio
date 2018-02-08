@@ -223,12 +223,54 @@ html {
 			text-align: center;
 			width: 90%;
 
+			.mobileMenuContainer {
+				display: none;
+				.menu {
+					padding-left: 0;
+				}
+				ul {
+					position: relative;
+					li {
+						list-style-type: none;
+						list-style: none;
+						margin: 0;
+						padding: 0;
+						float: left;
+						margin-bottom: 10px;
+						&.current-menu-item {
+							a {
+								color: $primary-blue;
+							}
+						}
+						a {
+							@include animate( all, 320ms ); 
+							font-size: 18px;
+							font-weight: bold;
+							text-decoration: none;
+							color: $white;	
+							margin-left: 10px;	
+							margin-right: 10px;
+							&:hover { color: $hover-blue; }
+							&:active { color: $active-blue; }	
+						}
+					}
+				}
+				@media screen and (max-width:1023px) {
+					display: block;
+				} 
+			}
+
 			.dashicons dashicons-businessman {
 				width: 100px;
 				height: 100px;
 			}	
 			
-			.image-container { display: block; width: 100%; overflow: hidden; text-align: center; }
+			.image-container { 
+				display: block; width: 100%; overflow: hidden; text-align: center;  
+				@media screen and (max-width:1023px) {
+					border-top: 1px solid $dark-grey;
+				}
+			}
 			.rpg-profile-picture { 
 				width: 96px; 
 				height: 96px; 
