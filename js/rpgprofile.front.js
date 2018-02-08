@@ -11,9 +11,7 @@ jQuery(document).ready(function($) {
 
 	// Mobile sidebar toggling
 	$(document).on('click', '.js-toggleSidebar', function() {
-		$( '#sidebar1' ).fadeToggle( 320 );
-		$( '#sidebar1' ).css("width", "100%");
-		$( '#sidebar1' ).css("z-index", "9999");		
+		$( '#sidebar1' ).toggleClass( 'sidebarToggle');	
 		$( '.sidebar-overlay' ).fadeToggle( 320 );
 		$( 'body' ).toggleClass( 'no-scroll' );
 	});	

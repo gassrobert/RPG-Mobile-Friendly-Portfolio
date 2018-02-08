@@ -348,18 +348,6 @@ html {
 				}
 			}
 		}
-
-		@media screen and (max-width: 1023px) {
-			display: none;
-		}
-
-		@media screen and (max-width:768px) {
-			display: none;
-
-			width: 450px;
-			z-index: 9999;
-		}
-
 	}
 	.sidebar-overlay {
 		top: 0;
@@ -378,6 +366,18 @@ html {
 			display: block;
 		}
 	}	
+	@media screen and (max-width: 1023px) {
+		#sidebar1 {
+			display: none;
+
+			&.sidebarToggle {
+				@include animate( all, 500ms ); 
+				display: block;
+				width: 100%;
+				z-index: 9999;
+			}
+		}	
+	}
 }   
 
 

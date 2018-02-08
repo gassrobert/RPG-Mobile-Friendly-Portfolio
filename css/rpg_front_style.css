@@ -353,14 +353,6 @@ html {
       text-align: center; }
     .twoColumnBody #sidebar1 #sidebar-widget .widget_archive ul {
       padding-left: 0; }
-  @media screen and (max-width: 1023px) {
-    .twoColumnBody #sidebar1 {
-      display: none; } }
-  @media screen and (max-width: 768px) {
-    .twoColumnBody #sidebar1 {
-      display: none;
-      width: 450px;
-      z-index: 9999; } }
 .twoColumnBody .sidebar-overlay {
   top: 0;
   left: 0;
@@ -375,6 +367,18 @@ html {
   @media screen and (max-width: 1023px) {
     .twoColumnBody .mobileMenuContainer {
       display: block; } }
+@media screen and (max-width: 1023px) {
+  .twoColumnBody #sidebar1 {
+    display: none; }
+    .twoColumnBody #sidebar1.sidebarToggle {
+      -webkit-transition: all 500ms ease;
+      -moz-transition: all 500ms ease;
+      -ms-transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+      transition: all 500ms ease;
+      display: block;
+      width: 100%;
+      z-index: 9999; } }
 
 /* 
 	Main Content
