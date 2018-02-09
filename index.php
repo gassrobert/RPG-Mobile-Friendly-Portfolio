@@ -34,6 +34,17 @@
 							get_template_part( 'template-contents/content', get_post_format() );
 
 						endwhile;
+				?>
+
+						<div class="post-nav-left">
+							<?php previous_posts_link('<< Newer Posts'); ?>
+						</div>
+						<div class="post-nav-right">
+							<?php next_posts_link('Older Posts >>'); ?>
+						</div>
+
+
+				<?php 
 
 					endif;
 
