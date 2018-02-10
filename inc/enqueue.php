@@ -35,3 +35,13 @@ function load_dashicons_front_end() {
   wp_enqueue_style( 'dashicons' );
 }
 add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
+
+// Create a function that includes the path to the favicon
+function add_favicon() {
+    $favicon_url = get_template_directory_uri() . '/portfolio-favicon.png';
+    echo '<link rel="shortcut icon" href="' . $favicon_url . '" />';
+}
+// Make sure function runs on the login page and admin pages  
+add_action('login_head', 'add_favicon');
+add_action('admin_head', 'add_favicon'); 
+add_action('wp_head', 'add_favicon');
