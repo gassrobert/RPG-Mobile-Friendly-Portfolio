@@ -46,6 +46,10 @@
 
 				<?php 
 
+					elseif( !have_posts() ):
+
+						echo "<br><br><br><br><br><h1>No Posts were Found.</h1><br><br><br><br><br>";
+
 					endif;
 
 				?>
