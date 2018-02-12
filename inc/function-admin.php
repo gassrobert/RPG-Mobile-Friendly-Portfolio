@@ -2,7 +2,7 @@
 
 /*
 	
-@package RPG Portfolio
+@package RPG Mobile Friendly Portfolio
 	
 	========================
 		ADMIN PAGE
@@ -38,12 +38,12 @@ function rpg_portfolio_enqueue_custom_admin_style( $hook ) {
 }
 add_action( 'admin_enqueue_scripts', 'rpg_portfolio_enqueue_custom_admin_style' );
 /**
- * Set up admin menu subpages
+ * Set up admin menu page
  */
 
 function rpg_portfolio_add_admin_page() {
 
-	// Generate RPG Portfolio Admin Page
+	// Generate RPG Mobile Friendly Portfolio Admin Page
 	add_menu_page( 'Portfolio Personal Data', 'Personal Data', 'manage_options', 'rpg_portfolio_admin', 'rpg_portfolio_admin_create_page', 'dashicons-businessman', 110 );
 }
 add_action( 'admin_menu', 'rpg_portfolio_add_admin_page', 'rpg_portfolio_sidebar_name' );
@@ -51,7 +51,6 @@ add_action( 'admin_menu', 'rpg_portfolio_add_admin_page', 'rpg_portfolio_sidebar
 // Template submenu functions
 function rpg_portfolio_admin_create_page() {
 	require_once( get_template_directory() . '/inc/templates/rpg-portfolio-admin-options.php' );
-	//echo "<h1>BizDoc Online Admin Options</h1>";
 }
 
 //Activate custom settings
@@ -86,12 +85,11 @@ function sunset_custom_settings() {
 }
 
 // Sidebar Options Functions
-// rpg_profile_sidebar_options
 function rpg_profile_sidebar_options() {
 	echo '<h3 class="title">Customize your personal data for the portfolio.</h3>';
 }
 
-// rpg_profile_sidebar_profile_picture
+// HTML for Sidebar Profile Picture
 function rpg_profile_sidebar_profile_picture() {
 	$picture = esc_attr( get_option( 'profile_picture' ) );
 	if( empty($picture) ){
@@ -102,52 +100,55 @@ function rpg_profile_sidebar_profile_picture() {
 	
 }
 
-// rpg_profile_sidebar_name
+// HTML for Sidebar Name
 function rpg_profile_sidebar_name() {
 	$profilename = esc_attr( get_option( 'profile_name' ) );
 	echo '<input type="text" name="profile_name" value="'.$profilename.'" placeholder="Full Name" class="txtProfile" />';
 }
 
-// rpg_profile_sidebar_email
+// HTML for Sidebar Email
 function rpg_profile_sidebar_email() {
 	$profileemail = esc_attr( get_option( 'profile_email' ) );
 	echo '<input type="text" name="profile_email" value="'.$profileemail.'" placeholder="Email" class="txtProfile" />';
 }
 
-// rpg_profile_sidebar_phone
+// HTML for Sidebar Phone
 function rpg_profile_sidebar_phone() {
 	$profilephone = esc_attr( get_option( 'profile_phone' ) );
 	echo '<input type="text" name="profile_phone" value="'.$profilephone.'" placeholder="Phone" class="txtProfile" />';
 }
 
-// rpg_profile_sidebar_location
+// HTML for Sidebar Location
 function rpg_profile_sidebar_location() {
 	$profilelocation = esc_attr( get_option( 'profile_location' ) );
 	echo '<input type="text" name="profile_location" value="'.$profilelocation.'" placeholder="Location" class="txtProfile" />';
 }
 
-// rpg_profile_sidebar_intro
+// HTML for Sidebar Intro
 function rpg_profile_sidebar_intro() {
 	$profileintro = esc_attr( get_option( 'profile_intro' ) );
 	echo '<textarea name="profile_intro" placeholder="Introduction" class="txtProfile">'.$profileintro.'</textarea>';
-	// echo '<input type="text" name="profile_intro" value="'.$profileintro.'" placeholder="Introduction" /><p class="description">Introduction</p>';
 }
 
+// HTML for Sidebar Github icon
 function rpg_profile_sidebar_github() {
 	$github = esc_attr( get_option( 'github_handler' ) );
 	echo '<input type="text" name="github_handler" value="'.$github.'" placeholder="Github account URL" class="txtProfile" />';
 }
 
+// HTML for Sidebar Twitter icon
 function rpg_profile_sidebar_twitter() {
 	$twitter = esc_attr( get_option( 'twitter_handler' ) );
 	echo '<input type="text" name="twitter_handler" value="'.$twitter.'" placeholder="Twitter account URL" class="txtProfile" />';
 }
 
+// HTML for Sidebar Facebook icon
 function rpg_profile_sidebar_facebook() {
 	$facebook = esc_attr( get_option( 'facebook_handler' ) );
 	echo '<input type="text" name="facebook_handler" value="'.$facebook.'" placeholder="Facebook account URL" class="txtProfile" />';
 }
 
+// HTML for Sidebar Google+ icon
 function rpg_profile_sidebar_gplus() {
 	$gplus = esc_attr( get_option( 'gplus_handler' ) );
 	echo '<input type="text" name="gplus_handler" value="'.$gplus.'" placeholder="Google+ account URL" class="txtProfile" />';

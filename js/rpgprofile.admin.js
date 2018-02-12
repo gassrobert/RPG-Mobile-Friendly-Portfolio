@@ -1,7 +1,9 @@
 jQuery(document).ready( function($){
 
+/* Image Uploader for the profile image */
 	var mediaUploader;
 
+/* Upload the Image */
 	$('#upload-button').on('click',function(e) {
 		e.preventDefault();
 		if( mediaUploader ){
@@ -27,6 +29,7 @@ jQuery(document).ready( function($){
 		
 	});
 
+/* Delete the image */
 	$('#remove-picture').on('click',function(e){
 		e.preventDefault();
 		var answer = confirm("Are you sure you want to remove your Profile Picture?");

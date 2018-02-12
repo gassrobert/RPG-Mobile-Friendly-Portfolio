@@ -58,8 +58,8 @@
 
     </div> <!-- End of #innerMainContent -->
 
-	<!-- end #mainContent --></div>
-	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+	</div><!-- end #mainContent -->
+	<br class="clearfloat" /><!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
 	<?php get_footer(); ?>
 
 

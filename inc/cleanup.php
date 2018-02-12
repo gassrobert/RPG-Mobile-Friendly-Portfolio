@@ -2,7 +2,7 @@
 
 /*
 	
-@package RPG Portfolio
+@package RPG Mobile Friendly Portfolio
 	
 	========================
 		REMOVE GENERATOR VERSION NUMBER

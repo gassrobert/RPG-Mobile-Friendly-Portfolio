@@ -37,15 +37,6 @@
 				
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					
-					<?php /* if( has_post_thumbnail() ): ?>
-						
-						<div class="pull-right"><?php the_post_thumbnail('thumbnail'); ?></div>
-				
-					<?php endif; */ ?>
-					<?php /* ?>
-					<small><?php the_category(' '); ?> || <?php the_tags(); ?> || <?php edit_post_link(); ?></small>
-					<?php */ ?>
-					
 					<div id="featuredContentBox">						
 					
 					<?php the_content(); ?>
@@ -58,15 +49,6 @@
 						<div class="col-xs-6 text-left" style="display:inline;"><?php previous_post_link(); ?></div>
 						<div class="col-xs-6 text-right" style="display:inline; float: right;"><?php next_post_link(); ?></div>
 					</div>
-					
-					<?php /*
-						if( comments_open() ){ 
-							comments_template(); 
-						} else {
-							echo '<h5 class="text-center">Sorry, Comments are closed!</h5>';
-						}
-						*/
-					 ?>
 				
 				</article>
 
@@ -81,7 +63,7 @@
     </div> <!-- End of #innerMainContent -->
 
 	<!-- end #mainContent --></div>
-	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+	<br class="clearfloat" /><!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
 	<?php get_footer(); ?>
 
 

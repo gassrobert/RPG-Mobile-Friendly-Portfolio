@@ -1,6 +1,6 @@
 <?php
+/* Set Profile Name for the Copyright */
 if(!get_option('profile_name')){
-    // update_option('profile_name', 'first_default_value');
 	$profilename = "Default User Name";
 } else {
 	$profilename = esc_attr( get_option( 'profile_name' ) );	
@@ -17,6 +17,7 @@ if(!get_option('profile_name')){
   	<div id="rpg-rightFooter">
 		<div id="rpg-footerMenu">  
 			<?php 
+				/* Primary Menu for Footer */
 				wp_nav_menu(array(
 					'theme_location' => 'rpg-profile-primary-menu', 
 					'container' => false

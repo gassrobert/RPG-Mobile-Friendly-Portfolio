@@ -1,5 +1,14 @@
 <?php
 
+/*
+	
+@package RPG Mobile Friendly Portfolio
+	
+	========================
+		FRONT THEME SUPPORT FUNCTIONS
+	========================
+*/
+
 /* Activate Nav Menu Options */
 function rpg_portfolio_register_nav_menu() {
 	register_nav_menu( 'rpg-profile-primary-menu', 'Header Navigation Menu' );

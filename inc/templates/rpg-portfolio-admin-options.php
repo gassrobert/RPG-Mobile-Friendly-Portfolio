@@ -13,54 +13,63 @@ if(!get_option('profile_picture')){
 	// Obtain the saved profile picture
 	$profilepicture = esc_attr( get_option( 'profile_picture' ) );
 }
+// Obtain the Profile Name
 if(!get_option('profile_name')){
 
 	$profilename = "Default User Name";
 } else {
 	$profilename = esc_attr( get_option( 'profile_name' ) );	
 }
+// Obtain the Email
 if(!get_option('profile_email')){
 
 	$profileemail = "";
 } else {
 	$profileemail = esc_attr( get_option( 'profile_email' ) );
 }
+// Obtain the Phone
 if(!get_option('profile_phone')){
 
 	$profilephone = "";
 } else {
 	$profilephone = esc_attr( get_option( 'profile_phone' ) );
 }
+// Obtain the Location
 if(!get_option('profile_location')){
 
 	$profilelocation = "";
 } else {
 	$profilelocation = esc_attr( get_option( 'profile_location' ) );
 }
+// Obtain the Intro
 if(!get_option('profile_intro')){
 
 	$profileintro = "Default introduction";
 } else {
 	$profileintro = esc_attr( get_option( 'profile_intro' ) );
 }
+// Obtain the Github URL
 if(!get_option('github_handler')){
 
 	$profilegithub = "";
 } else {
 	$profilegithub = esc_attr( get_option( 'github_handler' ) );
 }
+// Obtain the Twitter URL
 if(!get_option('twitter_handler')){
 
 	$profiletwitter = "";
 } else {
 	$profiletwitter = esc_attr( get_option( 'twitter_handler' ) );
 }
+// Obtain the Facebook URL
 if(!get_option('facebook_handler')){
 
 	$profilefacebook = "";
 } else {
 	$profilefacebook = esc_attr( get_option( 'facebook_handler' ) );
 }
+// Obtain the Google+ URL
 if(!get_option('gplus_handler')){
 
 	$profilegplus = "";
@@ -70,6 +79,7 @@ if(!get_option('gplus_handler')){
 
 ?>
 
+<!--  Display the Sidebar Preview Values -->
 <h1>Portfolio Personal Data</h1>
 <div class="rpg-profile-sidebar-preview">
 	<div class="rpg-profile-sidebar">
@@ -125,6 +135,7 @@ if(!get_option('gplus_handler')){
 	</div>
 </div>
 
+<!-- Display the form for updating the Profile Values -->
 <div class="rpg-profile-general-form-container">
 	<form id="submitForm" method="post" action="options.php" class="rpg-profile-general-form">
 		<?php settings_fields( 'rpg-profile-settings-group' ); ?>

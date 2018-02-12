@@ -14,13 +14,6 @@
     <?php get_header(); ?>
   	<div id="innerMainContent">
 		<div id="pageContainer">
-				<?php
-
-					if ( have_posts() ):
-
-						while( have_posts() ): the_post();
-
-				?>
 
 						<header class="entry-header">
 						<?php the_title( '<h1 class="entry-title"></h1>' ); ?>
@@ -33,12 +26,7 @@
 						the_content();
 				?>
 						</div>
-				<?php
-						endwhile;
 
-					endif;
-
-				?>
 		</div>
 
     </div> <!-- End of #innerMainContent -->

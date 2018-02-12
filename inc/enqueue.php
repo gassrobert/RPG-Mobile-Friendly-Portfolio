@@ -2,7 +2,7 @@
 
 /*
 	
-@package RPG Portfolio
+@package RPG Mobile Friendly Portfolio
 	
 	========================
 		ADMIN ENQUEUE FUNCTIONS
@@ -36,6 +36,9 @@ function load_dashicons_front_end() {
 }
 add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
 
+/********************************************************/
+// Adding Favicons in WordPress Front-end
+/********************************************************/
 // Create a function that includes the path to the favicon
 function add_favicon() {
     $favicon_url = get_template_directory_uri() . '/portfolio-favicon.png';
