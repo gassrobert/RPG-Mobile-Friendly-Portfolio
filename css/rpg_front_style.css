@@ -376,14 +376,16 @@ html {
       list-style-type: none;
       list-style: none; }
     .twoColumnBody #sidebar1 #sidebar-widget h2 {
-      margin: 0; }
+      margin: 0;
+      padding-top: 5px;
+      padding-bottom: 5px; }
     .twoColumnBody #sidebar1 #sidebar-widget .rpg-portfolio-widget-title {
       text-align: center;
       color: #FFFFFF;
       display: block;
       background-color: #303030;
       font: 100% Verdana, Arial, Helvetica, sans-serif;
-      font-weight: 300; }
+      font-weight: 800; }
     .twoColumnBody #sidebar1 #sidebar-widget table {
       margin-top: 10px;
       margin-bottom: 10px;

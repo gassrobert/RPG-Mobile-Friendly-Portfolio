@@ -16,19 +16,19 @@
   	<div id="innerMainContent">
 		<div id="articleContainer">
 
-						<header class="entry-header">
-						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<header class="entry-header">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-						</header>
+			</header>
 
-						<div class="entry-content">
+			<div class="entry-content">
 				<?php
     				while ( have_posts() ) : the_post();
 						the_content();
 					endwhile;
 					wp_reset_query();
 				?>
-						</div>
+			</div>
 
 		</div>
 
