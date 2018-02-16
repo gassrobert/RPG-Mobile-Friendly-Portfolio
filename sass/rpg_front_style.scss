@@ -861,6 +861,18 @@ html {
 	
 }
 
+/* Page */
+.page-content {
+	a {
+		@include animate( all, 320ms ); 
+		color: $active-blue;
+		text-decoration: none;
+		&:hover,
+		focus { color: $cadet-blue; text-decoration: underline; }
+		&:active { color: $hover-blue; text-decoration: underline; }	
+	}
+}
+
 
 /* 
 	Footer

@@ -21,7 +21,7 @@
 
 			</header>
 
-			<div class="entry-content">
+			<div class="entry-content page-content">
 				<?php
     				while ( have_posts() ) : the_post();
 						the_content();
