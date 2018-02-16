@@ -46,8 +46,8 @@
 					<hr>
 
 					<div class="row">
-						<div class="col-xs-6 text-left" style="display:inline;"><?php previous_post_link(); ?></div>
-						<div class="col-xs-6 text-right" style="display:inline; float: right;"><?php next_post_link(); ?></div>
+						<div class="col-xs-6 text-left" id="post-single-nav-left" style="display:inline;"><?php next_post_link('&laquo; %link'); ?></div>
+						<div class="col-xs-6 text-right" id="post-single-nav-right" style="display:inline; float: right;"><?php previous_post_link('%link &raquo;'); ?></div>
 					</div>
 				
 				</article>
