@@ -444,6 +444,8 @@ html {
         transition: all 320ms ease; }
         #innerMainContent #articleContainer article .entry-meta .standard-entry-meta a:hover, #innerMainContent #articleContainer article .entry-meta .standard-entry-meta a:focus {
           color: #333333; }
+  #innerMainContent #articleContainer .single-article {
+    padding-top: 0; }
   #innerMainContent #articleContainer h1 {
     font-size: 36px;
     font-weight: 600;

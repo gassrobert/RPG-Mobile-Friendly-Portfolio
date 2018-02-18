@@ -35,7 +35,7 @@
 				<?php the_title('<h1>','</h1>' ); ?>
 				</div>
 				
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<article id="post-<?php the_ID(); ?>" <?php post_class('single-article'); ?>>
 
 					<div class="entry-meta">
 						<div class="standard-entry-meta"><?php echo rpg_portfolio_posted_meta(); ?></div>
