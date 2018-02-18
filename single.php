@@ -36,6 +36,10 @@
 				</div>
 				
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+					<div class="entry-meta">
+						<div class="standard-entry-meta"><?php echo rpg_portfolio_posted_meta(); ?></div>
+					</div>
 					
 					<div id="featuredContentBox">						
 					
