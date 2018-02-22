@@ -74,11 +74,11 @@
       <div class="entry-excerpt">
         <?php the_excerpt(); ?>
       </div>
+    <?php } // End of if (!empty(the_excerpt())) { ?>
 
       <div class="button-container">
-        <a href="<?php the_permalink(); ?>" class="btn-rpgportfolio"><?php _e( 'Read More' ); ?></a>
+        <a href="<?php the_permalink(); ?>" class="btn-rpgportfolio"><?php _e( 'View More' ); ?></a>
       </div>
-    <?php } // End of if (!empty(the_excerpt())) { ?>
 
   </div> <!-- .entry-content -->
 

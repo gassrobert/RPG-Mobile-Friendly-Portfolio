@@ -23,8 +23,18 @@
 		<?php
 		echo rpg_portfolio_get_embedded_media( array('audio','iframe') );
 		?>
-
 	</div> <!-- .entry-content -->
+
+		<?php if (!empty(the_excerpt())) { ?>
+			<div class="entry-excerpt">
+				<?php the_excerpt(); ?>
+			</div>
+		<?php } // End of if (!empty(the_excerpt())) { ?>
+
+		<div class="button-container">
+			<a href="<?php the_permalink(); ?>" class="btn btn-rpgportfolio"><?php _e( 'View More' ); ?></a>
+		</div>
+
 
 	<footer class="entry-footer">
 		<?php echo rpg_portfolio_tags(); ?>	

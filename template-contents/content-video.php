@@ -32,10 +32,11 @@
 				<?php the_excerpt(); ?>
 			</div>
 
-			<div class="button-container">
-				<a href="<?php the_permalink(); ?>" class="btn btn-rpgportfolio"><?php _e( 'Read More' ); ?></a>
-			</div>
 		<?php } // End of if (!empty(the_excerpt())) { ?>
+
+		<div class="button-container">
+			<a href="<?php the_permalink(); ?>" class="btn btn-rpgportfolio"><?php _e( 'View More' ); ?></a>
+		</div>
 
 	</div> <!-- .entry-content -->
 
