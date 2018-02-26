@@ -17,6 +17,54 @@ add_theme_support( 'post-formats', $formats );
 add_theme_support( 'post-thumbnails' );
 add_post_type_support( 'page', 'excerpt' );
 
+/**
+ * Custom Post Type
+ */
+function register_featured_post_content_type() {
+	$post_labels = array(
+		'name' 			    => 'Featured Posts',
+		'singular_name' 	=> 'Featured Post',
+		'add_new' 		    => 'Add New',
+		'add_new_item'  	=> 'Add New Featured Post',
+		'edit'		        => 'Edit',
+		'edit_item'	        => 'Edit Featured Post (To convert a Featured Post to a Post install the Post Type Switcher plugin)',
+		'new_item'	        => 'New Featured Post',
+		'view' 			    => 'View Featured Post',
+		'view_item' 		=> 'View Featured Post',
+		'search_item' 		=> 'Search Featured Posts',
+		'search_term'   	=> 'Search Featured Posts',
+		'parent' 		    => 'Parent Featured Post',
+		'not_found' 		=> 'No Featured Posts found',
+		'not_found_in_trash' 	=> 'No Featured Posts in Trash', 
+		'parent_item_colon' => 'Parent Featured Posts:'
+	);
+	$args = array (
+		'labels' => $post_labels,
+		'public' => true,
+		'has_archive' => true,
+		'publicly_queryable' => true,
+		'query_var' => true, 
+		'rewrite' => true,
+		'capability_type' => 'post',
+		'hierarchical' => false,
+		'supports' => array(
+			'title',
+			'editor',
+			'post-formats', 
+			'excerpt',
+			'thumbnail',
+			'revisions',
+		),
+		'taxonomies' => array('category', 'post_tag'),
+		'menu_position' => 5, 
+		'menu_icon' => 'dashicons-admin-post',
+		'exclude_from_search' => false
+	);
+	register_post_type( 'featuredPosts', $args );
+}
+add_action( 'init', 'register_featured_post_content_type' );
+
+
 /* Activate HTML5 features */
 add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption' ) );
 

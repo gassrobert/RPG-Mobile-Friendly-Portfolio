@@ -1,20 +1,20 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
-	<head>
-		<title><?php bloginfo('name'); ?><?php wp_title('-'); ?></title>
-		<meta charset="<?php bloginfo('charset'); ?>">
-		<meta name="description" content="<?php bloginfo('description'); ?>">
+  <head>
+    <title><?php bloginfo('name'); ?><?php wp_title('-'); ?></title>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="description" content="<?php bloginfo('description'); ?>">
 
-		<!-- Mobile viewport optimized -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<!-- pingback -->
-		<?php if( is_singular() && pings_open( get_queried_object() ) ): ?>
-			<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-		<?php endif; ?>	
+    <!-- pingback -->
+    <?php if( is_singular() && pings_open( get_queried_object() ) ): ?>
+      <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    <?php endif; ?> 
 
-		<?php wp_head(); ?>
-	</head>
+    <?php wp_head(); ?>
+  </head>
 
 <body class="twoColumnBody">
 <?php get_sidebar(); ?>
@@ -22,45 +22,74 @@
 <div id="container"> 
   <div id="mainContent">
     <?php get_header(); ?>
-  	<div id="innerMainContent">
-		<div id="articleContainer">
+    <div id="innerMainContent">
+    <div id="articleContainer">
 
-				<?php
+        <?php
+          // Obtain the current page of the pagination
+          $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-					if ( have_posts() ):
+          // Check if it's at the beginning of the pagination
 
-						while( have_posts() ): the_post();
+          if(1 == $paged):
+            $args = array(
+                'post_type' => 'featuredPosts',
+                'orderby' => 'ID',
+                'order' => 'DESC',
+            );
 
-							get_template_part( 'template-contents/content', get_post_format() );
+            // if it's the first page then display any featured posts first
+            $featuredPosts = new WP_Query($args);
 
-						endwhile;
-				?>
+              if ( $featuredPosts->have_posts() ):
+                while( $featuredPosts->have_posts() ): $featuredPosts->the_post(); 
+            ?>
+                <?php get_template_part( 'template-contents/content', get_post_format() ); ?>         
+            <?php 
+                endwhile;
+              endif;
+              
+            wp_reset_postdata();
+          endif; // End of if(1 == $paged) {
 
-						<div class="post-nav-left">
-							<?php previous_posts_link('<< Newer Posts'); ?>
-						</div>
-						<div class="post-nav-right">
-							<?php next_posts_link('Older Posts >>'); ?>
-						</div>
 
 
-				<?php 
+          // display regular posts
+          if ( have_posts() ):
 
-					elseif( !have_posts() ):
+            while( have_posts() ): the_post();
 
-						echo "<br><br><br><br><br><h1>No Posts were Found.</h1><br><br><br><br><br>";
+              get_template_part( 'template-contents/content', get_post_format() );
 
-					endif;
+            endwhile;
+        ?>
 
-				?>
-				
-		</div>
+            <div class="post-nav-left">
+              <?php previous_posts_link('<< Newer Posts'); ?>
+            </div>
+            <div class="post-nav-right">
+              <?php next_posts_link('Older Posts >>'); ?>
+            </div>
+
+
+        <?php 
+          wp_reset_postdata();
+          
+          elseif( !have_posts() ):
+
+            echo "<br><br><br><br><br><h1>No Posts were Found.</h1><br><br><br><br><br>";
+
+          endif;
+
+        ?>
+        
+    </div>
 
     </div> <!-- End of #innerMainContent -->
 
-	</div><!-- end #mainContent -->
-	<br class="clearfloat" /><!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
-	<?php get_footer(); ?>
+  </div><!-- end #mainContent -->
+  <br class="clearfloat" /><!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <?php get_footer(); ?>
 
 
 </div><!-- end #container -->

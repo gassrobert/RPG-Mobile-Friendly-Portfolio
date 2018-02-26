@@ -37,9 +37,11 @@
 				
 				<article id="post-<?php the_ID(); ?>" <?php post_class('single-article'); ?>>
 
+
 					<div class="entry-meta">
 						<div class="standard-entry-meta"><?php echo rpg_portfolio_posted_meta(); ?></div>
 					</div>
+
 					
 					<div id="featuredContentBox">						
 					
@@ -50,30 +52,32 @@
 					<hr>
 
 					<div class="row">
-					<?php if($link = get_next_posts_link()) { ?>
 						<div class="col-xs-6 text-left" id="post-single-nav-left" style="display:inline;"><?php next_post_link('&laquo; %link'); ?></div>
-					<?php } else { ?>
 
+						<?php if($link = get_previous_posts_link()) { ?>
+
+						<div class="col-xs-6 text-right" id="post-single-nav-right" style="display:inline; float: right;"><?php previous_post_link('%link &raquo;'); ?></div>
+						<?php } else { ?>
+						
 							<?php 		
-								$first_result = get_oldest_featured_post_id();
+								$last_result = get_most_recent_regular_post_id();
 
-								if (isset($first_result)) {
-									foreach ( $first_result as $first_result_row ) {
-										$first_post_id = $first_result_row->id;
+								if (isset($last_result)) {
+									foreach ( $last_result as $last_result_row ) {
+										$last_post_id = $last_result_row->id;
 									}
 
-									$last_regular_post_title = get_the_title($first_post_id);
-									$last_regular_post_url = get_post_permalink($first_post_id);
+									$last_regular_post_title = get_the_title($last_post_id);
+									$last_regular_post_url = get_post_permalink($last_post_id);
 								?>
 
-								<div class="col-xs-6 text-left" id="post-single-nav-left" style="display:inline; float: left;">&laquo; <a href="<?php echo $last_regular_post_url; ?>"><?php echo $last_regular_post_title; ?></a></div>
+								<div class="col-xs-6 text-right" id="post-single-nav-right" style="display:inline; float: right;"><a href="<?php echo $last_regular_post_url; ?>"><?php echo $last_regular_post_title; ?></a> &raquo;</div>
 								
 							<?php } else { ?>
-								<div class="col-xs-6 text-left" id="post-single-nav-left" style="display:inline; float: left;">&nbsp;</div>
+								<div class="col-xs-6 text-right" id="post-single-nav-right" style="display:inline; float: right;">&nbsp;</div>
 							<?php } // End of if (isset($last_result)) { ?>
 
-					<?php } // End of if($link = get_previous_posts_link()) { ?>
-						<div class="col-xs-6 text-right" id="post-single-nav-right" style="display:inline; float: right;"><?php previous_post_link('%link &raquo;'); ?></div>
+						<?php } // End of if($link = get_previous_posts_link()) { ?>
 					</div>
 				
 				</article>

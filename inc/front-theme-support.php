@@ -128,6 +128,24 @@ function rpg_portfolio_grab_url() {
 	return esc_url_raw( $links[1] );
 }
 
+/* Regular Post Type Functions */
+function get_oldest_featured_post_id()
+{
+	global $wpdb;
+	$last_result_set = $wpdb->get_results("SELECT id FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'featuredposts' ORDER BY id ASC LIMIT 1");
+	return $last_result_set;
+}
+
+
+/* Single Custom Post Type Functions */
+function get_most_recent_regular_post_id()
+{
+	global $wpdb;
+	$last_result_set = $wpdb->get_results("SELECT id FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'post' ORDER BY id DESC LIMIT 1");
+	return $last_result_set;
+}
+
+
 /* Footer Functions */
 function rpg_portfolio_footer_one_init() {
 
