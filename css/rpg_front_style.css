@@ -888,7 +888,7 @@ html {
       text-decoration: underline; }
 
 /* Page */
-.page-content p a {
+.page-content a {
   -webkit-transition: all 320ms ease;
   -moz-transition: all 320ms ease;
   -ms-transition: all 320ms ease;
@@ -896,11 +896,11 @@ html {
   transition: all 320ms ease;
   color: #0073aa;
   text-decoration: none; }
-  .page-content p a:hover,
-  .page-content p a focus {
+  .page-content a:hover,
+  .page-content a focus {
     color: #5F9EA0;
     text-decoration: underline; }
-  .page-content p a:active {
+  .page-content a:active {
     color: #124964;
     text-decoration: underline; }
 
