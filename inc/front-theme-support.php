@@ -132,8 +132,15 @@ function rpg_portfolio_grab_url() {
 function get_oldest_featured_post_id()
 {
 	global $wpdb;
-	$last_result_set = $wpdb->get_results("SELECT id FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'featuredposts' ORDER BY id ASC LIMIT 1");
-	return $last_result_set;
+	$oldest_result_set = $wpdb->get_results("SELECT id FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'featuredposts' ORDER BY id ASC LIMIT 1");
+	return $oldest_result_set;
+}
+
+function get_newer_post_id($current_post_id)
+{
+	global $wpdb;
+	$newer_result_set = $wpdb->get_results("SELECT id FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'post' AND id > $current_post_id LIMIT 1");
+	return $newer_result_set;
 }
 
 
@@ -141,8 +148,15 @@ function get_oldest_featured_post_id()
 function get_most_recent_regular_post_id()
 {
 	global $wpdb;
-	$last_result_set = $wpdb->get_results("SELECT id FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'post' ORDER BY id DESC LIMIT 1");
-	return $last_result_set;
+	$most_recent_result_set = $wpdb->get_results("SELECT id FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'post' ORDER BY id DESC LIMIT 1");
+	return $most_recent_result_set;
+}
+
+function get_earlier_featured_post_id($current_post_id)
+{
+	global $wpdb;
+	$earlier_result_set = $wpdb->get_results("SELECT id FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'featuredposts' AND id < $current_post_id LIMIT 1");
+	return $earlier_result_set;
 }
 
 

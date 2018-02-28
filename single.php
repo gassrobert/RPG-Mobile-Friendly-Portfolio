@@ -50,7 +50,10 @@
 					<hr>
 
 					<div class="row">
-					<?php if($link = get_next_posts_link()) { ?>
+					<?php 
+						$current_post_id = get_the_ID();
+						if (get_newer_post_id($current_post_id)) {
+					?>
 						<div class="col-xs-6 text-left" id="post-single-nav-left" style="display:inline;"><?php next_post_link('&laquo; %link'); ?></div>
 					<?php } else { ?>
 

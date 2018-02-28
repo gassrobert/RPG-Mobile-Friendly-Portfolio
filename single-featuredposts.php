@@ -54,9 +54,12 @@
 					<div class="row">
 						<div class="col-xs-6 text-left" id="post-single-nav-left" style="display:inline;"><?php next_post_link('&laquo; %link'); ?></div>
 
-						<?php if($link = get_previous_posts_link()) { ?>
+						<?php 
+							$current_post_id = get_the_ID();
+							if (get_earlier_featured_post_id($current_post_id)) {
+						?>
 
-						<div class="col-xs-6 text-right" id="post-single-nav-right" style="display:inline; float: right;"><?php previous_post_link('%link &raquo;'); ?></div>
+							<div class="col-xs-6 text-right" id="post-single-nav-right" style="display:inline; float: right;"><?php previous_post_link('%link &raquo;'); ?></div>
 						<?php } else { ?>
 						
 							<?php 		
@@ -77,7 +80,7 @@
 								<div class="col-xs-6 text-right" id="post-single-nav-right" style="display:inline; float: right;">&nbsp;</div>
 							<?php } // End of if (isset($last_result)) { ?>
 
-						<?php } // End of if($link = get_previous_posts_link()) { ?>
+						<?php } // End of if (get_earlier_featured_post_id($current_post_id)) { */ ?>
 					</div>
 				
 				</article>
