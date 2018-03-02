@@ -23,67 +23,67 @@
   <div id="mainContent">
     <?php get_header(); ?>
     <div id="innerMainContent">
-    <div id="articleContainer">
+      <div id="articleContainer">
 
-        <?php
-          // Obtain the current page of the pagination
-          $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+          <?php
+            // Obtain the current page of the pagination
+            $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-          // Check if it's at the beginning of the pagination
+            // Check if it's at the beginning of the pagination and the page isn't a category or an archive
 
-          if(1 == $paged):
-            $args = array(
-                'post_type' => 'featuredPosts',
-                'orderby' => 'ID',
-                'order' => 'DESC',
-            );
+            if(1 == $paged && !is_category() && !is_archive() ):
+              $args = array(
+                  'post_type' => 'featuredPosts',
+                  'orderby' => 'ID',
+                  'order' => 'DESC',
+              );
 
-            // if it's the first page then display any featured posts first
-            $featuredPosts = new WP_Query($args);
+              // if it's the first page and it's not a category or n archive then display any featured posts first
+              $featuredPosts = new WP_Query($args);
 
-              if ( $featuredPosts->have_posts() ):
-                while( $featuredPosts->have_posts() ): $featuredPosts->the_post(); 
-            ?>
-                <?php get_template_part( 'template-contents/content', get_post_format() ); ?>         
-            <?php 
-                endwhile;
-              endif;
-              
+                if ( $featuredPosts->have_posts() ):
+                  while( $featuredPosts->have_posts() ): $featuredPosts->the_post(); 
+              ?>
+                  <?php get_template_part( 'template-contents/content', get_post_format() ); ?>         
+              <?php 
+                  endwhile;
+                endif;
+                
+              wp_reset_postdata();
+            endif; // End of if(1 == $paged) {
+
+
+
+            // display regular posts
+            if ( have_posts() ):
+
+              while( have_posts() ): the_post();
+
+                get_template_part( 'template-contents/content', get_post_format() );
+
+              endwhile;
+          ?>
+
+              <div class="post-nav-left">
+                <?php previous_posts_link('<< Newer Posts'); ?>
+              </div>
+              <div class="post-nav-right">
+                <?php next_posts_link('Older Posts >>'); ?>
+              </div>
+
+
+          <?php 
             wp_reset_postdata();
-          endif; // End of if(1 == $paged) {
+            
+            elseif( !have_posts() ):
 
+              echo "<br><br><br><br><br><h1>No Posts were Found.</h1><br><br><br><br><br>";
 
+            endif;
 
-          // display regular posts
-          if ( have_posts() ):
-
-            while( have_posts() ): the_post();
-
-              get_template_part( 'template-contents/content', get_post_format() );
-
-            endwhile;
-        ?>
-
-            <div class="post-nav-left">
-              <?php previous_posts_link('<< Newer Posts'); ?>
-            </div>
-            <div class="post-nav-right">
-              <?php next_posts_link('Older Posts >>'); ?>
-            </div>
-
-
-        <?php 
-          wp_reset_postdata();
+          ?>
           
-          elseif( !have_posts() ):
-
-            echo "<br><br><br><br><br><h1>No Posts were Found.</h1><br><br><br><br><br>";
-
-          endif;
-
-        ?>
-        
-    </div>
+      </div> <!-- End of #articleContainer -->
 
     </div> <!-- End of #innerMainContent -->
 
