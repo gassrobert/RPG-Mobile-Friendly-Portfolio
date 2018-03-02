@@ -31,7 +31,7 @@
 
             // Check if it's at the beginning of the pagination and the page isn't a category or an archive
 
-            if(1 == $paged && !is_category() && !is_archive() ):
+            if(1 == $paged && !is_category() && !is_archive() && !is_search() ):
               $args = array(
                   'post_type' => 'featuredPosts',
                   'orderby' => 'ID',
