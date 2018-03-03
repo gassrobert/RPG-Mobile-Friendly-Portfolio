@@ -54,6 +54,36 @@
 
 
 
+
+            // Get the featured posts by category if a category is selected
+            if (is_category()) {
+              $categories = get_the_category();
+              $category_id = $categories[0]->cat_ID;
+
+              $args = array(
+                  'post_type' => 'featuredPosts',
+                  'cat' => $category_id, 
+                  'orderby' => 'ID',
+                  'order' => 'DESC',
+              );
+
+              $featuredPosts = new WP_Query($args);
+
+                if ( $featuredPosts->have_posts() ):
+                  while( $featuredPosts->have_posts() ): $featuredPosts->the_post(); 
+              ?>
+                  <?php get_template_part( 'template-contents/content', get_post_format() ); ?>         
+              <?php 
+                  endwhile;
+                endif;
+                
+              wp_reset_postdata();
+            } // End of if (is_category()) {
+
+              
+
+
+
             // display regular posts
             if ( have_posts() ):
 
