@@ -91,7 +91,7 @@
 				
 		?>
 				
-		</div>
+		</div> <!-- End off #articleContainer -->
 
     </div> <!-- End of #innerMainContent -->
 

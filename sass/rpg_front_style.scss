@@ -834,6 +834,12 @@ html {
 		focus { color: $cadet-blue; text-decoration: underline; }
 		&:active { color: $hover-blue; text-decoration: underline; }		
 	}
+
+	.aligncenter {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
 
 #post-single-nav-left {

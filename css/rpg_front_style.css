@@ -850,6 +850,10 @@ html {
   #featuredContentBox a:active {
     color: #00a0d2;
     text-decoration: underline; }
+#featuredContentBox .aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
 
 #post-single-nav-left {
   font-weight: bold; }
