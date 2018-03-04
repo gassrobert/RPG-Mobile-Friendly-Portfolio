@@ -1,7 +1,4 @@
 /* Styling for Bootstrap carousel used in Gallery Post Format */
-.item img{
-    transform: translate(-10%, 0);
-}
 .sr-only{
 	position: absolute;
 	left: -9999999px;
