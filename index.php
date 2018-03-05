@@ -57,25 +57,31 @@
 
             // Get the featured posts by category if a category is selected
             if (is_category()) {
-              $categories = get_the_category();
-              $category_id = $categories[0]->cat_ID;
+
+              $category_id = $wp_query->get_queried_object_id();
 
               $args = array(
-                  'post_type' => 'featuredPosts',
+                  'post_type' => 'featuredPosts', 
                   'cat' => $category_id, 
                   'orderby' => 'ID',
-                  'order' => 'DESC',
+                  'order' => 'DESC'
               );
 
               $featuredPosts = new WP_Query($args);
 
                 if ( $featuredPosts->have_posts() ):
                   while( $featuredPosts->have_posts() ): $featuredPosts->the_post(); 
-              ?>
+                    if (has_category( $category_id ) ):
+              ?> 
                   <?php get_template_part( 'template-contents/content', get_post_format() ); ?>         
               <?php 
-                  endwhile;
-                endif;
+                    endif;  // End of if (has_category( $category_id ) ) {              
+                  endwhile; 
+
+                  $featuredPostExists = 1;
+                else:
+                  $featuredPostExists = 0;
+                endif; 
                 
               wp_reset_postdata();
             } // End of if (is_category()) {
@@ -105,7 +111,7 @@
           <?php 
             wp_reset_postdata();
             
-            elseif( !have_posts() ):
+            elseif( !have_posts() && ($featuredPostExists == 0) ):
 
               echo "<br><br><br><br><br><h1>No Posts were Found.</h1><br><br><br><br><br>";
 
