@@ -56,7 +56,7 @@
 
 
             // Get the featured posts by category if a category is selected
-            if (is_category()) {
+            if (is_category() && 1 == $paged):
 
               $category_id = $wp_query->get_queried_object_id();
 
@@ -84,7 +84,7 @@
                 endif; 
                 
               wp_reset_postdata();
-            } // End of if (is_category()) {
+            endif; // End of if (is_category()) {
 
               
 
