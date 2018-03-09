@@ -88,7 +88,45 @@
 
               
 
+            // Get the featured posts by date if an archive selected
+            if (is_archive() && 1 == $paged && !is_category() && !is_search()):
+ 
+              $year     = get_query_var('year');
+              $monthnum = get_query_var('monthnum');
 
+              $args = array(
+                  'post_type' => 'featuredPosts', 
+                  'date_query' => array(
+                    array(
+                      'year'  => $year,
+                      'month' => $monthnum
+                    ),
+                  ),
+                  'orderby' => 'ID',
+                  'order' => 'DESC'
+              );
+
+              $featuredPosts = new WP_Query($args);
+
+                if ( $featuredPosts->have_posts() ):
+                  while( $featuredPosts->have_posts() ): $featuredPosts->the_post(); 
+                    if ($featuredPosts):
+              ?> 
+                  <?php get_template_part( 'template-contents/content', get_post_format() ); ?>         
+              <?php 
+                    endif; // End of if ($featuredPosts):       
+                  endwhile; // End of while( $featuredPosts->have_posts()
+
+                  $featuredPostExists = 1;
+                else:
+                  $featuredPostExists = 0;
+                endif; // End of if ( $featuredPosts->have_posts() ):
+                
+              wp_reset_postdata();
+
+            endif; // End of if (is_archive()) {   
+
+              
 
             // display regular posts
             if ( have_posts() ):
