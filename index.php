@@ -128,40 +128,6 @@
 
 
 
-            // Get the featured posts by search term if a search is performed
-            if (is_search() && 1 == $paged && !is_category() && !is_archive()):
-
-              $search_term    = get_query_var('s');
-
-              $args = array(
-                  'post_type' => 'featuredPosts', 
-                  's' => $search_term, 
-                  'orderby' => 'ID',
-                  'order' => 'DESC'
-              );
-
-              $featuredPosts = new WP_Query($args);
-
-                if ( $featuredPosts->have_posts() ):
-                  while( $featuredPosts->have_posts() ): $featuredPosts->the_post(); 
-                    if ($featuredPosts):
-              ?> 
-                  <?php get_template_part( 'template-contents/content', get_post_format() ); ?>         
-              <?php 
-                    endif; // End of if ($featuredPosts):       
-                  endwhile; // End of while( $featuredPosts->have_posts()
-
-                  $featuredPostExists = 1;
-                else:
-                  $featuredPostExists = 0;
-                endif; // End of if ( $featuredPosts->have_posts() ):
-                
-              wp_reset_postdata();
-
-            endif; // End of if (is_search()) {    
-
-              
-
             // display regular posts
             if ( have_posts() ):
 
