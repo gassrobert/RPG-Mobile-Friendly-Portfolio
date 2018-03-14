@@ -86,4 +86,6 @@
   <?php echo rpg_portfolio_tags(); ?>
   </footer>
 
+  <?php wp_reset_postdata(); ?>
+
 </article>

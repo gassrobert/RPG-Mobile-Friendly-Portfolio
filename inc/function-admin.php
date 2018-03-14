@@ -17,6 +17,9 @@ add_theme_support( 'post-formats', $formats );
 add_theme_support( 'post-thumbnails' );
 add_post_type_support( 'page', 'excerpt' );
 
+/* Activate HTML5 features */
+add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption' ) );
+
 /**
  * Custom Post Type
  */
@@ -65,8 +68,7 @@ function register_featured_post_content_type() {
 add_action( 'init', 'register_featured_post_content_type' );
 
 
-/* Activate HTML5 features */
-add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption' ) );
+
 
 /**
  * Enqueue admin css and js

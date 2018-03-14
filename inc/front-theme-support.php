@@ -77,8 +77,6 @@ function rpg_portfolio_get_attachment( $num = 1 ){
 			$output = $attachments;
 		endif;	
 
-		wp_reset_postdata();
-
 	endif; 
 	return $output;
 }
