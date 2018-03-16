@@ -426,6 +426,8 @@ html {
 /* Standard Post Format */
 #innerMainContent {
   padding: 10px 50px; }
+  #innerMainContent #articleContainer hr {
+    color: #F0F8FF; }
   #innerMainContent #articleContainer article {
     padding-top: 20px;
     margin-bottom: 20px; }
