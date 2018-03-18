@@ -80,21 +80,21 @@ if(!get_option('gplus_handler')){
 				<?php if (!get_option('profile_picture')) { ?>
 					<div id="rpg-profile-picture-preview" class="rpg-profile-picture"><?php echo $defaultprofilepicture; ?></div>
 				<?php } else { ?>
-					<div id="rpg-profile-picture-preview" class="rpg-profile-picture" style="background-image: url(<?php print $profilepicture; ?>);"></div>				
+					<div id="rpg-profile-picture-preview" class="rpg-profile-picture" style="background-image: url(<?php print esc_url($profilepicture); ?>);"></div>				
 				<?php } ?>
 			</div>
 
-		<h1 class="rpg-profile-username" title="Name"><?php print $profilename; ?></h1>
-		<h2 class="rpg-profile-description" title="Email"><?php print $profileemail; ?></h2>
-		<h2 class="rpg-profile-description" title="Phone"><?php print $profilephone; ?></h2>
-		<h2 class="rpg-profile-description" title="Location"><?php print $profilelocation; ?></h2>
-		<h2 class="rpg-profile-description" title="Introduction"><?php print $profileintro; ?></h2>
+		<h1 class="rpg-profile-username" title="Name"><?php print esc_html($profilename); ?></h1>
+		<h2 class="rpg-profile-description" title="Email"><?php print esc_html($profileemail); ?></h2>
+		<h2 class="rpg-profile-description" title="Phone"><?php print esc_html($profilephone); ?></h2>
+		<h2 class="rpg-profile-description" title="Location"><?php print esc_html($profilelocation); ?></h2>
+		<h2 class="rpg-profile-description" title="Introduction"><?php print esc_html($profileintro); ?></h2>
 
 
 <?php
 		if (get_option('github_handler')) {
 ?>
-			<h2 class="rpg-profile-description" title="Github"><a class="sidebar-link" href="<?php print $profilegithub; ?>" target="_blank">Link to me on Github</a></h2>
+			<h2 class="rpg-profile-description" title="Github"><a class="sidebar-link" href="<?php print esc_url($profilegithub); ?>" target="_blank">Link to me on Github</a></h2>
 <?php
 		}	
 ?>
@@ -108,13 +108,13 @@ if(!get_option('gplus_handler')){
 <?php
 
 			if(get_option('twitter_handler')){
-				echo  '<a href="' . $profiletwitter . '" target="_blank" title="Twitter"><span class="rpg-profile-icon-sidebar dashicons-before dashicons-twitter"></span></a>';
+				echo  '<a href="' . esc_url($profiletwitter) . '" target="_blank" title="Twitter"><span class="rpg-profile-icon-sidebar dashicons-before dashicons-twitter"></span></a>';
 			}
 			if(get_option('gplus_handler')){
-				echo '<a href="' . $profilegplus . '" target="_blank" title="Google+"><span class="rpg-profile-icon-sidebar dashicons-before  dashicons-googleplus"></span></a>';
+				echo '<a href="' . esc_url($profilegplus) . '" target="_blank" title="Google+"><span class="rpg-profile-icon-sidebar dashicons-before  dashicons-googleplus"></span></a>';
 			}
 			if(get_option('facebook_handler')){
-				echo '<a href="' . $profilefacebook . '" target="_blank" title="Facebook"><span class="rpg-profile-icon-sidebar dashicons-before dashicons-facebook"></span></a>';
+				echo '<a href="' . esc_url($profilefacebook) . '" target="_blank" title="Facebook"><span class="rpg-profile-icon-sidebar dashicons-before dashicons-facebook"></span></a>';
 			}
 ?>
 		</div>
