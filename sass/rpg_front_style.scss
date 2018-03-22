@@ -390,6 +390,10 @@ html {
 				ul {
 					padding-left: 0;
 				}
+
+				label {
+					display: none;
+				}
 			}
 		}
 	}
@@ -945,6 +949,10 @@ html {
 				.widget_archive {
 					ul {
 						padding-left: 0;
+					}
+
+					label {
+						display: none;
 					}
 				}
 

@@ -392,6 +392,8 @@ html {
       text-align: center; }
     .twoColumnBody #sidebar1 #sidebar-widget .widget_archive ul {
       padding-left: 0; }
+    .twoColumnBody #sidebar1 #sidebar-widget .widget_archive label {
+      display: none; }
 .twoColumnBody .sidebar-overlay {
   top: 0;
   left: 0;
@@ -960,6 +962,8 @@ html {
         text-align: center; }
       .twoColumnBody #footer #rpg-leftFooterWidget #rpg-portfolio-footer-one-container .widget_archive ul {
         padding-left: 0; }
+      .twoColumnBody #footer #rpg-leftFooterWidget #rpg-portfolio-footer-one-container .widget_archive label {
+        display: none; }
   .twoColumnBody #footer #rpg-rightFooter {
     display: inline-block; }
     .twoColumnBody #footer #rpg-rightFooter #rpg-footerMenu {
