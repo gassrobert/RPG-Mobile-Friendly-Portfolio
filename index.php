@@ -20,6 +20,9 @@
 <?php get_sidebar(); ?>
 <div class="sidebar-overlay"></div>
 <div id="container"> 
+  <div class="loaderModal">
+    <div class="loader"></div> 
+  </div>
   <div id="mainContent">
     <?php get_header(); ?>
     <div id="innerMainContent">

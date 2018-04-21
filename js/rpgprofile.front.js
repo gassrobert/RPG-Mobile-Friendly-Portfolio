@@ -15,4 +15,10 @@ jQuery(document).ready(function($) {
 		$( '.sidebar-overlay' ).fadeToggle( 320 );
 		$( 'body' ).toggleClass( 'no-scroll' );
 	});	
+
+	// Remove loader animation after page loads
+	$(window).load(function() {
+	    $(".loader").fadeOut("slow");
+	    $(".loaderModal").fadeOut("slow");
+	});
 });

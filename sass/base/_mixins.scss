@@ -15,6 +15,10 @@
     transition: $attr $time ease;
 }
 
+@mixin loadingSpinner () {
+    animation: spin 2s linear infinite;
+}
+
 @mixin transform( $val ) {
     -webkit-transform: $val;
     -moz-transform: $val;
