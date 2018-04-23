@@ -34,7 +34,7 @@
 
             // Check if it's at the beginning of the pagination and the page isn't a category or an archive
 
-            if(1 == $paged && !is_category() && !is_archive() && !is_search() ):
+            if(1 == $paged && !is_category() && !is_archive() && !is_search() && !is_tag() ):
               $args = array(
                   'post_type' => 'featuredPosts',
                   'orderby' => 'ID',
@@ -89,10 +89,44 @@
               wp_reset_postdata();
             endif; // End of if (is_category()) {
 
+
+
+            // Get the featured posts by tag if a tag is selected
+            if (is_tag() && 1 == $paged):
+
+              $tag = get_queried_object();
+              $tag_name = $tag->slug;
+
+              $args = array(
+                  'post_type' => 'featuredPosts', 
+                  'tag' => $tag_name, 
+                  'orderby' => 'ID',
+                  'order' => 'DESC'
+              );
+
+              $featuredPosts = new WP_Query($args);
+
+                if ( $featuredPosts->have_posts() ):
+                  while( $featuredPosts->have_posts() ): $featuredPosts->the_post(); 
+                    if (has_category( $category_id ) ):
+              ?> 
+                  <?php get_template_part( 'template-contents/content', get_post_format() ); ?>         
+              <?php 
+                    endif;  // End of if (has_category( $category_id ) ) {              
+                  endwhile; 
+
+                  $featuredPostExists = 1;
+                else:
+                  $featuredPostExists = 0;
+                endif; 
+
+              wp_reset_postdata();
+            endif; // End of if (is_tag()) {
+
               
 
             // Get the featured posts by date if an archive selected
-            if (is_archive() && 1 == $paged && !is_category() && !is_search()):
+            if (is_archive() && 1 == $paged && !is_category() && !is_search() && !is_tag()):
  
               $year     = get_query_var('year');
               $monthnum = get_query_var('monthnum');
