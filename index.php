@@ -35,20 +35,14 @@
             // Check if it's at the beginning of the pagination and the page isn't a category or an archive
 
             if(1 == $paged && !is_category() && !is_archive() && !is_search() && !is_tag() ):
-              $args = array(
-                  'post_type' => 'featuredPosts',
-                  'orderby' => 'ID',
-                  'order' => 'DESC',
-              );
 
-              // if it's the first page and it's not a category or n archive then display any featured posts first
-              $featuredPosts = new WP_Query($args);
+                $featuredPosts = get_featured_posts_for_index();
 
                 if ( $featuredPosts->have_posts() ):
                   while( $featuredPosts->have_posts() ): $featuredPosts->the_post(); 
-              ?>
-                  <?php get_template_part( 'template-contents/content', get_post_format() ); ?>         
-              <?php 
+              
+                    get_template_part( 'template-contents/content', get_post_format() );
+
                   endwhile;
                 endif;
                 
@@ -63,21 +57,14 @@
 
               $category_id = $wp_query->get_queried_object_id();
 
-              $args = array(
-                  'post_type' => 'featuredPosts', 
-                  'cat' => $category_id, 
-                  'orderby' => 'ID',
-                  'order' => 'DESC'
-              );
-
-              $featuredPosts = new WP_Query($args);
+              $featuredPosts = get_featured_posts_by_category($category_id);
 
                 if ( $featuredPosts->have_posts() ):
                   while( $featuredPosts->have_posts() ): $featuredPosts->the_post(); 
                     if (has_category( $category_id ) ):
-              ?> 
-                  <?php get_template_part( 'template-contents/content', get_post_format() ); ?>         
-              <?php 
+ 
+                      get_template_part( 'template-contents/content', get_post_format() );        
+ 
                     endif;  // End of if (has_category( $category_id ) ) {              
                   endwhile; 
 
@@ -97,21 +84,14 @@
               $tag = get_queried_object();
               $tag_name = $tag->slug;
 
-              $args = array(
-                  'post_type' => 'featuredPosts', 
-                  'tag' => $tag_name, 
-                  'orderby' => 'ID',
-                  'order' => 'DESC'
-              );
-
-              $featuredPosts = new WP_Query($args);
+              $featuredPosts = get_featured_posts_by_tag($tag_name);
 
                 if ( $featuredPosts->have_posts() ):
                   while( $featuredPosts->have_posts() ): $featuredPosts->the_post(); 
                     if (has_category( $category_id ) ):
-              ?> 
-                  <?php get_template_part( 'template-contents/content', get_post_format() ); ?>         
-              <?php 
+
+                      get_template_part( 'template-contents/content', get_post_format() );        
+
                     endif;  // End of if (has_category( $category_id ) ) {              
                   endwhile; 
 
@@ -131,26 +111,14 @@
               $year     = get_query_var('year');
               $monthnum = get_query_var('monthnum');
 
-              $args = array(
-                  'post_type' => 'featuredPosts', 
-                  'date_query' => array(
-                    array(
-                      'year'  => $year,
-                      'month' => $monthnum
-                    ),
-                  ),
-                  'orderby' => 'ID',
-                  'order' => 'DESC'
-              );
-
-              $featuredPosts = new WP_Query($args);
+              $featuredPosts = get_featured_posts_by_date($year, $monthnum);
 
                 if ( $featuredPosts->have_posts() ):
                   while( $featuredPosts->have_posts() ): $featuredPosts->the_post(); 
                     if ($featuredPosts):
-              ?> 
-                  <?php get_template_part( 'template-contents/content', get_post_format() ); ?>         
-              <?php 
+
+                      get_template_part( 'template-contents/content', get_post_format() );       
+
                     endif; // End of if ($featuredPosts):       
                   endwhile; // End of while( $featuredPosts->have_posts()
 

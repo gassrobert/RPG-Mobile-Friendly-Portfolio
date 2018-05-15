@@ -37,6 +37,61 @@ function rpg_portfolio_sidebar_init() {
 }
 add_action( 'widgets_init', 'rpg_portfolio_sidebar_init' );
 
+/* Post Index Loop Functions */
+function get_featured_posts_for_index() {
+    $args = array(
+        'post_type' => 'featuredPosts',
+        'orderby' => 'ID',
+        'order' => 'DESC',
+    );
+
+    // if it's the first page and it's not a category or an archive then display any featured posts first
+    $featuredPosts = new WP_Query($args);
+    return $featuredPosts;
+}
+
+function get_featured_posts_by_category($category_id) {
+
+    $args = array(
+        'post_type' => 'featuredPosts', 
+        'cat' => $category_id, 
+        'orderby' => 'ID',
+        'order' => 'DESC'
+    );
+
+    $featuredPosts = new WP_Query($args);
+    return $featuredPosts;
+}
+
+function get_featured_posts_by_tag($tag_name) {
+    $args = array(
+        'post_type' => 'featuredPosts', 
+        'tag' => $tag_name, 
+        'orderby' => 'ID',
+        'order' => 'DESC'
+    );
+
+    $featuredPosts = new WP_Query($args);
+    return $featuredPosts;
+}
+
+function get_featured_posts_by_date($year, $monthnum) {
+    $args = array(
+        'post_type' => 'featuredPosts', 
+        'date_query' => array(
+            array(
+                'year'  => $year,
+                'month' => $monthnum
+            ),
+        ),
+        'orderby' => 'ID',
+        'order' => 'DESC'
+    );
+
+    $featuredPosts = new WP_Query($args);
+    return $featuredPosts;
+}
+
 /* Post Content Functions */
 function rpg_portfolio_posted_meta() {
 	$posted_on = human_time_diff( get_the_time('U'), current_time('timestamp') );
