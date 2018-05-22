@@ -5,7 +5,7 @@
 @package RPG Mobile Friendly Portfolio
 	
 	========================
-		ADMIN ENQUEUE FUNCTIONS
+		FRONT ENQUEUE FUNCTIONS
 	========================
 */
 
